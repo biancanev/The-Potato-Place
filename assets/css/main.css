@@ -11,7 +11,7 @@ body{
   background-size: cover;
 }
 .bgimg-1 {
-  background-image: url(images/background.png");
+  background-image: url("images/background.png");
   min-height: 100%;
 }
 .caption {
