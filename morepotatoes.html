@@ -20,6 +20,11 @@
     </center>
     </h3>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>you have been on this website for:<span id = countdown>0 seconds</h1>
     </body>
     
 
@@ -32,7 +37,12 @@ head{background-color:#0362A2}
   var infoDiv = document.getElementByID("info");
   console.log(window);
   console.log(window.location);
-          infoDiv.textContent += "Your user agent is " + window.navigator.userAgent;
+          infoDiv.textContent += "You are currently using:" + window.navigator.userAgent;
+  var countdown = document.getElementById("countdown");
+  var countItDown = function() {
+    countdown.textContent = parseFloat(countdown.textContent) + 1;  
+  };
+  window.setTimeout(countItDown, 60000);
 </script>
       <img src="https://media.giphy.com/media/U1rlk8zdcAwbm/giphy.gif">
     <img src="https://media.giphy.com/media/iiZpZq2rpkkvu/giphy.gif">
