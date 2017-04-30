@@ -1,5 +1,11 @@
+
+
+
+
+
 <html>
   <head>
+
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <center><h1><strong>More Potatoes</strong></h1></center>
     <a href="http://thepotatoplace.ml/">Home</a><br><br>
@@ -10,7 +16,8 @@
      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <div class="games-to-play"><center><h1>Games to play</h1></center>
     <h3 style="font-family:Quicksand">
-    <center>
+
+      <center>
     <a href="http://wings.io/">Wings</a><br>
     <a href="http://agar.pro/">Agar Pro</a><br>
     <a href="http://agar.io/">Agario</a><br>
@@ -20,6 +27,7 @@
     <a href="http://vanar.io/">Vanar</a>
     </center>
     </h3>
+
     </div>
     <br>
     <br>
@@ -30,6 +38,7 @@
     
 
 
+
   
   
   
@@ -40,6 +49,7 @@
   
   
   
+
   
   
   
@@ -84,6 +94,36 @@ head{background-color:#0362A2}
     countdown.textContent = parseFloat(countdown.textContent) + 1;  
   };
   window.setTimeout(countItDown, 60000);
+  
+  
+var slideShow = function(container) {
+    this.images = [];
+    this.curImage = 0;
+    for (i = 0; i < container.childElementCount; i++) {
+        this.images.push(container.children[i]);
+        this.images[i].style.display = "none";
+    }
+    
+    // Handle going to to the next slide
+    var nextSlide = function() {
+        for (var i = 0; i < this.images.length; i++) {
+            this.images[i].style.display = "none";
+        }
+        this.images[this.curImage].style.display = "block";
+        this.curImage++;
+        if (this.curImage >= this.images.length) {
+            this.curImage = 0;
+        }
+        window.setTimeout(nextSlide.bind(this), 1000);
+    };
+    
+    nextSlide.call(this);
+};
+slideShow(document.getElementById("slideshow"));  
+  
+  
+  
+  
 </script>
       <img src="https://media.giphy.com/media/U1rlk8zdcAwbm/giphy.gif">
     <img src="https://media.giphy.com/media/iiZpZq2rpkkvu/giphy.gif">
