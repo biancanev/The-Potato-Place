@@ -61,44 +61,7 @@
   
   
   
-  var button = document.getElementById("button");
   
-     
-  var onButtonClick = function() {
-    var name = document.getElementById("name").value;
-    var lang = document.getElementById("lang").value;
-    var greeting;
-    if (lang === "sll") {
-        greeting = "Please Select a Language ";
-    } else if (lang === "es") {
-        greeting = "Hola ";
-    } else if (lang === "en"){
-        greeting = "Hello " ;
-    } else if (lang === "chnm"){
-        greeting = "ni hao ";
-    } else if (lang === "chnc"){
-        greeting = "ni hao ";
-    } else if (lang === "grm"){
-        greeting = "Hallo"
-    } else if (lang === "frn"){
-      greeting = "bonjour "
-    } else if (lang === "hnd"){
-        greeting = "नमस्ते "
-    } else if (lang === "irs"){
-        greeting = "Dia dhuit "
-    } else if (lang === "krn"){
-        greeting === "an nyoung "
-    } else if (lang === "twn"){
-      greeting = "ni hao "
-    } else if (lang === "vtm"){
-      greeting = "chào bạn "
-    } else if (lang === "other"){
-      greeting = "What language do you speak? "
-    }
-    document.getElementById("message").textContent += greeting;  
-  };
-  
-  button.addEventListener("click", onButtonClick);
       
   
   
@@ -140,7 +103,44 @@ head{background-color:#0362A2}
     .games-to-play{ background: rgb(150, 136, 136);
   }</style>
 <script>
+  var button = document.getElementById("button");
   
+     
+  var onButtonClick = function() {
+    var name = document.getElementById("name").value;
+    var lang = document.getElementById("lang").value;
+    var greeting;
+    if (lang === "sll") {
+        greeting = "Please Select a Language ";
+    } else if (lang === "es") {
+        greeting = "Hola ";
+    } else if (lang === "en"){
+        greeting = "Hello " ;
+    } else if (lang === "chnm"){
+        greeting = "ni hao ";
+    } else if (lang === "chnc"){
+        greeting = "ni hao ";
+    } else if (lang === "grm"){
+        greeting = "Hallo"
+    } else if (lang === "frn"){
+      greeting = "bonjour "
+    } else if (lang === "hnd"){
+        greeting = "नमस्ते "
+    } else if (lang === "irs"){
+        greeting = "Dia dhuit "
+    } else if (lang === "krn"){
+        greeting === "an nyoung "
+    } else if (lang === "twn"){
+      greeting = "ni hao "
+    } else if (lang === "vtm"){
+      greeting = "chào bạn "
+    } else if (lang === "other"){
+      greeting = "What language do you speak? "
+    }
+    document.getElementById("message").textContent += greeting;  
+  };
+  
+  button.addEventListener("click", onButtonClick);
   var infoDiv = document.getElementByID("info");
   console.log(window);
   console.log(window.location);
