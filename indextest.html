@@ -1,239 +1,123 @@
 <html>
-
 <head>
-
 <style>
-
 body {font-family: "Lato", sans-serif;}
 
-
-
 /* Style the tab */
-
 div.tab {
-
     overflow: hidden;
-
     border: 1px solid #ccc;
-
     background-color: #5355cd ;
-
 }
-
-
 
 /* Style the buttons inside the tab */
-
 div.tab button {
-
     background-color: #cc0c0c;
-
     float: left;
-
     border: none;
-
     outline: none;
-
     cursor: pointer;
-
     padding: 14px 16px;
-
     transition: 0.3s;
-
     font-size: 39px;
-
 }
-
-
 
 /* Change background color of buttons on hover */
-
 div.tab button:hover {
-
     background-color: #5355cd;
-
 }
-
-
-
+	
 /* Create an active/current tablink class */
-
 div.tab button.active {
-
     background-color: #5355cd;/* Style the tab content */
-
 .tabcontent {
-
     display: none;
-
     padding: 6px 12px;
-
     border: 1px solid #ccc;
-
     border-top: none;
-
 }
-
 	
-
 /* Style the info box */
-
 .div1 {
-
     border: 1px solid black;
-
     height:250px;
-
     width:500px;
-
     background:url(href="http://wallpapermonkey.com/wp-content/uploads/2016/09/pusheen-wallpaper7.jpg");
-
     background-repeat: no-repeat;
-
 }
-
-	
-
 </style>
-
-
 <title> The Potato Place </title>
-
 <head>
-
    <meta http-equiv="refresh" content="60">
-
   <title>The Potato Place</title>
-
   <link rel="stylesheet" href="assets/css/main.css">
-
   <script type="text/javascript" src="assets/js/index.js"></script>
-
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-
 </head>
-
 <body>
-
   <div class="bgimg-1">
-
     <div class="caption">
-
       <span class="border">The Potato Place</span>
-
     </div>
-
     </div>
-
 </head>
-
 <body>
-
-
 
 <div class="tab">
-
   <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
-
   <button class="tablinks" onclick="openTab(event, 'MorePotatoes')"> More Potatoes </button>
-
   <button class="tablinks" onclick="openTab(event, 'Potatooligists')"> Potato-oligist </button>
-
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Helpdesk </button>
-
   <button class="tablinks" onclick="openTab(event, 'Pokemon')"> Pokemon </button>
-
 </div>
-
-
 
 <div id="Home" class="tabcontent">
-
   <div class="div1">
-
 	  <h3> Welcome to the Potato Place! This is a testing place however. </h3>
-
 	  <p> However you got here, it doesn't matter! Enjoy this site!</p>
-
   </div>
-
 </div>
 
-
-
 <div id="MorePotatoes" class="tabcontent">
-
 <h1> More Potatoes </h1>
 <h4> Welcome to the testing site of more potatoes!</h4>
 <p> We get it, Our more potatoes is a bit cringy. That is why this testing site is here to remodify everything that went wrong before!
-
 </div>
-
-
 
 <div id="Potatooligists" class="tabcontent">
-
   <h3> Website Contributors </h3>
-
   <p> Ryan Kwong</p>
   <p> Connor Park </p>
-
  <h3> Other People of Mention </h3>
-
   <p> Michael Ng </p>
   <p> Pranav Garigipati </p>
-
 </div>
 
-
-
 <div id="Helpdesk" class="tabcontent">
-
 	<h3> Need help? </h3>
-
     <p> We're sorry to say that this is a testing site, so we cannot reach you for now!</p><br>
 	<p> However, if there is a dire need to contact us, you can email <a href="bebostunner234@gmail.com">Ryan Kwong</a> . <a href="
 		park8854@mydusd.org> Connor Park</a> to help us modify our website.</p>
-
-
+		
 <div id="Pokemon" class="tabcontent">
-
     <h3>Pokemon list</h3>
-
     <p> No New Pokemon </p>
-
 </div>
-
-
-
+		
 <script>
-
 function openTab(evt, cityName) {
-
     var i, tabcontent, tablinks;
-
     tabcontent = document.getElementsByClassName("tabcontent");
-
     for (i = 0; i < tabcontent.length; i++) {
-
         tabcontent[i].style.display = "none";
-
     }
-
     tablinks = document.getElementsByClassName("tablinks");
-
     for (i = 0; i < tablinks.length; i++) {
-
         tablinks[i].className = tablinks[i].className.replace(" active", "");
-
     }
-
     document.getElementById(cityName).style.display = "block";
-
     evt.currentTarget.className += " active";
-
 }
-
 
 
 // Get the element with id="defaultOpen" and click on it
