@@ -102,8 +102,8 @@ div.tab button.active {
     <h3>Ubers</h3>
 		<ul>
 		<li> Aegislash -- Steel/Ghost <i>Ability: Stance Change</i> </li>
-		<li> Arceus -- Normal <i>Ablity: Multitype</i></li>
-		
+		<li> Arceus -- Normal <i>Ablity: Multitype</i>(Different Forms: Fire, Water, Grass, Steel, Flying, Bug, 
+			Dark, Fairy.)</li>
 		</ul>
 </div>
 		
@@ -124,7 +124,14 @@ function openTab(evt, cityName) {
 
 
 // Get the element with id="defaultOpen" and click on it
-
+/***  
+tablinks = document.getElementsByClassName("tablinks");
+for(i=0; i < tablinks.length; i++) {
+	tablinks[i].className.replace("active","");
+	}
+document.getElementById(cityName).style.display = "block";
+ent.currentTarget.className += "active";
+***/
 document.getElementById("defaultOpen").click();
 
 </script>
