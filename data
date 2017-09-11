@@ -1,0 +1,2 @@
+CREATE TABLE usernames (id INTEGER PRIMARY KEY, username TEXT, password TEXT);
+INSERT INTO usernames (1, "bebostunner345@gmail.com", "password123");
