@@ -1,3 +1,2 @@
 # The-Potato-Place
-Just a potato place. Or is it???
-POTATOES?
+Your Online Gaming/Other Random Things Site
