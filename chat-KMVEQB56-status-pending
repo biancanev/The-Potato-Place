@@ -6,4 +6,8 @@
       <span class="border">This Chat is Pending</span>
     </div>
     </div>
+    
+    <form action="/action_page.php">
+<textarea name="paragraph_text" cols="50" rows="10"></textarea>
+</form> 
 </head>
