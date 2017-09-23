@@ -1,4 +1,5 @@
-  <link rel="stylesheet" href="assets/css/main.css">
+<title></htm
+<link rel="stylesheet" href="assets/css/main.css">
   <script type="text/javascript" src="assets/js/index.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <div class="bgimg-1">
@@ -9,6 +10,7 @@
 <p align="left">
     <form action="/action_page.php">
 <textarea name="paragraph_text" cols="150" rows="5"></textarea>
+<input type="submit" value="Send">
 </form>
 </p>
 </head>
