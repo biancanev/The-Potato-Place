@@ -10,16 +10,21 @@
     </div>
 <p align="left">
     <form action="/action_page.php">
-<textarea name="paragraph_text" cols="150" rows="5"></textarea>
+<textarea name="sentValue" cols="150" rows="5"></textarea>
 <input type="submit" value="Send">
 </form>
 </p>
 </head>
 <body>
+<div class="chatbox">
+</div>
 </body>
 <style>
 </style>
+.chatbox{
+background-image: chatbox.png;
+}
 <script>
-var jobValue = document.getElementsByName('txtJob')[0].value;
+var jobValue = document.getElementsByName('sentValue')[0].value;
 </script>
 </html>
