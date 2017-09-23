@@ -8,6 +8,6 @@
     </div>
     
     <form action="/action_page.php">
-<textarea name="paragraph_text" cols="50" rows="10"></textarea>
+<textarea name="paragraph_text" cols="50" rows="5"></textarea>
 </form> 
 </head>
