@@ -1,3 +1,4 @@
+<html>
 <title>Chat-KMVEQB56</title>
 <link rel="stylesheet" href="assets/css/main.css">
   <script type="text/javascript" src="assets/js/index.js"></script>
@@ -14,3 +15,11 @@
 </form>
 </p>
 </head>
+<body>
+</body>
+<style>
+</style>
+<script>
+var jobValue = document.getElementsByName('txtJob')[0].value;
+</script>
+</html>
