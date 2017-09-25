@@ -1,0 +1,36 @@
+<html>
+<title>Chat-A4df0e2</title>
+<head>
+  <center><h3>Announcements</h3></center>
+  </head>
+  <body>
+  <div class="chatbox" align="center">
+    <div class="owner-name" align="left">RyanKwong@ThePotatoplace at 9/24/17 6:49 PM<div class="message" align="left">Please review our Terms of Service and Behavior Policy before using this chat.</div></div><br>
+   <div class="owner-name" align="left">RyanKwong@ThePotatoplace at 9/24/17 6:50 PM<div class="message" align="left">This chat is not supported yet. Please come back at another time.</div></div><br>
+    <div class="bot-name" align="left">PotatoPlaceBot at 9/25/17 12:00 AM<div class="message" align="left">BETA testing has officially started</div></div><br>
+    <div class="bot-name" align="left">PotatoPlaceBot at 9/25/17 4:26 PM<div class="message" align="left">BETA testing was succesful and has now ended</div></div>
+    </div>
+    <div id="chatwee-root"</div>
+<style>
+  .bot-name{
+    color: #346311;
+  }
+  .message{
+    color: #000000;
+  }
+  .owner-name{
+    color: #b89813
+  }
+  .chatbox{
+    width: 2750px;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 0;
+}
+</style>
+<script>
+var jobValue = document.getElementsByName('sentValue')[0].value;
+</script>
+  <script src="https://chatwee-api.com/v2/script/59c7f206bd616d5674be1ca8.js"></script>
+  </body>
+</html>
