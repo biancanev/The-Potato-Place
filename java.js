@@ -1,4 +1,13 @@
-// Wait for DOM to load
+
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars": {
+        "car1":"Ford",
+        "car2":"BMW",
+        "car3":"Fiat"
+    }
+ } // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function(event) {
 
   // Put the drop down into a variable
@@ -67,3 +76,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }, false);
   
 });
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
+document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
+
+
+
+
+
+
