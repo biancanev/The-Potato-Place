@@ -1,4 +1,4 @@
-
+var g = 4;
 myObj = {
     "name":"John",
     "age":30,
@@ -76,10 +76,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }, false);
   
 });
-document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
-document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
-
-
+document.cookie = "username=; expires=Thu, 01 Jan 2018 00:00:00 UTC; path=/;"; 
+document.cookie = "password=; expires=Thu, 01 Jan 2018 00:00:00 UTC; path=/;"; 
+document.cookie = "id=; expires=Thu, 01 Jan 2018 00:00:00 UCT; path/;";
+if(e === 4){
+ alert("Error" + 4) 
+}
 
 
 
