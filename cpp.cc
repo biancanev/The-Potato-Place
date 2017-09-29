@@ -10,18 +10,18 @@ struct student
 
 int main()
 {
-    cout << "Enter information of students: " << endl;
+    cout << "Username: " << endl;
 
     // storing information
     for(int i = 0; i < 10; ++i)
     {
         s[i].roll = i+1;
-        cout << "For roll number" << s[i].roll << "," << endl;
+        cout << "For id number" << s[i].roll << "," << endl;
 
-        cout << "Enter name: ";
+        cout << "Enter username: ";
         cin >> s[i].name;
 
-        cout << "Enter marks: ";
+        cout << "Enter password: ";
         cin >> s[i].marks;
 
         cout << endl;
@@ -32,8 +32,8 @@ int main()
     // Displaying information
     for(int i = 0; i < 10; ++i)
     {
-        cout << "\nRoll number: " << i+1 << endl;
-        cout << "Name: " << s[i].name << endl;
+        cout << "\nid number: " << i+1 << endl;
+        cout << "userame: " << s[i].name << endl;
         cout << "Marks: " << s[i].marks << endl;
     }
 
