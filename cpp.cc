@@ -21,7 +21,7 @@ int main()
         cout << "Enter username: ";
         cin >> s[i].name;
 
-        cout << "Enter password: ";
+        cout << "Enter password: " << endl;
         cin >> s[i].marks;
 
         cout << endl;
