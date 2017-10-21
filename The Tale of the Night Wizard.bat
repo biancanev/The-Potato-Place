@@ -108,7 +108,7 @@ if %resultscene2% equ HOME goto home
 
 :note
 cls
-echo The note reads "at village meeting. will be back at 8:00
+echo The note reads "at village meeting. will be back at 8:00"
 echo Will you go to the HALL?
 set /p resultscene2=
 if %resultscene2% equ HALL goto hall
