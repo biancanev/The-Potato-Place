@@ -347,8 +347,16 @@ div.tab button.active {
 	<p>A harmless virus:</p>
 	<a href="http://thepotatoplace.ml/virus2.bat">When you click this link press open. Then your computer should shut down in a minute.</a>
 </div>
-<p> Find you Location : <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12624.428053881542!2d-121.86194274999998!3d37.7171659!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1510268520366" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+<p> Find you Location :</p>
+<div id="googleMap" style="width:100%;height:400px"></div>
 <script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
