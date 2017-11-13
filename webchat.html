@@ -21,6 +21,9 @@
     mindheight: 800px;
     background-color: #666;
 }
+#launchBtn {
+    background-color: red;
+    }
 </style>
 </head>
   
@@ -29,7 +32,7 @@
     <video autoplay="true" id="videoElement"></video>
 </div>
   </center>
-    <button onclick="checkCookie"="checkCookie()">Launch Chat</button>
+    <button onclick="checkCookie"="checkCookie()" disabled id="launchBtn">Launch Chat</button>
   <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button>
   <div id="camera-publisher"></div>
   <div id="camera-subscriber"></div>
