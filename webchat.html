@@ -22,12 +22,17 @@
 </style>
 </head>
   
-<body>
+<body><center>
 <div id="container">
     <video autoplay="true" id="videoElement">
      
     </video>
 </div>
+  </center>
+  <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button>
+  <div id="camera-publisher"></div>
+  <div id="camera-subscriber"></div>
+  <div id="screen-subscriber"></div>
 <script>
  var video = document.querySelector("#videoElement");
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
@@ -43,6 +48,8 @@ function videoError(e) {
     // do something
 }
   </script>
+  
+  <script src="//static.opentok.com/v2/js/opentok.js"></script>
     <script type="text/javascript">
     // Go to https://dashboard.tokbox.com/ to get your OpenTok API Key and to generate
     // a test session ID and token:
