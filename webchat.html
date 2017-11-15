@@ -37,7 +37,7 @@ video:hover{
     <video autoplay="true" id="videoElement" onclick="startFunction()"></video>
 </div>
   </center>
-    <button onclick="checkCookie"="checkCookie()" disabled id="launchBtn">Launch Chat</button>
+    <button onclick="loading.innerHRML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
   <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button>
   <div id="camera-publisher"></div>
   <div id="camera-subscriber"></div>
@@ -178,7 +178,7 @@ function videoError(e) {
             });
         });
     </script>
-  <p>Looking for other users . . .</p>
-  <p>Locating a server . . .</p>
+  <p id="loading">Looking for other users . . .</p>
+  <p id="loading">Locating a server . . .</p>
 </body>
 </html>
