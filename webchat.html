@@ -34,7 +34,7 @@ video:hover{
 </head>
 <body><center>
 <div id="container">
-    <video autoplay="true" id="videoElement"></video>
+    <video autoplay="true" id="videoElement" onclick="startFunction()"></video>
 </div>
   </center>
     <button onclick="checkCookie"="checkCookie()" disabled id="launchBtn">Launch Chat</button>
@@ -42,6 +42,11 @@ video:hover{
   <div id="camera-publisher"></div>
   <div id="camera-subscriber"></div>
   <div id="screen-subscriber"></div>
+    <script>
+        function startFunction(){
+            alert("Error 408. Request Timeout.");
+        }
+    </script>
 <script>
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
