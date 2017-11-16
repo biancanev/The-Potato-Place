@@ -110,7 +110,8 @@ function videoError(e) {
     var session = OT.initSession(apiKey, sessionId);
     session.connect(token, function(error) {
       if (error) {
-        alert('Error connecting to session: ' + 'Your server address is undefined. Please try again. -- Google says: ' + error.message);
+          //Do Nothing for now . . . 
+       // alert('Error connecting to session: ' + 'Your server address is undefined. Please try again. -- Google says: ' + error.message);
         return;
       }
       // publish a stream using the camera and microphone
