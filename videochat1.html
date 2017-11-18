@@ -1,8 +1,41 @@
 <html>
   <head>
+    <style>
+      
+#localVideo {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 200px;
+}
+video:nth-of-type(2) {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-size: cover;
+}
+    </style>
     <title>Icecomm Chat</title>
   </head>
   <body>
     <video id="localVideo" autoplay></video>
+    <script type="text/javascript" src="http://cdn.icecomm.io/icecomm.js"></script>  
+    <script>
+var comm = new Icecomm('3kB4PpZaNNFN4r3xhmOVgcPn2D8rzcOTtQFh4gRwmAsaGTPwlm');
+
+comm.connect('custom room', {audio: false});
+
+comm.on('connected', function(peer) {
+   document.body.appendChild(peer.getVideo());
+});
+
+comm.on('local', function(peer) {
+  localVideo.src = peer.stream;
+});
+
+comm.on('disconnect', function(peer) {
+  document.getElementById(peer.ID).remove();
+});       
+    </script>
   </body>
 </html>
