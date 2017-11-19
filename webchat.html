@@ -34,7 +34,7 @@ video:hover{
 </head>
 <body><center>
 <div id="container">
-    <video autoplay="true" id="videoElement" onclick="startFunction()" onload="checkCookie"></video>
+    <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"></video>
 </div>
   </center>
     <button onclick="loading.innerHRML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
@@ -42,11 +42,7 @@ video:hover{
   <div id="camera-publisher"></div>
   <div id="camera-subscriber"></div>
   <div id="screen-subscriber"></div>
-    <script>
-        function startFunction(){
-            alert("Error 408. Request Timeout.");
-        }
-    </script>
+
 <script>
 function setCookie(cname,cvalue,exdays) {
     var d = new Date();
@@ -80,6 +76,7 @@ function checkCookie() {
        }
     }
 }
+    
  var video = document.querySelector("#videoElement");
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
 if (navigator.getUserMedia) {       
@@ -93,6 +90,11 @@ function videoError(e) {
     alert("Video Feed Error. Sorry, we don't know what happened. Are you on v.0.92.5?");
 }
   </script>
+        <script>
+        function VideoLauchFunction(){
+            alert("Error 408. Request Timeout.");
+        }
+    </script>
   <script src="//static.opentok.com/v2/js/opentok.js"></script>
     <script type="text/javascript">
     // Go to https://dashboard.tokbox.com/ to get your OpenTok API Key and to generate
