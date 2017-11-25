@@ -204,22 +204,6 @@ is an acceptable contribution.
 Failure to contribute may result in being kicked out of the repository
 
 ### Section 2
-#### Consequences
-If your contributions intentionally try to target a person, you will be severely punished. This includes:
-
-* Consistantly poking fun at a person
-* Using inappropriate language
-* Talking about political/economical topics
-For example:
-
-```
-@exampleperson1, what are you thinking? b---ch you better delete that dumb script.
-```
-
-
-Consequences will vary by the severity of the action.
-
-### Section 3
 #### Adding a new Contributor
 To add a new contributor, you first need to ask biancanev or ConnorPark to add a contributor. A message should look something like this:
 ```
@@ -238,3 +222,30 @@ or
 --Thanks for understanding
 biancanev
 ```
+
+### Section 3
+#### Removing a Current Contributor
+Sometimes there is going to be a contributor that is just not helping, or is becoming a negative impact. If this is so, then please contact biancanev to ask for removal. Your message should look like this:
+```
+@biancanev, I feel that examplename is becoming a negative impact for me, and the rest of the contributors. I feel that we should remove him/her from the repository. 
+--Thanks for your time
+Your name
+```
+
+### Section 4
+#### Consequences
+If your contributions intentionally try to target a person, you will be severely punished. This includes:
+
+* Consistantly poking fun at a person
+* Using inappropriate language
+* Talking about political/economical topics
+For example:
+
+```
+@exampleperson1, what are you thinking? b---ch you better delete that dumb script.
+```
+
+
+Consequences will vary by the severity of the action.
+
+Also, adding or removing a contributor*(see sections 2 & 3)* is strictly prohibited. If found adding or removing a contributor, you will be kicked out automatically.
