@@ -210,8 +210,10 @@ If your contributions intentionally try to target a person, you will be severely
 * Using inappropriate language
 * Talking about political/economical topics
 For example:
+
+```
+
 ```
 @exampleperson1, what are you thinking? b---ch you better delete that dumb script.
 ```
-
 Consequences will vary by the severity of the action.
