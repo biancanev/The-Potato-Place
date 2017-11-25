@@ -6,7 +6,11 @@ Contributions are mandatory for all Potato Place Curators. In order to track eac
 Contributions must be in one of these forms:
 * HTML(Hypertext Markup Language)
 ```html
-<html></html>
+<html>
+    <body>
+    <p>My First HTML script!</p>
+    </body>
+</html>
 ```
 * CSS(Cascading Style Sheets)
 ```css
