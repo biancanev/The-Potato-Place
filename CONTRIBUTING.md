@@ -248,4 +248,4 @@ For example:
 
 Consequences will vary by the severity of the action.
 
-Also, adding or removing a contributor*(see sections 2 & 3)* is strictly prohibited. If found adding or removing a contributor, you will be kicked out automatically.
+Also, adding or removing a contributor * (see sections 2 & 3) *  is strictly prohibited. If found adding or removing a contributor, you will be kicked out automatically.
