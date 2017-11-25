@@ -218,3 +218,23 @@ For example:
 
 
 Consequences will vary by the severity of the action.
+
+### Section 3
+#### Adding a new Contributor
+To add a new contributor, you first need to ask biancanev or ConnorPark to add a contributor. A message should look something like this:
+```
+@biancanev, Can we add examplename to our repository? I think he/she will be a big help with the PHP. 
+-- thanks, Your name
+```
+
+You should get a response like this:
+```
+@Your name, Thank you for contacting me to add examplename to our repository, yes, please do add examplename to our repository!
+-- biancanev
+```
+or
+```
+@Your name, Thank uou for contacting me to add examplename to our repository, however, I do not believe that this person is fit to edit the repository
+--Thanks for understanding
+biancanev
+```
