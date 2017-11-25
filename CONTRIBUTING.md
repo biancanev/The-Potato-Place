@@ -17,7 +17,7 @@ div{
 }
 ```
 * JavaScript
-```
+```javascript
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
