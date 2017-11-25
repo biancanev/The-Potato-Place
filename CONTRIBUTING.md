@@ -156,7 +156,7 @@ function videoError(e) {
           alert('This browser does not support screen sharing.');
         } else if (response.extensionInstalled === false
             && (response.extensionRequired || !ffWhitelistVersion)) {
-          alert('Please install the screen-sharing extension and load this page over HTTPS.');
+            alert('Please install the screen-sharing extension and load this page over HTTPS.');
         } else if (ffWhitelistVersion && navigator.userAgent.match(/Firefox/)
           && navigator.userAgent.match(/Firefox\/(\d+)/)[1] < ffWhitelistVersion) {
             alert('For screen sharing, please update your version of Firefox to '
@@ -199,7 +199,8 @@ function videoError(e) {
 </body>
 </html>
 
-``` is an acceptable contribution.
+``` 
+is an acceptable contribution.
 Failure to contribute may result in being kicked out of the repository
 
 ### Section 2
@@ -212,8 +213,8 @@ If your contributions intentionally try to target a person, you will be severely
 For example:
 
 ```
-
-```
 @exampleperson1, what are you thinking? b---ch you better delete that dumb script.
 ```
+
+
 Consequences will vary by the severity of the action.
