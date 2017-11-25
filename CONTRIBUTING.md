@@ -9,6 +9,7 @@ Contributions must be in one of these forms:
 * JavaScript
 * Python(Personal Homepage)
 * PHP
+
 For example:
 ```html
 <!DOCTYPE html>
