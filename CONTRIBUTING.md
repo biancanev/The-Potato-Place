@@ -5,10 +5,41 @@
 Contributions are mandatory for all Potato Place Curators. In order to track each curators commits, we will use the commit function in our repository
 Contributions must be in one of these forms:
 * HTML(Hypertext Markup Language)
+```html
+<html></html>
+```
 * CSS(Cascading Style Sheets)
+```css
+div{
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+}
+```
 * JavaScript
-* Python(Personal Homepage)
-* PHP
+```
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+```
+* Python
+
+* PHP(Personal Homepage)
+```php
+<?php>
+```
 
 For example:
 ```html
