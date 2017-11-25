@@ -199,7 +199,7 @@ function videoError(e) {
 </body>
 </html>
 
-```
+``` is an acceptable contribution.
 Failure to contribute may result in being kicked out of the repository
 
 ### Section 2
@@ -209,5 +209,9 @@ If your contributions intentionally try to target a person, you will be severely
 * Consistantly poking fun at a person
 * Using inappropriate language
 * Talking about political/economical topics
+For example:
+```
+@exampleperson1, what are you thinking? b---ch you better delete that dumb script.
+```
 
 Consequences will vary by the severity of the action.
