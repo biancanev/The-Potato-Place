@@ -4,11 +4,11 @@
 #### How To Contribute
 Contributions are mandatory for all Potato Place Curators. In order to track each curators commits, we will use the commit function in our repository
 Contributions must be in one of these forms:
-    <html>
-    CSS
-    JavaScript
-    Python
-    PHP
+* HTML(Hypertext Markup Language)
+* CSS(Cascading Style Sheets)
+* JavaScript
+* Python(Personal Homepage)
+* PHP
 Failure to contribute may result in being kicked out of the repository
 
 ### Section 2
