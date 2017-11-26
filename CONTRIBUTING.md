@@ -1,7 +1,7 @@
 # Contributing to The Potato Place
 
 ### Introduction
-The Potato Place is a place where eveyone needs to contribute. In order to ensure this, we have set up a few guidelines.
+The Potato Place is a place where eveyone needs to contribute. In order to ensure this, we have set up a few guidelines. These are:
 ### Section 1
 #### How To Contribute
 Contributions are mandatory for all Potato Place Curators. In order to track each curators commits, we will use the commit function in our repository
