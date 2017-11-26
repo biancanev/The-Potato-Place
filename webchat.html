@@ -7,13 +7,18 @@
 <meta content="Display Webcam Stream" name="title">
 <title>The Potato Place | Webchat</title>
 <style>
+.menubar{
+    height: 10px;
+    width: inherit;
+    background-color: rgba(0,0,0,0.9);
+    }
 button:hover{
     opacity: 0.65;
     }
 video:hover{
     opacity: 0.65;
     cursor: wait;
-    
+    positon: relative;
     }
 #container {
     margin: 0px auto;
@@ -36,7 +41,7 @@ video:hover{
 </head>
 <body><center>
 <div id="container">
-    <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"></video>
+    <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"><div class="menubar"></div></video>
 </div>
   </center>
     <button onclick="loading.innerHRML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
