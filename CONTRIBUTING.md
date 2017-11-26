@@ -1,5 +1,7 @@
 # Contributing to The Potato Place
 
+### Introduction
+The Potato Place is a place where eveyone needs to contribute. In order to ensure this, we have set up a few guidelines.
 ### Section 1
 #### How To Contribute
 Contributions are mandatory for all Potato Place Curators. In order to track each curators commits, we will use the commit function in our repository
@@ -309,3 +311,5 @@ Getting help is not hard at all. Whether it be your code is not working, or you 
 @everyone, ASK YOUR QUESTION HERE. DESCRIBE WHAT YOU NEED HELP WITH. BE CONSISE.
 -- YourName
 ```
+As always you need to be consise and specific with your post.
+
