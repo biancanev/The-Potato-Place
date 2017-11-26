@@ -302,3 +302,10 @@ For example:
 Consequences will vary by the severity of the action.
 
 Also, adding or removing a contributor _(see sections 2 & 3)_ is strictly prohibited. If found adding or removing a contributor, you will be kicked out automatically.
+### Section 5
+#### Getting Help
+Getting help is not hard at all. Whether it be your code is not working, or you just don't know what to add, you can always add an issue in our issue tab, and we will get to it as soon as possible. Your post should look something like this:
+```
+@everyone, ASK YOUR QUESTION HERE. DESCRIBE WHAT YOU NEED HELP WITH. BE CONSISE.
+-- YourName
+```
