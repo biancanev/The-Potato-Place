@@ -160,6 +160,33 @@ div.tab button.active {
     background:url(href="http://wallpapermonkey.com/wp-content/uploads/2016/09/pusheen-wallpaper7.jpg");
     background-repeat: no-repeat;
 }
+.cool{
+	color: blue;
+	animation-name: cool;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: cool;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	}
+@keyframes cool{
+    0% {background-color: red;}
+    14% {background-color: orange;}
+    28% {background-color: yellow;}
+    42% {background-color: green;}
+    63% {background-color: blue;}
+    84% {background-color: purple;}
+    100% {background-color: red;}
+	}
+@-webkit-keyframes cool{
+    0% {background-color: red;}
+    14% {background-color: orange;}
+    28% {background-color: yellow;}
+    42% {background-color: green;}
+    63% {background-color: blue;}
+    84% {background-color: purple;}
+    100% {background-color: red;}
+	}
 </style>
 <title> The Potato Place </title>
 <head>
@@ -246,7 +273,7 @@ div.tab button.active {
 <!--Potato-oligist Tab Content-->
 <div id="Potatooligists" class="tabcontent">
   <h3> Website Contributors </h3>
-  <a href="https://biancanev.github.io/aboutme/">Ryan Kwong</a>
+  <a class="cool" href="https://biancanev.github.io/aboutme/">Ryan Kwong</a>
   <p> Connor Park </p>
   <p> MiO Nguyen </p>
   <p> Pranav Garigipati </p>
