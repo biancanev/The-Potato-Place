@@ -11,6 +11,7 @@
     height: 10px;
     width: inherit;
     background-color: rgba(0,0,0,0.9);
+    visibility: hidden;
     }
 button:hover{
     opacity: 0.65;
@@ -18,7 +19,6 @@ button:hover{
 video:hover{
     opacity: 0.65;
     cursor: wait;
-    positon: relative;
     }
 #container {
     margin: 0px auto;
@@ -33,6 +33,7 @@ video:hover{
     mindheight: 800px;
     background-color: #666;
     border: 10px #333 solid;
+    positon: relative;
 }
 #launchBtn {
     background-color: LightGreen;
@@ -94,7 +95,7 @@ function handleVideo(stream) {
     video.src = window.URL.createObjectURL(stream);
 }
 function videoError(e) {
-    alert("Video Feed Error. Sorry, we don't know what happened. Are you on v.0.92.5?");
+    alert("Video Feed Error. Sorry, we don't know what happened. Are you on Microsoft Edge?");
 }
   </script>
         <script>
