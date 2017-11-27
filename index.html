@@ -1,463 +1,917 @@
 <html>
+
 <head>
+
 <link rel="shortcut icon" type="image/png" href="/tpp-blue-transparent.png"/>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
+
 body{
+
 	margin: 0px;
+
 	}
+
 marquee{
+
 	border: 5px solid black;
+
 	}
+
 marquee span{
+
 	margin-right: 50%;
+
 	}
+
 marquee p { 
+
     white-space:nowrap;
+
     margin-right: 1000px;
+
 	}
+
 .codebox{
+
 	background-image: chatbox.png;
+
 	}
+
 .status-offline{
+
 	color: red;
+
 	}
+
 .status-online{
+
 	color: green;
+
 	}
+
 .status-pending{
+
 	color: #dd8920;
+
 	}
+
 .status-warning{
+
 	color: #e5d210;
+
 	}
+
 .status-blocked{
+
 	color: #791a8b;
+
 	}
+
 .head{
+
 	background-image: 39782933-hexagon-wallpapers.jpg ;
+
 	}
+
 .welcome{
+
 	color: white;
+
 	text-shadow: 1px 1px 3px black, 0 0 35px blue, 0 0 10px darkblue;
+
 	}
+
 * {box-sizing:border-box}
+
 /* Slideshow container */
+
 .slideshow-container {
+
   max-width: 1000px;
+
   position: relative;
+
   margin: auto;
+
   box-shadow: 10px 10px 5px;
+
 }
+
 .mySlides {
+
     display: none;
+
 }
+
 /* Next & previous buttons */
+
 .prev, .next {
+
   cursor: pointer;
+
   position: absolute;
+
   top: 50%;
+
   width: auto;
+
   margin-top: -22px;
+
   padding: 16px;
+
   color: white;
+
   font-weight: bold;
+
   font-size: 18px;
+
   transition: 0.6s ease;
+
   border-radius: 0 3px 3px 0;
+
 }
+
 /* Position the "next button" to the right */
+
 .next {
+
   right: 0;
+
   border-radius: 3px 0 0 3px;
+
 }
+
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
+
   background-color: rgba(0,0,0,0.8);
+
 }
+
 /* Caption text */
+
 .text {
+
   color: #f2f2f2;
+
   font-size: 15px;
+
   padding: 8px 12px;
+
   position: absolute;
+
   bottom: 8px;
+
   width: 100%;
+
   text-align: center;
+
 }
+
 /* Number text (1/3 etc) */
+
 .numbertext {
+
   color: #f2f2f2;
+
   font-size: 12px;
+
   padding: 8px 12px;
+
   position: absolute;
+
   top: 0;
+
 }
+
 /* The dots/bullets/indicators */
+
 .dot {
+
   cursor:pointer;
+
   height: 13px;
+
   width: 13px;
+
   margin: 0 2px;
+
   background-color: #bbb;
+
   border-radius: 50%;
+
   display: inline-block;
+
   transition: background-color 0.6s ease;
+
 }
+
 .active, .dot:hover {
+
   background-color: #717171;
+
 }
+
 /* Fading animation */
+
 .fade {
+
   -webkit-animation-name: fade;
+
   -webkit-animation-duration: 1.5s;
+
   animation-name: fade;
+
   animation-duration: 1.5s;
+
 }
+
 @-webkit-keyframes fade {
+
   from {opacity: .4} 
+
   to {opacity: 1}
+
 }
+
 @keyframes fade {
+
   from {opacity: .4} 
+
   to {opacity: 1}
+
 } 
+
 body {font-family: "Lato", sans-serif;}
+
 /* Style the tab */
+
 div.tab {
+
    overflow: hidden;
+
     border: 1px solid #ccc;
+
     background-color: #544e4e ;
+
 }
+
 /* Style the buttons inside the tab */
+
 div.tab button {
+
     background-color: #544e4e;
+
     float: left;
+
     border: none;
+
     outline: none;
+
     cursor: pointer;
+
     padding: 14px 16px;
+
     transition: 0.3s;
+
     font-size: 39px;
+
 }
+
 /* Change background color of buttons on hover */
+
 div.tab button:hover {
+
     background-color: #e0d9d9;
+
 }
+
 /* Create an active/current tablink class */
+
 div.tab button.active {
+
     background-color: #b7b0b0;/* Style the tab content */
+
 .tabcontent {
+
     display: none;
+
     padding: 6px 12px;
+
     border: 1px solid #ccc;
+
     border-top: none;
+
 }
+
 /* Style the info box */
+
 .div1 {
+
     border: 1px solid black;
+
     height:250px;
+
     width:500px;
+
     background:url(href="http://wallpapermonkey.com/wp-content/uploads/2016/09/pusheen-wallpaper7.jpg");
+
     background-repeat: no-repeat;
+
 }
+
 .cool{
+
 	color: blue;
+
 	animation-name: cool;
+
 	animation-duration: 10s;
+
 	animation-iteration-count: infinite;
+
 	animation-fil-mode: fowards;
+
 	-webkit-animation-name: cool;
+
 	-webkit-animation-duration: 10s;
+
 	-webkit-animation-iteration-count: infinite;
+
 	-webkit-animation-fill-mode: fowards;
+
 	}
+
 @keyframes cool{
+
     0% {background-color: red;}
+
     14% {background-color: orange;}
+
     28% {background-color: yellow;}
+
     42% {background-color: green;}
+
     63% {background-color: blue;}
+
     84% {background-color: purple;}
+
     100% {background-color: red;}
+
 	}
+
 @-webkit-keyframes cool{
+
     0% {background-color: red;}
+
     14% {background-color: orange;}
+
     28% {background-color: yellow;}
+
     42% {background-color: green;}
+
     63% {background-color: blue;}
+
     84% {background-color: purple;}
+
     100% {background-color: red;}
+
 	}
+
 </style>
+
 <title> The Potato Place </title>
+
 <head>
+
   <title>The Potato Place - Your Online Gaming Site</title>
+
   <link rel="stylesheet" href="assets/css/main.css">
+
   <script type="text/javascript" src="assets/js/index.js"></script>
+
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
   <div class="bgimg-1">
+
     <div class="caption">
+
       <span class="border">The Potato Place</span>
+
     </div>
+
     </div>
+
 </head>
+
 <body>
+
 <!--Set up tabs-->
+
 <div class="tab">
+
   <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
+
   <button class="tablinks" onclick="openTab(event, 'MorePotatoes')"> More Potatoes </button>
+
   <button class="tablinks" onclick="openTab(event, 'Potatooligists')"> Potato-oligist </button>
+
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
+
   <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie()"> Chat Server </button>
+
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
+
 </div>
+
 <!--Home Tab Content-->
+
 <div id="Home" class="tabcontent">
+
   <div class="div1">
+
 	  <h2 class="welcome"> Welcome to The Potato Place! </h2>
+
 	  <a href="http://thepotatoplace.ml/home">Miss our old homepage? Click here to see it!</a>  
+
 	  <div class="slideshow-container">
+
   <div class="mySlides fade">
+
     <div class="numbertext">1 / 3</div>
+
     <img src="39782933-hexagon-wallpapers.jpg " style="width:100%">
+
 	  <div class="text">Potato</div>
+
   </div>
+
   <div class="mySlides fade">
+
     <div class="comp background.jpg ">2 / 3</div>
+
     <img src="img2.jpg" style="width:100%">
+
     <div class="text">POTATO</div>
+
   </div>
+
   <div class="mySlides fade">
+
     <div class="gameover.jpg ">3 / 3</div>
+
     <img src="img3.jpg" style="width:100%">
+
     <div class="text">PoTaTo</div>
+
   </div>
+
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
+
 <br>
+
 <div style="text-align:center">
+
   <span class="dot" onclick="currentSlide(1)"></span> 
+
   <span class="dot" onclick="currentSlide(2)"></span> 
+
   <span class="dot" onclick="currentSlide(3)"></span> 
+
 	  </div>
+
   </div>
+
 </div>
+
 <!--More Potatoes Tab Content-->
+
 <div id="MorePotatoes" class="tabcontent">
+
 <h1> More Potatoes </h1>
+
 <h4> Welcome to the testing site of more potatoes!</h4>
+
 	<p>Loading the most recent games</p>
+
 	<i class="fa fa-spinner fa-spin" style="font-size:24px"></i>
+
 	<h3><u><strong>.io games</strong></u></h3>
+
 	<p>
+
 	<a href="https://wings.io">Wings!</a><br>
+
 	<a href="https://slither.io">Slither</a><br>
+
 	<a href="https://starblast.io">Starblast</a><br>
+
 	<a href="https://agar.io">Agario</a>
+
 	</p>
+
 	<h3><u><strong>Pokemon Games</strong></u></h3>
+
 	<p>
+
 	<a href="http://play.pokemonshowdown.com">Pokemon Showdown</a><br>
+
 	<a href="www.smogon.com">**Smogon**</a>
+
 	</p>
+
 	<h3><u><strong>Other Games</strong></u></h3>
+
 	<p>
+
 	No Games in Here! However, feel free to email us a game idea!
+
 	</p>
+
 	<h3><u><strong>Social Engineering & Pranking Programs</u></strong></h3>
+
 	<p>
+
 		<a href="Game.bat">Shutdown Prank Program(.bat file)</a>
+
 	</p>
+
 	</div>
+
 <!--Potato-oligist Tab Content-->
+
 <div id="Potatooligists" class="tabcontent">
+
   <h3> Website Contributors </h3>
+
   <a class="cool" href="https://biancanev.github.io/aboutme/">Ryan Kwong</a>
+
   <p> Connor Park </p>
+
   <p> MiO Nguyen </p>
+
   <p> Pranav Garigipati </p>
+
 	<hr>
+
  <h3> Other People of Mention </h3>
+
   <p> Michael Ng </p>
+
   <p> Enoch Duong</p>
+
 </div>
+
 <!--Music Tab Content-->
+
 <div id="Music" class="tabcontent">
+
 	<h3>Music</h3>
+
 	<h4>Song of the Week</h4>
+
 	<audio controls>
+
 		<source src="01-05- Sugar [Clean].mp3.wav" type="audio/wav">
+
 		<source src="Teminite-Vortex.mp3 " type="audio/mpeg">
+
 		Your browser does not support this audio format.
+
 	</audio>
+
 	<hr>
+
 	<h4>Connor Produces</h4>
+
 	<h3>Track 3: Lantern</h3>
+
 	<h5>Check all the tracks at Soundcloud! New Ep: Remix, coming out soon</h5>
+
 	<audio controls>
+
 		<source src="xbpzQwOvKW0H.128.mp3" type="audio/mpeg">
+
 		Your browser does not support this audio format.
+
 	</audio>
+
 	<hr>
+
 	<strong><h4>Connor's Songs</h4></strong>
+
 	<h5>Recently listened to:</h5>
+
 	<p>Make it Right -- Foo Fighters</p>
+
 	<hr>
+
 	<strong><h4>Ryan's Songs</h4></strong>
+
 	<h5>Recently listened to:</h5>
+
 	<audio controls>
+
 		<source src="Maroon 5 - Lucky Strike [pleer.net].mp3" type="audio/mpeg">
+
 		Your browser does not support this audio format.
+
 	</audio>
+
 	<p>Lucky Strike -- Maroon 5</p>
+
 	<h3>Recommended Songs</h3>
+
 	<ul>
+
 		<li>HUMBLE -- Kendrick Lamar</li>
+
 	</ul>
+
 	</div>
+
 <!--Pokemon Content-->
+
 <div id="Pokemon" class="tabcontent">
+
     <h3>Ubers</h3>
+
 	<p>
+
 	Aegislash -- Steel/Ghost <i>Ability: Stance Change</i>( Different Formes: Shield Form, Blade Form)<br>
+
 	Arceus -- Normal <i>Ablity: Multitype</i>(Different Forms: Fire, Water, Grass, Steel, Flying, Bug, 
+
 			Dark, Fairy.)
+
 	</p>
+
 </div>
+
 <div id="Chat" class="tabcontent">
+
 	<h2>Welcome to the chat room! Click on a code to start chatting</h2>
+
 	<marquee scrollamount="10"><b>Chat M8QQ9vJC is currently only available on Microsoft Edge<span> </span> Chat KMVEQB56 is currently being updated.<span> </span> We are going to release our new Video chats soon! <span></span> We will soon release our new Potato Place chat format</b></marquee> 
+
 	<p>Chat codes:</p>
+
 	<p><a href="http://thepotatoplace.ml/chat-A4df0e2-status-online">A4df0e2</a>--Status:<div class="status-online">online</div></p>
+
 	<p><a href="http://thepotatoplace.ml/webchat">M8QQ9VJC</a>--Status:<div class="status-pending">pending</div></p>
+
 	<p><a href="javascript:alert('This chat is currnetly offline. Come back at a later time')">5ZKXCYZY</a>--Status:<div class="status-offline">offline</div></p>
+
 	<p><a href="http://thepotatoplace.ml/chat-KMVEQB56-status-online">KMVEQB56</a>--Status:<div class="status-online">online</div></p>
+
 	<p><a href="javascript:alert('This chat is insecure. Please come back at a later time.')">7D36MK4D</a>--Status:<div class="status-warning">**Insecure-Online**</div>
+
 	<p> Or you can join our Discord: <iframe src="https://discordapp.com/widget?id=367449053002334209&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p>
+
 <h4>Insert Code:</h4>
+
 <p>Supported Browsers:</p>
+
 <p><i class="fa fa-edge"></i>, <i class="fa fa-chrome"</i>, <i class="fa fa-internet-explorer"></i></p>
+
 <form method="get">
+
 	<fieldset>
+
 		<legend>Create a chat</legend>
+
 		<p>Create Chat Name</p>
+
 	<input id="name" type="text">
+
 	<p>Put your Potato Place Key Here!</p>
+
 	<input id"username" type="text">
+
 	<p>Enter Your Key Password Here!</p>
+
 	<input id="keypassword" type="password">
+
 	<p>Enter Status</p>
+
 	<input id="status" type="text"><br>
+
 	<input id="Create Code!" type="submit">
+
 	</fieldset>
+
 </form>
 
+
+
 </div>
+
 </div>
+
 </div>
+
 <div id="Helpdesk" class="tabcontent">
+
 	<h3> Need help? </h3>
+
     <p> You've come to the right place!</p><br>
+
 	<p> Contact us! You can email <a href="bebostunner234@gmail.com">Ryan Kwong</a> or <a href="
+
 		park8854@mydusd.org"> Connor Park</a> to help us modify our website.</p>
+
 	<p> Or you can also go to our troubleshooting<a href="http://thepotatoplace.ml/troubleshooting">page</a></p>
+
 </div>
+
 <!--Potato-oligist Tab Content-->
+
 <div id="CoolTechyStuff" class="tabcontent">
+
 	<h2>Welcome to The Cool Techy Place!</h2>
+
 	<h3>Here are a few cool things to see:</h3>
+
 	<p>A harmless virus:</p>
+
 	<a href="http://thepotatoplace.ml/virus2.bat">When you click this link press open. Then your computer should shut down in a minute.</a>
+
 </div>
+
 <hr>
+
 <h6>v.0.92.1</h6>
+
 <script>
+
 var slideIndex = 1;
+
 showSlides(slideIndex);
+
 function plusSlides(n) {
+
   showSlides(slideIndex += n);
+
 }
+
 function currentSlide(n) {
+
   showSlides(slideIndex = n);
+
 }
+
 function showSlides(n) {
+
   var i;
+
   var slides = document.getElementsByClassName("mySlides");
+
   var dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1} 
+
   if (n < 1) {slideIndex = slides.length}
+
   for (i = 0; i < slides.length; i++) {
+
       slides[i].style.display = "none"; 
+
   }
+
   for (i = 0; i < dots.length; i++) {
+
       dots[i].className = dots[i].className.replace(" active", "");
+
   }
+
   slides[slideIndex-1].style.display = "block"; 
+
   dots[slideIndex-1].className += " active";
+
 } 
+
 function openTab(evt, cityName) {
+
     var i, tabcontent, tablinks;
+
     tabcontent = document.getElementsByClassName("tabcontent");
+
     for (i = 0; i < tabcontent.length; i++) {
+
         tabcontent[i].style.display = "none";
+
     }
+
     tablinks = document.getElementsByClassName("tablinks");
+
     for (i = 0; i < tablinks.length; i++) {
+
         tablinks[i].className = tablinks[i].className.replace(" active", "");
+
     }
+
     document.getElementById(cityName).style.display = "block";
+
     evt.currentTarget.className += " active";
+
 }
+
 // Get the element with id="defaultOpen" and click on it
+
 /***  
+
 tablinks = document.getElementsByClassName("tablinks");
+
 for(i=0; i < tablinks.length; i++) {
+
 	tablinks[i].className.replace("active","");
+
 	}
+
 document.getElementById(cityName).style.display = "block";
+
 ent.currentTarget.className += "active";
+
 ***/
+
 document.getElementById("defaultOpen").click();
 
+
+
 function setCookie(cname, cvalue, exdays){
+
 	var d = new Date();
+
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+
 	var expires = "expires=" + d.toUTCString();
+
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"
+
 }
+
 function getCookie(cname) {
+
     var name = cname + "=";
+
     var decodedCookie = decodeURIComponent(document.cookie);
+
     var ca = decodedCookie.split(';');
+
     for(var i = 0; i <ca.length; i++) {
+
         var c = ca[i];
+
         while (c.charAt(0) == ' ') {
+
             c = c.substring(1);
+
         }
+
         if (c.indexOf(name) == 0) {
+
             return c.substring(name.length, c.length);
+
         }
+
     }
+
     return "";
+
 } 
+
 function checkCookie() {
+
     var username = getCookie("username");
+
     if (username != "") {
+
         alert("Welcome again " + username);
+
     } else {
+
         username = prompt("Please enter your name:", "");
-	password = prompt("Password:", "");
+
         if (username != "" && username != null) {
+
             setCookie("username", username, 365);
+
         }
-	if (password != "" && password != {
-	    setCookie("password", password, 365)
-	}
+
     }
+
 } 
+
 </script>
+
 </body>
+
 </html> 
