@@ -449,9 +449,13 @@ function checkCookie() {
         alert("Welcome again " + username);
     } else {
         username = prompt("Please enter your name:", "");
+	password = prompt("Password:", "");
         if (username != "" && username != null) {
             setCookie("username", username, 365);
         }
+	if (password != "" && password != {
+	    setCookie("password", password, 365)
+	}
     }
 } 
 </script>
