@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html onload="startGame()">
+<head>
+<title>Pokemon Game</title>
+</head>
+<body>
+<div id="game">
+  <p> Welcome to your Pokemon Journey!</p>
+  <p>Please Type in all CAPS</p>
+  <br>
+  <p>Do you chose Charmander, Squirtle, Bulbasaur, or Pikachu?</p>
+</div>
+<script>
+function startGame(){
+ var content = document.getElementById("gmae");
+ content.style.display="none";
+ setTimeout(function(){
+   content.style.display="block";
+   var txt;
+   var starter = prompt("Please enter your starter:", "");
+   if (starter == null || starter == "") {
+       txt = "Please enter a starter...";
+   } else if (starter == "charmander" || starter == "Charmander" || starter == "CHARMANDER") {
+       txt = "Brock and Misty sweep your " + starter + "! You lose!";
+   } else if (starter == "squirtle" || starter == "Squirtle" || starter == "SQUIRTLE"){
+       txt = "You have an advantage against most of the gyms and become a Pokemon Master! This is the shortest game ever!";
+   } else if (starter == "bulbasaur" || starter == "Bulbasaur" || starter == "BULBASAUR"){
+       txt = "Your pokemon has no information about it. You lose.";
+   } else if (starter == "pikachu" || starter == "Pikachu" || starter == "PIKACHU"){
+       txt = "SCREW OFF ASH! You lose!"
+   } else{
+       txt = "Please choose an actual starter." + starter + " is not a starter";
+   }
+    document.getElementById("demo").innerHTML = txt;
+  }, 1500);
+}
+</script>
+</body>
