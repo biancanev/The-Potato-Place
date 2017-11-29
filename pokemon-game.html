@@ -12,10 +12,6 @@
 </div>
 <script>
 function startGame(){
- var content = document.getElementById("gmae");
- content.style.display="none";
- setTimeout(function(){
-   content.style.display="block";
    var txt;
    var starter = prompt("Please enter your starter:", "");
    if (starter == null || starter == "") {
@@ -31,8 +27,6 @@ function startGame(){
    } else{
        txt = "Please choose an actual starter." + starter + " is not a starter";
    }
-    document.getElementById("demo").innerHTML = txt;
-  }, 1500);
 }
 </script>
 </body>
