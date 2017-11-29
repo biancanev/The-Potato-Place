@@ -10,6 +10,7 @@
   <br>
   <p>Do you choose Charmander, Squirtle, Bulbasaur, or Pikachu?</p>
   <button onclick="startGame()">Choose</button>
+  <p id="return"></p>
 </div>
 <script>
 function startGame(){
@@ -28,6 +29,7 @@ function startGame(){
    } else{
        txt = "Please choose an actual starter." + starter + " is not a starter";
    }
+  document.getElementByID("return").innerHTML = txt;
 }
 </script>
 </body>
