@@ -25,8 +25,12 @@ function startGame(){
    } else if (starter == "bulbasaur" || starter == "Bulbasaur" || starter == "BULBASAUR"){
        txt = "Your pokemon has no information about it. You lose.";
    } else if (starter == "pikachu" || starter == "Pikachu" || starter == "PIKACHU"){
-       txt = "SCREW OFF ASH! You lose!"
-   } else{
+       txt = "SCREW OFF ASH! You lose!";
+   }else if ( starter == "CHIKORITA" || starter == "CYNDAQUIL" || starter == "TOTODILE" || starter == "TREECKO" || starter == "MUDKIP" || starter == "TORCHIC" || starter == "TURTWIG" || starter == "CHIMCHAR" || starter == "PIPLUP" || starter == "SNIVY" || starter == "TEPIG" || starter == "OSHAWOTT" || starter = "CHESPIN" || starter == "FENNEKIN" ){
+       txt = "Choose a KANTO starter";
+   } else if ( starter == "FROAKIE" {
+       txt = "I don't blame you! Still, pick a Kanto starter";
+   }else{
        txt = "Please choose an actual starter." + starter + " is not a starter";
    }
   document.getElementById("return").innerHTML = txt;
