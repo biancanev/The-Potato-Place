@@ -25,6 +25,7 @@ function startGame(){
    var starter = prompt("Please enter your starter:", "");
    if (starter == null || starter == "") {
        txt = "Please enter a starter...";
+       status = "codeRed";
    } else if (starter == "charmander" || starter == "Charmander" || starter == "CHARMANDER") {
        txt = "Brock and Misty sweep your " + starter + "! You lose!";
        status = "codeGreen";
