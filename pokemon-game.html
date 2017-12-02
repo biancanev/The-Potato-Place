@@ -27,35 +27,35 @@ function startGame(){
        txt = "Please enter a starter...";
    } else if (starter == "charmander" || starter == "Charmander" || starter == "CHARMANDER") {
        txt = "Brock and Misty sweep your " + starter + "! You lose!";
-       status = codeGreen;
+       status = "codeGreen";
    } else if (starter == "squirtle" || starter == "Squirtle" || starter == "SQUIRTLE"){
        txt = "You have an advantage against most of the gyms and become a Pokemon Master! This is the shortest game ever!";
-       status = codeGreen;
+       status = "codeGreen";
    } else if (starter == "bulbasaur" || starter == "Bulbasaur" || starter == "BULBASAUR"){
        txt = "Your pokemon has no information about it. You lose.";
-       status = codeGreen;
+       status = "codeGreen";
    } else if (starter == "pikachu" || starter == "Pikachu" || starter == "PIKACHU"){
        txt = "SCREW OFF ASH! You lose!";
-       status = codeGreen;
+       status = "codeGreen";
    } else if (starter == "CHIKORITA" || starter == "Chikorita" || starter == "chikorita" || starter == "CYNDAQUIL" || starter == "cyndaquil" || starter == "Cyndaquil" || starter == "TOTODILE" || starter == "totodile" || starter == "Totodile" || starter == "TREECKO" || starter == "Treecko" || starter == "treecko" || starter == "TORCHIC" || starter == "TURTWIG" || starter == "CHIMCHAR" || starter == "PIPLUP" || starter == "SNIVY" || starter == "TEPIG" || starter == "OSHAWOTT" || starter == "CHESPIN" || starter == "FENNEKIN" ){
        txt = "Choose a KANTO starter";
-       status = codeRed;
+       status = "codeRed";
    } else if (starter == "MUDKIP" || starter == "Mudkip" || starter == "mudkip"){
        txt = "So you liek Mudkipz?";
-       status = codeRed;
+       status = "codeRed";
    } else if (starter == "FROAKIE" || starter == "froakie" || starter == "Froakie") {
        txt = "I don't blame you! Still, pick a Kanto starter";
-       status = codeRed;
+       status = "codeRed";
    }else{
        txt = "Please choose an actual starter." + starter + " is not a starter";
-       status = codeRed;
+       status = "codeRed";
    }
   document.getElementById("return").innerHTML = txt;
-  if (status == codeGreen){
+  if (status == "codeGreen"){
        document.getElementById("return").style.backgroundColor = "#c4f0ba";
        document.getElementById("return").style.borderLeft = "thick solid #1bba0d"; 
   }
-  else if (status == codeRed){
+  else if (status == "codeRed"){
        document.getElementById("return").style.backgroundColor = "#f0baba";
        document.getElementById("return").style.borderLeft = "thick solid #ff0000"; 
   }
