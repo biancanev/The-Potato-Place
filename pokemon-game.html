@@ -18,8 +18,8 @@
   <p> Welcome to your Pokemon Journey!</p>
   <p>Please Type in all CAPS.</p>
   <br>
-  <p>Do you choose Charmander, Squirtle, Bulbasaur, or Pikachu?</p>
-  <button onclick="startGame()">Choose</button>
+  <p id="question">Do you choose Charmander, Squirtle, Bulbasaur, or Pikachu?</p>
+  <button id="button" onclick="startGame()">Choose</button>
   <p id="return"></p>
   <p id="otherError"></p>
 </div>
@@ -32,8 +32,9 @@ function startGame(){
        txt = "Please enter a starter...";
        status = "codeRed";
    } else if (starter == "charmander" || starter == "Charmander" || starter == "CHARMANDER") {
-       txt = "Brock and Misty sweep your " + starter + "! You lose!";
+       txt = "You obtained a CHARMANDER!!!!!!!!";
        status = "codeGreen";
+       charStory1()
    } else if (starter == "squirtle" || starter == "Squirtle" || starter == "SQUIRTLE"){
        txt = "You have an advantage against most of the gyms and become a Pokemon Master! This is the shortest game ever!";
        status = "codeGreen";
@@ -68,6 +69,19 @@ function startGame(){
        document.getElementById("otherError").innerHTML = "Error: startername " + starter + " is not defined. javascript(46 , 7)";
        document.getElementById("otherError").style.backgroundColor = "#f0baba";
        document.getElementById("otherError").style.borderLeft = "thick solid #ff0000"; 
+  }
+}
+function charStory1(){
+  document.getElementById("")
+  document.getElementById("question").innerhtml = "The first gym is Brock's Gym. What do you do?(Catch NIDORAN, WEEDLE, PIDGEY)";
+  var txt;
+  var pokemon = prompt("What do you do?");
+  if(pokemon == "WEEDLE"){
+    txt = "BOI! What are you thinking?";
+  } else if (pokemon == "CATERPIE"){
+    txt = "Are you trying to copy Ash? You lose!" 
+  } else if (pokemon == "NIDORAN"){
+    txt = "You head towards Pewter City with your Nidoran and your Charmander! You reach the gym and challenge Brock. Who do you use?(CHARMANDER, NIDORAN)"
   }
 }
 </script>
