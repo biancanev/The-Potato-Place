@@ -40,11 +40,12 @@
   <div id="myProgress">
   <div id="myBar">0%</div>
 </div>
-  <button onclick="move()">LOAD THE FULL GAME</button>
+  <button id="loadButton" onclick="move()">LOAD THE FULL GAME</button>
   <p></p>
 </div>
 <script>
 function move() {
+  document.getElementById("loadButton").style.visibility = "hidden";
   document.getElementById("myProgress").style.visibility = "visible";
    document.getElementById("myBar").style.visibility = "visible";
   var elem = document.getElementById("myBar");   
