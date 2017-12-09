@@ -5,10 +5,12 @@
   <style>
     #myProgress {
   width: 100%;
+  visibility: hidden;
   background-color: #ddd;
 }
 
 #myBar {
+  visibility: hidden;
   width: 0%;
   height: 30px;
   background-color: #4CAF50;
@@ -36,12 +38,15 @@
   <p id="return"></p>
   <p id="otherError"></p>
   <div id="myProgress">
-  <div onload="move()" id="myBar">0%</div>
+  <div id="myBar">0%</div>
 </div>
-  <p>Error loading the full version . . .</p>
+  <button onclick="move()">LOAD THE FULL GAME</button>
+  <p></p>
 </div>
 <script>
 function move() {
+  document.getElementById("myProgress").style.visibility = "visible";
+   document.getElementById("myBar").style.visibility = "visible";
   var elem = document.getElementById("myBar");   
   var width = 10;
   var id = setInterval(frame, 3000);
