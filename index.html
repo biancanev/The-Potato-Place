@@ -3,90 +3,6 @@
 <link rel="shortcut icon" type="image/png" href="/tpp-blue-transparent.png"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-dl {
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  width: 100%;
-  max-width: 700px;
-  position: relative;
-  padding: 20px;
-}
-
-dt {
-  align-self: flex-start;
-  width: 100%;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 20px;
-  margin-left: 130px;
-}
-
-.text {
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 130px;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  justify-content: flex-end;
-}
-
-.percentage {
-  font-size: .8em;
-  line-height: 1;
-  text-transform: uppercase;
-  width: 100%;
-  height: 40px;
-  margin-left: 130px;
-  background: repeating-linear-gradient(
-  to right,
-  #ddd,
-  #ddd 1px,
-  #fff 1px,
-  #fff 5%
-);
-  
-  &:after {
-    content: "";
-    display: block;
-    background-color: #3d9970;
-    width: 50px;
-    margin-bottom: 10px;
-    height: 90%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: background-color .3s ease;
-    cursor: pointer;
-  }
-  &:hover,
-  &:focus {
-    &:after {
-       background-color: #aaa; 
-    }
-  }
-}
-
-@for $i from 1 through 100 {
-  .percentage-#{$i} {
-    &:after {
-      $value: ($i * 1%);
-      width: $value;
-    }
-  }
-}
-
-html, body {
-  height: 500px;
-  font-family: "fira-sans-2",sans-serif;
-  color: #333;
-}
 .fileName{
 	background-color: #333;
 	}
@@ -389,17 +305,7 @@ div.tab button.active {
 <br>
 <br>
 <br>
-<dl>
-  <dt>
-    Browser market share June 2015
-  </dt>
-  <dd class="percentage percentage-11"><span class="text">IE 11: 11.33%</span></dd>
-  <dd class="percentage percentage-49"><span class="text">Chrome: 49.77%</span></dd>
-  <dd class="percentage percentage-16"><span class="text">Firefox: 16.09%</span></dd>
-  <dd class="percentage percentage-5"><span class="text">Safari: 5.41%</span></dd>
-  <dd class="percentage percentage-2"><span class="text">Opera: 1.62%</span></dd>
-  <dd class="percentage percentage-2"><span class="text">Android 4.4: 2%</span></dd>
-</dl>
+<div id="graphDiv1"></div>
 </div>
 <!--Music Tab Content-->
 <div id="Music" class="tabcontent">
@@ -546,30 +452,30 @@ function setCookie(cname, cvalue, exdays){
 	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"
 }
 function getCookie(cname) {
-    var name = cname + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 } 
 function checkCookie() {
-    var username = getCookie("username");
-    if (username != "") {
-        alert("Welcome again " + username);
-    } else {
-        username = prompt("Please enter your name:", "");
-        if (username != "" && username != null) {
-            setCookie("username", username, 365);
-        }
-    }
+    var username = getCookie("username");
+    if (username != "") {
+        alert("Welcome again " + username);
+    } else {
+        username = prompt("Please enter your name:", "");
+        if (username != "" && username != null) {
+            setCookie("username", username, 365);
+        }
+    }
 } 
 </script>
 	<script src="html5-canvas-bar-graph.js"></script>
