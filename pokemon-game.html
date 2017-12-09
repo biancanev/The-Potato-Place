@@ -3,6 +3,19 @@
 <head>
 <title>Pokemon Game</title>
   <style>
+    #myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
     #otherError{
       width: 400px;
     }
@@ -22,8 +35,26 @@
   <button id="button" onclick="startGame()">Choose</button>
   <p id="return"></p>
   <p id="otherError"></p>
+  <div id="myProgress">
+  <div onload="move()" id="myBar">0%</div>
+</div>
+  <p>Error loading the full version . . .</p>
 </div>
 <script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 10;
+  var id = setInterval(frame, 3000);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
 function startGame(){
    var status;
    var txt;
