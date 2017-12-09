@@ -41,7 +41,7 @@
   <div id="myBar">0%</div>
 </div>
   <button id="loadButton" onclick="move()">LOAD THE FULL GAME</button>
-  <p></p>
+  <p id="resultMessage"></p>
 </div>
 <script>
 function move() {
@@ -54,6 +54,7 @@ function move() {
   function frame() {
     if (width >= 50) {
       clearInterval(id);
+      document.getElementById("resultMessage").style.innerHTML = "Error loading the game . . ."
     } else {
       width++; 
       elem.style.width = width + '%'; 
