@@ -10,6 +10,13 @@
 }
 
 #myBar {
+  border: 0.5px solid black;
+  animation-name: load;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: load;
+  -webkit-animation-duration: 7s;
+  -webkit-animation-iteration-count: infinite;
   visibility: hidden;
   width: 50%;
   height: 30px;
@@ -18,6 +25,11 @@
   line-height: 30px;
   color: white;
 }
+@keyframes load{
+  0%{border-bottom: 0.5px solid #5f99ce;}
+  50%{border-bottom: 0.5px solid #8ddeea;}
+  100%{border-bottom: 0.5px solid #5f99ce;}
+    }
     #otherError{
       width: 400px;
     }
