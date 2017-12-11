@@ -82,6 +82,7 @@ function startGame(){
    if (starter == null || starter == "") {
        txt = "Please enter a starter...";
        status = "codeRed";
+       document.cookie= "condition=null; expires=Wed, 1 Jan 2020 12:00:00; path=/";
    } else if (starter == "charmander" || starter == "Charmander" || starter == "CHARMANDER") {
        txt = "You obtained a CHARMANDER!!!!!!!!";
        status = "codeGreen";
