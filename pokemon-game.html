@@ -4,19 +4,19 @@
 <title>Pokemon Game</title>
   <style>
     #myProgress {
-  width: 50%;
-  visibility: hidden;
-  background-color: #ddd;
-}
-
-#myBar {
-  border: 0.5px solid black;
+  border: 1px solid black;
   animation-name: load;
   animation-duration: 7s;
   animation-iteration-count: infinite;
   -webkit-animation-name: load;
   -webkit-animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
+  width: 50%;
+  visibility: hidden;
+  background-color: #ddd;
+}
+
+#myBar {
   visibility: hidden;
   width: 50%;
   height: 30px;
@@ -26,9 +26,9 @@
   color: white;
 }
 @keyframes load{
-  0%{border-bottom: 0.5px solid #5f99ce;}
-  50%{border-bottom: 0.5px solid #8ddeea;}
-  100%{border-bottom: 0.5px solid #5f99ce;}
+  0%{border-bottom: 1px solid #5f99ce;}
+  50%{border-bottom: 1px solid #8ddeea;}
+  100%{border-bottom: 1px solid #5f99ce;}
     }
     #otherError{
       width: 400px;
