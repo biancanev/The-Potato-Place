@@ -131,6 +131,18 @@ marquee p {
   to {opacity: 1}
 } 
 body {font-family: "Lato", sans-serif;}
+/**Popup**/
+.popup{
+	background: #083b81;
+	position: fixed;
+	border: #ababab;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px #88888;
+	}
+.close{
+	position: absolute;
+	
+	}
 /* Style the tab */
 div.tab {
    overflow: hidden;
@@ -220,7 +232,7 @@ div.tab button.active {
 <body>
 <!--Set up tabs-->
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
+  <button class="tablinks" onload="notification()" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
   <button class="tablinks" onclick="openTab(event, 'MorePotatoes')"> More Potatoes </button>
   <button class="tablinks" onclick="openTab(event, 'Potatooligists')"> Potato-oligist </button>
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
@@ -230,6 +242,12 @@ div.tab button.active {
 </div>
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
+	<div class="popup">
+		<img src=""></img>
+	<p>The Potato Place is no longer at the url <a href="http://thepotatoplace.ml">http://thepotatoplace.ml</a>!
+So far the URL has been undecided, therefore, it has been reverted back to
+<a href="https://biancanev.github.io/The-Potato-Place/">https://biancanev.github.io/The-Potato-Place/</a>.</p>
+	</div>
   <div class="div1">
 	  <h2 class="welcome"> Welcome to The Potato Place! </h2>
 	  <a href="http://thepotatoplace.ml/home">Miss our old homepage? Click here to see it!</a>  
@@ -400,6 +418,9 @@ div.tab button.active {
 <hr>
 <h6>v.0.92.1</h6>
 <script>
+function notification(){
+	var notification = getElementById("")
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
