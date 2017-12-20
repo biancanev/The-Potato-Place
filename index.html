@@ -133,6 +133,7 @@ marquee p {
 body {font-family: "Lato", sans-serif;}
 /**Popup**/
 .popup{
+	visibility: hidden;
 	background: #083b81;
 	position: fixed;
 	border: #ababab;
@@ -242,7 +243,6 @@ div.tab button.active {
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
 	<div class="popup">
-		<img src=""></img>
 	<p>The Potato Place is no longer at the url <a href="http://thepotatoplace.ml">http://thepotatoplace.ml</a>!
 So far the URL has been undecided, therefore, it has been reverted back to
 <a href="https://biancanev.github.io/The-Potato-Place/">https://biancanev.github.io/The-Potato-Place/</a>.</p>
@@ -418,7 +418,7 @@ So far the URL has been undecided, therefore, it has been reverted back to
 <h6>v.0.92.1</h6>
 <script>
 function notification(){
-	var notification = getElementById("")
+	var notification = getElementById("popup").visibility = "visiblle";
 }
 var slideIndex = 1;
 showSlides(slideIndex);
