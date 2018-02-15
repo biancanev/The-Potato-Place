@@ -21,17 +21,17 @@ video:hover{
     cursor: wait;
     }
 #container {
-    margin: 0px auto;
-    width: 100%;
-    height: 80%;
-    border: 10px #333 solid;
+    margin: 0px auto;
+    width: 100%;
+    height: 80%;
+    border: 10px #333 solid;
 }
 #videoElement {
-    width: 100%;
-    height: 80%;
+    width: 100%;
+    height: 80%;
     min-width: 1000px;
     mindheight: 800px;
-    background-color: #666;
+    background-color: #666;
     border: 10px #333 solid;
     positon: relative;
 }
@@ -42,11 +42,17 @@ video:hover{
 </head>
 <body><center>
 <div id="container">
-    <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"><div class="menubar"></div></video>
+    <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"><div class="menubar"></div></video>
 </div>
   </center>
     <button onclick="loading.innerHRML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
   <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button>
+  <p style="color:red;">ERROR LOADING PHP FORMS</p>
+    <button onclick="move()">Load TPP Error Analysis</button>
+    <br>
+  <div id="myProgress">
+  <div id="myBar">START</div>
+</div>
   <div id="camera-publisher"></div>
   <div id="camera-subscriber"></div>
   <div id="screen-subscriber"></div>
@@ -85,17 +91,31 @@ function checkCookie() {
     }
 }
     
- var video = document.querySelector("#videoElement");
+ var video = document.querySelector("#videoElement");
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
-if (navigator.getUserMedia) {       
+if (navigator.getUserMedia) {       
 
-    navigator.getUserMedia({video: true}, handleVideo, videoError);
+    navigator.getUserMedia({video: true}, handleVideo, videoError);
 }
 function handleVideo(stream) {
-    video.src = window.URL.createObjectURL(stream);
+    video.src = window.URL.createObjectURL(stream);
 }
 function videoError(e) {
-    alert("Video Feed Error. Sorry, we don't know what happened. Are you on Microsoft Edge?");
+    alert("Video Feed Error. Sorry, we don't know what happened. Are you on Microsoft Edge?");
+}
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 700);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
 }
   </script>
         <script>
