@@ -43,13 +43,25 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       RPG <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAccB" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Fortnite</a>
-      <a href="#" class="w3-bar-item w3-button">League of Legends</a>
+      <a href="http://thepotatoplace.ga/rant/rpg/fortnite" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Fortnite</a>
+      <a href="http://thepotatoplace.ga/rant/rgp/league-of-legends" class="w3-bar-item w3-button">League of Legends</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button">Racing Games</a>
-    <a href="#" class="w3-bar-item w3-button">Shooting Games</a>
-    <a href="#" class="w3-bar-item w3-button">Most Popular Games</a>
-    <a href="#" class="w3-bar-item w3-button">? Games</a>
+    <a onclick="myAccFuncC()" href="#" class="w3-bar-item w3-button">Racing Games</a>
+    <div id="demoAccC" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button"></i>[Empty]</a>
+    </div>
+    <a onclick="myAccFuncD()" href="#" class="w3-bar-item w3-button">Shooting Games</a>
+    <div id="demoAccD" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button"></i>[Empty]</a>
+    </div>
+    <a onclick="myAccFuncE()" href="#" class="w3-bar-item w3-button">Most Popular Games</a>
+    <div id="demoAccC" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button"></i>[Empty]</a>
+    </div>
+    <a onclick="myAccFuncF()" href="#" class="w3-bar-item w3-button">Recent Games</a>
+    <div id="demoAccC" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button"></i>[Empty]</a>
+    </div>
   </div>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
@@ -213,7 +225,38 @@ function myAccFuncB() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
-
+function myAccFuncC() {
+    var x = document.getElementById("demoAccC");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function myAccFuncD() {
+    var x = document.getElementById("demoAccD");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function myAccFuncE() {
+    var x = document.getElementById("demoAccE");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function myAccFuncF() {
+    var x = document.getElementById("demoAccF");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 // Click on the "Jeans" link on page load to open the accordion for demo purposes
 document.getElementById("myBtn").click();
 
