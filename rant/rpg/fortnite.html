@@ -35,14 +35,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
     <a href="http://thepotatoplace.ga/rant" class="w3-bar-item w3-button">Home</a>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-bar-item w3-button">PvP <i class="fa fa-caret-down"></i></a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <a onclick="myAccFuncA()" href="javascript:void(0)" class="w3-bar-item w3-button">PvP <i class="fa fa-caret-down"></i></a>
+    <div id="demoAccA" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button"></i>[Empty]</a>
     </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFuncB()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       RPG <i class="fa fa-caret-down"></i>
     </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <div id="demoAccB" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="http://thepotatoplace.ga/" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Fortnite</a>
       <a href="#" class="w3-bar-item w3-button">League of Legends</a>
     </div>
@@ -197,8 +197,16 @@ function submit_poll() {
   document.getElementById("button-no").style.visibility = "hidden";
 }
 // Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
+function myAccFuncA() {
+    var x = document.getElementById("demoAccA");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+function myAccFuncB() {
+    var x = document.getElementById("demoAccB");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
