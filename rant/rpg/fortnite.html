@@ -114,8 +114,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
   <div class="poll">
     <center>
-    <h3>Was this article helpful?</h3>
-    <button class="button-yes">Yes</button><button class="button-no">No</button>
+    <h3 id="header-poll">Was this article helpful?</h3>
+    <button class="button-yes" id="button_yes" onclick="submit_poll()">Yes</button> <button class="button-no" id="" onclick="submit_poll()">No</button>
     </center>
   </div>
   <br>
@@ -188,6 +188,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
+function submit_poll() {
+  document.getElementById("header-poll").innerHTML = "Thank you for your help!";
+  document.getElementById("button-yes").style.visibility = "hidden";
+  document.getElementById("button-no").style.visibility = "hidden";
+}
 // Accordion 
 function myAccFunc() {
     var x = document.getElementById("demoAcc");
