@@ -239,7 +239,7 @@ function sort_by() {
     var rawLink = "http://thepotatoplace.ga/rant/" + gameCat + "/" + gameName; 
     var finalLink = rawLink.toLowerCase();
     window.location.href(finalLink);
-    document.getElementById("reply").innerHTML = finalLink.link();
+    document.getElementById("reply").innerHTML = "Redirecting you to " + finalLink.link() + "...";
 }
 function submit_poll() {
   document.getElementById("header-poll").innerHTML = "Thank you for your help!";
