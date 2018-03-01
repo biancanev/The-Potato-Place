@@ -183,6 +183,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </div>
   <div class="poll">
     <center>
+      <span class="closebtn">&times;</span>  
     <h3 id="header-poll">Was this article helpful?</h3>
     <button class="button-yes" id="button_yes" onclick="submit_poll()">Yes</button> <button class="button-no" id="" onclick="submit_poll()">No</button>
     </center>
@@ -257,6 +258,16 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
 function submit_poll() {
   document.getElementById("header-poll").innerHTML = "Thank you for your help!";
   document.getElementById("button-yes").style.visibility = "hidden";
