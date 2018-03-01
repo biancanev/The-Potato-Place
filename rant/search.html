@@ -143,8 +143,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <input type="radio" name="FPS" id="fps"> FPS<br>
   <input type="radio" name="Racing" id="rcg"> Racing<br>
   <input type="radio" name="other" id="oth"> Other
-    <button class="submit_query" onclick="sort_by()">Submit</button>
 </form>
+   <button class="submit_query" onclick="sort_by()">Submit</button>
     </p>
     <p id="reply"></p>
   <br>
@@ -237,7 +237,8 @@ function sort_by() {
     }
     var rawLink = "http://thepotatoplace.ga/rant/" + gameCat + "/" + gameName; 
     var finalLink = rawLink.toLowerCase();
-    document.location.href(finalLink);
+    window.location.href(finalLink);
+    document.getElementById("reply").innerHTML = finalLink.link();
 }
 function submit_poll() {
   document.getElementById("header-poll").innerHTML = "Thank you for your help!";
