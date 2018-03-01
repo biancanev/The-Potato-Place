@@ -130,9 +130,17 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <h3>Search TPP Rant</h3>
     <p>
 <form>
-  <input type="text" name="search" placeholder="Search..">
+  <input type="text" name="search" placeholder="Search.." id="gameName">
+    <p>What Game Type?</p>
+  <input type="radio" name="RPG" id="rpg"> RPG<br>
+  <input type="radio" name="PvP" id="pvp"> PvP<br>
+  <input type="radio" name="FPS" id="fps"> FPS<br>
+  <input type="radio" name="Racing" id="rcg"> Racing<br>
+  <input type="radio" name="other" id="oth"> Other
+  <input type="submit" name="Submit" onclick="sort_by()">
 </form>
     </p>
+    <p id="reply"></p>
   <br>
   <hr>
   <br>
@@ -203,6 +211,28 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
 <script>
+function sort_by() {
+    var gameName = document.getElementById("gameName").value;
+    var isRpgChecked = document.getElementById("rpg").checked;
+    var isPvpChecked = document.getElementById("pvp").checked;
+    var isFpsChecked = document.getElementById("fps").checked;
+    var isRcgChecked = document.getElementById("rcg").checked;
+    var isOthChecked = document.getElementById("oth").checked;
+    if(isRpgChecked == true){
+        var gameCat = "rpg";
+    }if(isPvpChecked == true){
+        var gameCat = "pvp";
+    }if(isFpsChecked == true){
+        var gameCat = "fps";
+    }if(isRcgChecked == true){
+        var gameCat = "racing";
+    }if(isOthChecked == true){
+        document.getElementById("reply").innerHTML = "Unable to find your game.";
+    }
+    var rawLink = "http://thepotatoplace.ga/rant/" + gameCat + "/" + gameName; 
+    var finalLink = rawLink.toLowerCase();
+    document.getElementById("reply").innerHTML = finalLink;
+}
 function submit_poll() {
   document.getElementById("header-poll").innerHTML = "Thank you for your help!";
   document.getElementById("button-yes").style.visibility = "hidden";
