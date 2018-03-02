@@ -235,8 +235,11 @@ function sort_by() {
     }if(isRcgChecked == true){
         var gameCat = "racing";
     }if(isOthChecked == true){
-        var location_href = false;
-    }
+        var check = gameName.toLowerCase();
+        if(check == "discord"){
+            window.location.href("https://discordapp.com/invite/h77jW6k");
+        }
+        }
     var rawLink = "http://thepotatoplace.ga/rant/" + gameCat + "/" + gameName; 
     var finalLink = rawLink.toLowerCase();
     if(location_href == true){
