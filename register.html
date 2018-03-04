@@ -2,7 +2,12 @@
 <html>
    <head>
       <title>Register - The Potato Place</title>
-      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+      <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
       <style>
          .mainFrame{
             padding: 70px 0;
