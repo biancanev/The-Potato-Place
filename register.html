@@ -2,11 +2,14 @@
 <html>
    <head>
       <title>Register - The Potato Place</title>
-      <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
       <script type="text/javascript">
-  var onloadCallback = function() {
-    alert("grecaptcha is ready!");
-  };
+function log_registration(grecaptcha){
+   if(grecaptcha == 1)
+      console.log('Registration Error TPP[ErrorFunction4]. Error Connecting to TPP Servers')
+      console.log('Registration Error C8[ErrorFunction7]. Error confirming password with username.')
+      console.log('Recaptcha: Successfully loaded!')
+}
 </script>
       <style>
          .mainFrame{
@@ -15,7 +18,7 @@
          }
       </style>
    </head>
-   <body>
+   <body onload="log_registration(1)">
       <center>
       <div class="mainFrame">
       <form action="https://www.google.com/recaptcha/api/siteverify" method="post">
