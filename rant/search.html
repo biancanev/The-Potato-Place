@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Search - TPP Rant</title>
+<title>Home - TPP Rant</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -245,7 +245,8 @@ function sort_by() {
     var rawLink = "http://thepotatoplace.ga/rant/" + gameCat + "/" + gameName; 
     var finalLink = rawLink.toLowerCase();
     if(location_href == true){
-        document.getElementById("reply").innerHTML = "Displaying 1 of 1 search results found<br><ul><li>" + finalLink.link() + "</li></ul>";
+        window.location.href(finalLink);
+        document.getElementById("reply").innerHTML = "Redirecting you to " + finalLink.link() + "...";
     }if(location_href == false){
         document.getElementById("reply").innerHTML = "No Search Results Found"   
     }
