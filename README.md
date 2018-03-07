@@ -64,7 +64,7 @@ myTest();
 echo $y;
 ?>
 ```
-See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/CONTRIBUTING.md)
+See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -95,4 +95,4 @@ Project maintainers are responsible for clarifying the standards of acceptable b
 
 Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
-See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/CODE_OF_CONDUCT.md)
+See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CODE_OF_CONDUCT.md)
