@@ -118,6 +118,12 @@ See [W3 Schools' W3.CSS](https://www.w3schools.com/w3css/) for The Potato Place'
 
 #### Javascript APIs
 
-```
-No Javascript API so far. . .
+```javascript
+//To make a Navbar
+tablinks = document.getElementsByClassName("tablinks");
+for(i=0; i < tablinks.length; i++) {
+	tablinks[i].className.replace("active","");
+	}
+document.getElementById(cityName).style.display = "block";
+ent.currentTarget.className += "active";
 ```
