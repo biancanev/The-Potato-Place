@@ -73,7 +73,7 @@ echo $y;
 ##### MD equivilent of <h5>
 ###### MD equivilent of <h6>
 MD equivilent of <p>
-[value](href) html equivilent of <a href="https://www.example.com/directory"></a>
+[value](href) MD equivilent of <a href="https://www.example.com/directory"></a>
 ```
 See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
 ## Contributor Covenant Code of Conduct
