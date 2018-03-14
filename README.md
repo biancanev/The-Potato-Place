@@ -1,6 +1,6 @@
 # The-Potato-Place
 
-# Contributing to The Potato Place
+## Contributing to The Potato Place
 
 ### Section 1
 #### How To Contribute
@@ -64,7 +64,7 @@ echo $y;
 ?>
 ```
 See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
-# Contributor Covenant Code of Conduct
+## Contributor Covenant Code of Conduct
 
 ## Our Pledge
 
