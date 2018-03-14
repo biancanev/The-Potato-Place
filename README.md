@@ -96,3 +96,15 @@ Project maintainers are responsible for clarifying the standards of acceptable b
 Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
 See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CODE_OF_CONDUCT.md)
+
+### The Potato Place API
+
+#### HTML API
+
+```html
+<!--To Create a new tab-->
+<div id="tabname">
+</div>
+<!--Button for navbar-->
+<button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
+```
