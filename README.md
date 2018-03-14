@@ -137,11 +137,8 @@ Any violation of these rules will result in an immediate ban.
 <!--To Create a new tab just add a link to the spot were you want the link-->
 <a href="https://www.example.com/directory"> Name </a>
 ```
-#### CSS APIs
-See [W3 Schools' W3.CSS](https://www.w3schools.com/w3css/) for The Potato Place's CSS
 
-#### Javascript APIs
-
+##### Add Javascript
 ```javascript
 //To make a Navbar
 function openTab(evt, cityName) {
