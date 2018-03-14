@@ -108,3 +108,15 @@ See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blo
 <!--Button for navbar-->
 <button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
 ```
+
+#### CSS API
+See [W3 Schools' W3.CSS](https://www.w3schools.com/w3css/) for The Potato Place's CSS
+
+#### Javascript API
+
+'''
+
+
+```
+No Javascript API so far. . .
+```
