@@ -63,6 +63,18 @@ myTest();
 echo $y;
 ?>
 ```
+
+* MD(Markup Documents)
+```
+# MD equivilent of <h1>
+## MD equivilent of <h2>
+### MD equivilent of <h3>
+#### MD equivilent of <h4>
+##### MD equivilent of <h5>
+###### MD equivilent of <h6>
+MD equivilent of <p>
+[value](href) html equivilent of <a href="https://www.example.com/directory"></a>
+```
 See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
 ## Contributor Covenant Code of Conduct
 
