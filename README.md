@@ -109,7 +109,7 @@ See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blo
 <button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
 ```
 ##### Potato Rant Tabs
-```
+```html
 <!--To Create a new tab just add a link to the spot were you want the link-->
 <a href="https://www.example.com/directory"> Name </a>
 ```
