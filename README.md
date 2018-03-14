@@ -1,5 +1,4 @@
 # The-Potato-Place
-Your Online Gaming/Other Random Things Site
 
 # Contributing to The Potato Place
 
