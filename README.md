@@ -132,11 +132,6 @@ Any violation of these rules will result in an immediate ban.
 <!--Button for navbar-->
 <button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
 ```
-##### Potato Rant Tabs
-```html
-<!--To Create a new tab just add a link to the spot were you want the link-->
-<a href="https://www.example.com/directory"> Name </a>
-```
 
 ##### Add Javascript
 ```javascript
