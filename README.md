@@ -136,7 +136,7 @@ Any violation of these rules will result in an immediate ban.
 ##### Add Javascript
 ```javascript
 //To make a Navbar
-function openTab(evt, cityName) {
+function openTab(evt, cityName) {//You can change the cityName parameter to anything
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
