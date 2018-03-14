@@ -64,7 +64,7 @@ myTest();
 echo $y;
 ?>
 ```
-See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
+See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CONTRIBUTING.md)
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -95,11 +95,11 @@ Project maintainers are responsible for clarifying the standards of acceptable b
 
 Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
 
-See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CODE_OF_CONDUCT.md)
+See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CODE_OF_CONDUCT.md)
 
-### The Potato Place API
+### The Potato Place APIs
 
-#### HTML API
+#### HTML APIs
 ##### Creating a New Tab On the Navbar
 ```html
 <!--To Create a new tab-->
@@ -113,10 +113,10 @@ See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blo
 <!--To Create a new tab just add a link to the spot were you want the link-->
 <a href="https://www.example.com/directory"> Name </a>
 ```
-#### CSS API
+#### CSS APIs
 See [W3 Schools' W3.CSS](https://www.w3schools.com/w3css/) for The Potato Place's CSS
 
-#### Javascript API
+#### Javascript APIs
 
 ```
 No Javascript API so far. . .
