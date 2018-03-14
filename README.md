@@ -6,7 +6,7 @@
 #### How To Contribute
 Contributions are mandatory for all Potato Place Curators. In order to track each curators commits, we will use the commit function in our repository
 Contributions must be in one of these forms:
-* HTML(Hypertext Markup Language)
+* HTML(Hypertext Markup Language){.html}
 ```html
 <html>
     <body>
@@ -14,7 +14,7 @@ Contributions must be in one of these forms:
     </body>
 </html>
 ```
-* CSS(Cascading Style Sheets)
+* CSS(Cascading Style Sheets){.css}
 ```css
 div{
     background-color: blue;
@@ -22,7 +22,7 @@ div{
     width: 100%;
 }
 ```
-* JavaScript
+* JavaScript{.js}
 ```javascript
 function getCookie(cname) {
     var name = cname + "=";
@@ -40,7 +40,7 @@ function getCookie(cname) {
     return "";
 }
 ```
-* Python
+* Python{.py}
 ```python
 def happyBirthday(): #program does nothing as written
     print("Happy Birthday to you!")
@@ -49,7 +49,7 @@ def happyBirthday(): #program does nothing as written
     print("Happy Birthday to you!")
 ```
 
-* PHP(Personal Homepage)
+* PHP(Personal Homepage){.php}
 ```php
 <?php
 $x = 5;
@@ -64,7 +64,7 @@ echo $y;
 ?>
 ```
 
-* MD(Markup Documents)
+* MD(Markup Documents){.md}
 ```
 # MD equivilent of <h1>
 ## MD equivilent of <h2>
