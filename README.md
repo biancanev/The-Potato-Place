@@ -104,6 +104,7 @@ See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blo
 ```html
 <!--To Create a new tab-->
 <div id="tabname">
+    <!--Content goes here-->
 </div>
 <!--Button for navbar-->
 <button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
