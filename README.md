@@ -108,6 +108,15 @@ Project maintainers have the right and responsibility to remove, edit, or reject
 
 See full documentation [here.](https://github.com/biancanev/The-Potato-Place/blob/master/markups/CODE_OF_CONDUCT.md)
 
+## Copying Other Work
+
+Copying of other websites is strictly prohibited. There are 2 instances where you may copy code from another person/website:
+
+* If the website/program is open source.
+* If the creator gave explicit permission to you to copy the code
+
+Any violation of these rules will result in an immediate ban.
+
 ### The Potato Place APIs
 
 #### HTML APIs
