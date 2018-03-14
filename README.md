@@ -146,3 +146,6 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 ```
+ ### The Potato Place's Discord
+ 
+ We use Discord for recreational purposes. There is no formal use of it other than to play around with the bots and have fun with other users online.
