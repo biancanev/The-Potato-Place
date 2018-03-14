@@ -100,7 +100,7 @@ See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blo
 ### The Potato Place API
 
 #### HTML API
-
+##### Creating a New Tab On the Navbar
 ```html
 <!--To Create a new tab-->
 <div id="tabname">
@@ -108,14 +108,15 @@ See full [documentation here.](https://github.com/biancanev/The-Potato-Place/blo
 <!--Button for navbar-->
 <button class="tablinks" onclick="openTab(event, 'tabname')"> Tab Name </button>
 ```
-
+##### Potato Rant Tabs
+```
+<!--To Create a new tab just add a link to the spot were you want the link-->
+<a href="https://www.example.com/directory"> Name </a>
+```
 #### CSS API
 See [W3 Schools' W3.CSS](https://www.w3schools.com/w3css/) for The Potato Place's CSS
 
 #### Javascript API
-
-'''
-
 
 ```
 No Javascript API so far. . .
