@@ -1,73 +1,104 @@
-<?PHP
-require_once("./include/membersite_config.php");
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
 
-if(isset($_POST['submitted']))
-{
-   if($fgmembersite->Login())
-   {
-        $fgmembersite->RedirectToURL("login-home.php");
-   }
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<head>
-      <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-      <title>Login</title>
-      <link rel="STYLESHEET" type="text/css" href="style/fg_membersite.css" />
-      <script type='text/javascript' src='scripts/gen_validatorv31.js'></script>
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 </head>
 <body>
 
-<!-- Form Code Start -->
-<div id='fg_membersite'>
-<form id='login' action='<?php echo $fgmembersite->GetSelfScript(); ?>' method='post' accept-charset='UTF-8'>
-<fieldset >
-<legend>Login</legend>
+<h2>Login Form</h2>
 
-<input type='hidden' name='submitted' id='submitted' value='1'/>
+<form>
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
-<div class='short_explanation'>* required fields</div>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
 
-<div><span class='error'><?php echo $fgmembersite->GetErrorMessage(); ?></span></div>
-<div class='container'>
-    <label for='username' >UserName*:</label><br/>
-    <input type='text' name='username' id='username' value='<?php echo $fgmembersite->SafeDisplay('username') ?>' maxlength="50" /><br/>
-    <span id='login_username_errorloc' class='error'></span>
-</div>
-<div class='container'>
-    <label for='password' >Password*:</label><br/>
-    <input type='password' name='password' id='password' maxlength="50" /><br/>
-    <span id='login_password_errorloc' class='error'></span>
-</div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+    <button type="submit" onclick="login()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-<div class='container'>
-    <input type='submit' name='Submit' value='Submit' />
-</div>
-<div class='short_explanation'><a href='reset-pwd-req.php'>Forgot Password?</a></div>
-</fieldset>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
 </form>
-<!-- client-side Form Validations:
-Uses the excellent form validation script from JavaScript-coder.com-->
-
-<script type='text/javascript'>
-// <![CDATA[
-
-    var frmvalidator  = new Validator("login");
-    frmvalidator.EnableOnPageErrorDisplay();
-    frmvalidator.EnableMsgsTogether();
-
-    frmvalidator.addValidation("username","req","Please provide your username");
-    
-    frmvalidator.addValidation("password","req","Please provide the password");
-
-// ]]>
-</script>
-</div>
-<!--
-Form Code End (see html-form-guide.com for more info.)
--->
-
+   <script>
+      function login(){
+         var uname = document.getElementById("uname").innerHTML;
+         var psw = document.getElementById("psw").innerHTML;
+         window.location.href="thepotatoplace.ga/accounts/" + uname + "/profile";
+      }
+   </script>
 </body>
 </html>
