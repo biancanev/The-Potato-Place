@@ -55,10 +55,11 @@ video:hover{
 </head>
 <body><center>
 <div id="container">
+  <div class="data" style="z-index:1;color:white;">Connecting</div>
     <video autoplay="true" id="videoElement" onclick="VideoLaunchFunction()" onload="checkCookie"><div class="menubar"></div></video>
 </div>
   </center>
-    <button onclick="loading.innerHRML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
+    <button onclick="loading.innerHTML='Connection failed. please try again'" id="launchBtn">Launch Chat</button>
   <button onclick="javascript:screenshare();" disabled id="shareBtn">Share your screen</button>
   <p style="color:red;">ERROR LOADING PHP FORMS</p>
     <button onclick="move()">Load TPP Error Analysis</button>
