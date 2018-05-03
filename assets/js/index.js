@@ -1,4 +1,4 @@
-
+/**
 myObj = {
     "name":"John",
     "age":30,
@@ -78,10 +78,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
 document.cookie = "password=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; 
-
-
-
-
-
-
-
+**/
