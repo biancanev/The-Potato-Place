@@ -304,7 +304,7 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'Potatooligists')"> Potato-oligist </button>
   <button class="tablinks" onclick="window.location.href='http://thepotatoplace.ga/rant/'"> Potato Rant </button>
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
-  <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie()"> Chat Server </button>
+  <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie(); display_ct()"> Chat Server </button>
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
   <button class="tablinks w3-right" onclick="window.location.href='http://thepotatoplace.ga/login'"> Login </button>
 </div>
@@ -454,6 +454,7 @@ So far the URL has been undecided, therefore, it has been reverted back to
 </div>
 <div id="Chat" class="tabcontent">
 	<h2>Welcome to the chat room! Click on a code to start chatting</h2>
+	<span id='ct' ></span>
 	<marquee scrollamount="10"><b>Chat M8QQ9vJC is currently only available on Microsoft Edge<span> </span> Chat KMVEQB56 is currently being updated.<span> </span> We are going to release our new Video chats soon! <span></span> We will soon release our new Potato Place chat format</b></marquee> 
 	<p>Chat codes:</p>
 	<p><a href="http://thepotatoplace.ga/chat-A4df0e2-status-online">A4df0e2</a>--Status:<div class="status-online">online</div></p>
@@ -505,6 +506,17 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<div id="google_translate_element"></div>
 </footer>
 <script type="text/javascript">
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var strcount
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+tt=display_c();
+ }
 function myFunction() {
     var x = document.getElementById("snackbar");
     x.className = "show";
