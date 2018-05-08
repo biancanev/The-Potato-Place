@@ -82,18 +82,26 @@ input[type=text]:focus, input[type=password]:focus {
       <h1>Login</h1>
 
       <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="email" required>
+      <input type="text" placeholder="Enter Username" name="username" id="usrn"required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" id="pswd" required>
       <a href="">Forgot Password?</a>
 
-      <button type="submit" class="btn">Login</button>
+      <button type="submit" class="btn" onclick="validate()">Login</button>
       <br><br>
       <button type="sublit" class="btn-2">Don't Have an Account? Sign Up!</button>
     </div>
   </form>
 </div>
-
+<script>
+function validate(){
+    var x = document.getElementById("usrn").innerHTML;
+    var y = docuemnt.getElementById("pswd").innerHTML;
+    if(x == "biancano" && y == "longgrass123"){
+        window.location.href="http://thepotatoplace.ga";
+    }
+}
+</script>
 </body>
 </html>
