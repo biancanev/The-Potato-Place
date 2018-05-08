@@ -83,7 +83,7 @@ input[type=text]:focus, input[type=password]:focus {
       <h1>Login</h1>
 
       <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="username" id="usrn"required>
+      <input type="text" placeholder="Enter Username" name="username" id="usrn" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" id="pswd" required>
@@ -100,8 +100,10 @@ input[type=text]:focus, input[type=password]:focus {
 function validate(){
     var x = document.getElementById("usrn").innerHTML;
     var y = docuemnt.getElementById("pswd").innerHTML;
-    if(x == "biancano" && y == "longgrass123"){
+    if(x == "biancano"){
+        if(y == "longgrass123"){
         window.location.href="http://thepotatoplace.ga/accounts/biancano/profile";
+        }
     }
 }
 </script>
