@@ -607,7 +607,7 @@ function checkCookie() {
         alert("Welcome again " + username);
     } else {
 	alert("Welcome, GUEST_USER. In order to save you conversations on our chat servers, please sign up or log in.")
-        username = "Guest_User"
+        username = prompt("What username would you like to use?")
         if (username != "" && username != null) {
             setCookie("username", username, 365);
         }
