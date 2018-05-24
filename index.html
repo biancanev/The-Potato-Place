@@ -1,7 +1,3 @@
-<!--
-Created by Ryan Kwong, Connor Park, and Shreyas Lad. All rights reserved. This code was created by The Potato Place Inc. This code was made by Cloud Eight
-and it's C8 Branches, any inappropriate use of this code is not at fault of Cloud Eight and it's C8 Branches.
--->
 <html lang="en">
 <head>
 <meta name="Description" CONTENT="Your Online Gaming Website">
@@ -596,7 +592,7 @@ function getCookie(cname) {
 function checkCookie() {
     var username = getCookie("username");
     if (username != "") {
-        alert("Welcome again " + username);
+        var api = false;
     } else {
 	alert("Welcome, GUEST_USER. In order to save you conversations on our chat servers, please sign up or log in.")
         username = prompt("What username would you like to use?")
