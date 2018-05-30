@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Your Profile -- The Potato Place</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,21 +9,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-.fa fa-bug{
-    -webkit-animation-name: spin;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 4s;
-    animation-name: spin;
-    animation-iteration-cout: infinite;
-    animation-duration: 4s;
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 1.5s ease-in-out infinite; /* Safari */
+  animation: spin 1.5s ease-in-out infinite;
 }
-@-webkit-keyframes spin{
-	from{rotate(0deg);}
-    to{rotate(359deg);}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
-@keyframes spin{
-	from{rotate(0deg);}
-    to{rotate(359deg)}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 </style>
 <body class="w3-theme-l5">
@@ -96,10 +100,21 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       <div class="w3-card w3-round w3-white">
       <div class="w3-theme-l1 w3-center">Badges</div>
       <div class="w3-center"> <span style="color:#DAA520;">&#9812;</span> - 0<br>
-      <span style="#C0C0C0">&9813;</span> - 0</div>
+      <span style="#C0C0C0">&#9813;</span> - 0</div>
       </div>
-     
       <br>
+      <div class="w3-card w3-round w3-white">
+	      <div class="w3-theme-l1 w3-center">Contributions</div>
+	      <div class="w3-center">
+	      <ul>
+		      <li>None so far...</li>
+	      </ul>
+	      </div>
+      </div>
+      <br>
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+	      <div class="loader"></div>
+      </div>
       
     
     <!-- End Left Column -->
@@ -139,9 +154,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
       </div>
       <br>
       
-      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-        <p><i class="fa fa-bug w3-xxlarge"></i></p>
-      </div>
+      
       
     <!-- End Right Column -->
     </div>
