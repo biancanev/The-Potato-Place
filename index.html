@@ -500,6 +500,15 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<div id="google_translate_element"></div>
 </footer>
 <script type="text/javascript">
+var header = document.getElementById("myNavbar");
+var btns = header.getElementsById("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh)
