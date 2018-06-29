@@ -1,6 +1,5 @@
-import cgitb
-cgitb.enable()
-
+#!/usr/bin/python   
+print('Content-type: text/html\r\n\r')
 def pokemon_journey():
   print "You just started a Pokemon Journey!"
   print "Before you start you must make sure to type everyhting in lowercase otherwise the game will crash!" .upper()
