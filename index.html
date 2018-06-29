@@ -502,7 +502,7 @@ So far the URL has been undecided, therefore, it has been reverted back to
 function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
-	if(hrs <= 23 && hrs >= 22){
+	if(hrs <= 17 && hrs >= 15){
 		var online = document.getElementByClassName("status-online");
 		online.ClassName = "status-offline-o";
 	}else{
