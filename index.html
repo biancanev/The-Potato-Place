@@ -490,7 +490,6 @@ So far the URL has been undecided, therefore, it has been reverted back to
 <div id="CoolTechyStuff" class="tabcontent">
 	<h2>Welcome to The Cool Techy Place!</h2>
 	<h3>Here are a few cool things to see:</h3>
-	<p>A harmless virus:</p>
 	<a href="http://thepotatoplace.ml/virus2.bat">When you click this link press open. Then your computer should shut down in a minute.</a>
 </div>
 <div id="snackbar">Automatically logged on as <strong>Guest_User</strong></div>
@@ -499,20 +498,22 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<div id="google_translate_element"></div>
 </footer>
 <script type="text/javascript">
+function shutdown_refresh(){
+	var rate = 500;
+	tot = setTimeout('shutdown()',rate)
+}
 function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
 	if(hrs <= 17 && hrs >= 15){
 		var online = document.getElementByClassName("status-online");
 		online.ClassName = "status-offline-o";
+		sd = shutdown_refresh();
 	}else{
 		var offline_o = document.getElementByClassName("status-offline-o");
 		offline_o.className = "status-online";
+		sd = shutdown_refresh();
 	}
-}
-function shutdown_refresh(){
-	var rate = 500;
-	
 }
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
