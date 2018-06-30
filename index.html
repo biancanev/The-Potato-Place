@@ -513,7 +513,7 @@ function shutdown(){
 		var online = document.getElementById("status-online");
 		online.id = "status-offline-o";
 		online.innerHTML = "offline";
-		online.onclick = 
+		online.onclick = noPass();
 		sd = shutdown_refresh();
 	}else{
 		var offline_o = document.getElementById("status-offline-o");
