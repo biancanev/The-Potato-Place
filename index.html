@@ -85,22 +85,22 @@ marquee p {
 .codebox{
 	background-image: chatbox.png;
 	}
-.status-offline{
+#status-offline{
 	color: red;
 	}
-.status-offline-o{
+#status-offline-o{
 	color: red;
 	}
-.status-online{
+#status-online{
 	color: green;
 	}
-.status-pending{
+#status-pending{
 	color: #dd8920;
 	}
-.status-warning{
+#status-warning{
 	color: #e5d210;
 	}
-.status-blocked{
+#status-blocked{
 	color: #791a8b;
 	}
 .head{
@@ -451,11 +451,11 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<span id='ct' ></span>
 	<marquee scrollamount="5"><b>Chat M8QQ9vJC is currently only available on Microsoft Edge<span> </span> Chat KMVEQB56 is currently being updated.<span> </span> We are going to release our new Video chats soon! <span></span> We will soon release our new Potato Place chat format</b></marquee> 
 	<p>Chat codes:</p>
-	<p><a href="http://thepotatoplace.ga/chat-A4df0e2-status-online">A4df0e2</a>--Status:<div class="status-online">online</div></p>
-	<p><a href="http://thepotatoplace.ga/webchat/temp-id-34718290137418239042874561/video/streaming-false">M8QQ9VJC</a>--Status:<div class="status-pending">pending</div></p>
-	<p><a href="javascript:alert('This chat is currnetly offline. Come back at a later time')">5ZKXCYZY</a>--Status:<div class="status-offline">offline</div></p>
-	<p><a href="http://thepotatoplace.ga/chat-KMVEQB56-status-online">KMVEQB56</a>--Status:<div class="status-online">online</div></p>
-	<p><a href="javascript:alert('This chat is insecure. Please come back at a later time.')">7D36MK4D</a>--Status:<div class="status-warning">**Insecure-Online**</div>
+	<p><a href="http://thepotatoplace.ga/chat-A4df0e2-status-online">A4df0e2</a>--Status:<div id="status-online">online</div></p>
+	<p><a href="http://thepotatoplace.ga/webchat/temp-id-34718290137418239042874561/video/streaming-false">M8QQ9VJC</a>--Status:<div id="status-pending">pending</div></p>
+	<p><a href="javascript:alert('This chat is currnetly offline. Come back at a later time')">5ZKXCYZY</a>--Status:<div id="status-offline">offline</div></p>
+	<p><a href="http://thepotatoplace.ga/chat-KMVEQB56-status-online">KMVEQB56</a>--Status:<div id="status-online">online</div></p>
+	<p><a href="javascript:alert('This chat is insecure. Please come back at a later time.')">7D36MK4D</a>--Status:<div id="status-warning">**Insecure-Online**</div>
 	<p> Or you can join our Discord:<br> <iframe src="https://discordapp.com/widget?id=367449053002334209&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p>
 <h4>Insert Code:</h4>
 <p>Supported Browsers:</p>
@@ -506,11 +506,11 @@ function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
 	if(hrs <= 23 && hrs >= 22){
-		var online = document.getElementsByClassName("status-online");
+		var online = document.getElementById("status-online");
 		online.ClassName = "status-offline-o";
 		sd = shutdown_refresh();
 	}else{
-		var offline_o = document.getElementByClassName("status-offline-o");
+		var offline_o = document.getElementById("status-offline-o");
 		offline_o.className = "status-online";
 		sd = shutdown_refresh();
 	}
