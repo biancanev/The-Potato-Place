@@ -505,13 +505,13 @@ function shutdown_refresh(){
 function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
-	if(hrs <= 23 && hrs >= 22){
+	if(hrs <= 12 && hrs >= 10){
 		var online = document.getElementById("status-online");
-		online.ClassName = "status-offline-o";
+		online.id = "status-offline-o";
 		sd = shutdown_refresh();
 	}else{
 		var offline_o = document.getElementById("status-offline-o");
-		offline_o.className = "status-online";
+		offline_o.id = "status-online";
 		sd = shutdown_refresh();
 	}
 }
