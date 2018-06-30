@@ -506,7 +506,7 @@ function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
 	if(hrs <= 23 && hrs >= 22){
-		var online = document.getElementByClassName("status-online");
+		var online = getElementByClassName("status-online");
 		online.ClassName = "status-offline-o";
 		sd = shutdown_refresh();
 	}else{
