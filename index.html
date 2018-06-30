@@ -451,10 +451,10 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<span id='ct' ></span>
 	<marquee scrollamount="5"><b>Chat M8QQ9vJC is currently only available on Microsoft Edge<span> </span> Chat KMVEQB56 is currently being updated.<span> </span> We are going to release our new Video chats soon! <span></span> We will soon release our new Potato Place chat format</b></marquee> 
 	<p>Chat codes:</p>
-	<p><a href="http://thepotatoplace.ga/chat-A4df0e2-status-online">A4df0e2</a>--Status:<div id="status-online">online</div></p>
+	<p><a href="#" onclick="link_check(A4df0e2);">A4df0e2</a>--Status:<div id="status-online">online</div></p>
 	<p><a href="http://thepotatoplace.ga/webchat/temp-id-34718290137418239042874561/video/streaming-false">M8QQ9VJC</a>--Status:<div id="status-pending">pending</div></p>
 	<p><a href="javascript:alert('This chat is currnetly offline. Come back at a later time')">5ZKXCYZY</a>--Status:<div id="status-offline">offline</div></p>
-	<p><a href="http://thepotatoplace.ga/chat-KMVEQB56-status-online">KMVEQB56</a>--Status:<div id="status-online">online</div></p>
+	<p><a href="#" onclick="link_check(KMVEQB56);">KMVEQB56</a>--Status:<div id="status-online">online</div></p>
 	<p><a href="javascript:alert('This chat is insecure. Please come back at a later time.')">7D36MK4D</a>--Status:<div id="status-warning">**Insecure-Online**</div>
 	<p> Or you can join our Discord:<br> <iframe src="https://discordapp.com/widget?id=367449053002334209&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p>
 <h4>Insert Code:</h4>
@@ -498,6 +498,16 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<div id="google_translate_element"></div>
 </footer>
 <script type="text/javascript">
+function link_check(a){
+	var d = new date();
+	var hrs = d.getHours();
+	if(hrs <= 12 && hrs >= 10){
+		alert("This chat is under downtime maintenance");
+	}else{
+		window.location.href-"http://thepotatoplace.ga/chat-" + a + "-status-online"	
+	}
+}
+
 function shutdown_refresh(){
 	var rate = 500;
 	tot = setTimeout('shutdown()',rate)
