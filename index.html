@@ -508,6 +508,7 @@ function shutdown(){
 	if(hrs <= 12 && hrs >= 10){
 		var online = document.getElementById("status-online");
 		online.id = "status-offline-o";
+		online.innerHTML = "offline";
 		sd = shutdown_refresh();
 	}else{
 		var offline_o = document.getElementById("status-offline-o");
