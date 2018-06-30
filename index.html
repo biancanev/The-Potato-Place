@@ -110,6 +110,28 @@ marquee p {
 	color: white;
 	text-shadow: 1px 1px 3px black, 0 0 35px blue, 0 0 10px darkblue;
 	}
+.alert {
+    padding: 20px;
+    background-color: #ff9800;;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 60px;
+}
+
+.closebtn:hover {
+    color: black;
+}
+<
 * {box-sizing:border-box}
 .slideshow-container {
   width: 400px;
@@ -456,6 +478,10 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<p><a href="javascript:alert('This chat is currnetly offline. Come back at a later time')">5ZKXCYZY</a>--Status:<div id="status-offline">offline</div></p>
 	<p><a href="javascript:prompt("Password:")" onclick="">KMVEQB56</a>--Status:<div id="status-blocked">BLOCKED</div></p>
 	<p><a href="javascript:alert('This chat is insecure. Please come back at a later time.')">7D36MK4D</a>--Status:<div id="status-warning">**Insecure-Online**</div>
+	<div class="alert">
+ 	 	<span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fa fa-exclamation-triangle"></i></span> 
+ 		<strong> Chat Downtime:</strong> Starting on 6/30/18, every day from 10:00PM(PST) till 11:00PM(PST), chats will be unavailable due to maintenance.
+	</div>
 	<p> Or you can join our Discord:<br> <iframe src="https://discordapp.com/widget?id=367449053002334209&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe></p>
 <h4>Insert Code:</h4>
 <p>Supported Browsers:</p>
@@ -501,7 +527,7 @@ So far the URL has been undecided, therefore, it has been reverted back to
 function link_check(link){
 	var d = new date();
 	var hrs = d.getHours();
-	if(hrs <= 12 && hrs >= 10){
+	if(hrs <= 23 && hrs >= 22){
 		alert("This chat is under downtime maintenance");
 	}else{
 		window.location.href-"http://thepotatoplace.ga/chat-" + link + "-status-online"	
