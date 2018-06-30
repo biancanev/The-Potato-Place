@@ -502,6 +502,10 @@ function shutdown_refresh(){
 	var rate = 500;
 	tot = setTimeout('shutdown()',rate)
 }
+function noPass(){
+	wwindow.location.href="http://thepotatoplace.ga";
+	alert("This chat is under downtime maintenance...")
+}
 function shutdown(){
 	var d = new Date();
 	var hrs = d.getHours();
@@ -509,6 +513,7 @@ function shutdown(){
 		var online = document.getElementById("status-online");
 		online.id = "status-offline-o";
 		online.innerHTML = "offline";
+		online.onclick = 
 		sd = shutdown_refresh();
 	}else{
 		var offline_o = document.getElementById("status-offline-o");
