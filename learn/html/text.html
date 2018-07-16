@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.attr{
+	color: #68d875;
+}
+.tag{
+	color: blue;
+}
+.code{
+	color: #ff5353;
+    background-color: #eee;
+}
+code{
+	color: #ff5353;
+    background-color: #eee;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Text</a>
+  <a href="#clients">Images</a>
+  <a href="#contact">Links</a>
+  <a href="#contact">Links</a>
+  <h4 style="padding: 6px 8px 6px 16px;text-decoration: none;color: #818181;display: block;">Useful Tags</h4>
+  <hr>
+<a href="#contact">&lt;div&gt;</a>
+<a href="#contact">&lt;style&gt;</a>
+<a href="#contact">&lt;script&gt;</a>
+<a href="#contact">&lt;link&gt;</a>
+
+</div>
+
+<div class="main">
+  <h2>HTML Text</h2>
+  <h4>Tag(s): <code>&lt;<span class="tag">h1</span>&gt;</code>, <code>&lt;<span class="tag">h2</span>&gt;</code>, <code>&lt;<span class="tag">h3</span>&gt;</code>, <code>&lt;<span class="tag">h4</span>&gt;</code>, <code>&lt;<span class="tag">h5</span>&gt;</code>, <code>&lt;<span class="tag">h6</span>&gt;</code>, <code>&lt;<span class="tag">p</span>&gt;</code></h4>
+  <h4>Attribute(s): <code><span class="attr">style</span></code>, <code><span class="attr">class</span></code>, <code><span class="attr">id</span></code>, <code><span class="attr">onclick</span></code>, <code><span class="attr">style</span></code></h4>
+  <h4>Examples Code: <ul>
+  <code>Input:</code><br>
+     <li><code>&lt;<span class="tag">h1</span>&gt; TEXT &lt;<span class="tag">/h1</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">h2</span>&gt; TEXT &lt;<span class="tag">/h2</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">h3</span>&gt; TEXT &lt;<span class="tag">/h3</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">h4</span>&gt; TEXT &lt;<span class="tag">/h4</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">h5</span>&gt; TEXT &lt;<span class="tag">/h5</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">h6</span>&gt; TEXT &lt;<span class="tag">/h6</span>&gt;</code></li>
+     <li><code>&lt;<span class="tag">p</span>&gt; TEXT &lt;<span class="tag">/p</span>&gt;</code></li>
+     </ul>
+     <code>Output:</code><br>
+     <h1>TEXT</h1>
+     <h2>TEXT</h2>
+     <h3>TEXT</h3>
+     <h4>TEXT</h4>
+     <h5>TEXT</h5>
+     <h6>TEXT</h6>
+     <p>TEXT</p>
+     </h4>
+     <h3>Examples Explained</h3>
+     <hr>
+     <p><code>&lt;<span class="tag">h1</span>&gt;</code>-<code>&lt;<span class="tag">h6</span>&gt;</code> represent headings from largest to smallest, respectively. <code>&lt;<span class="tag">p</span>&gt;</code> represents paragraph text, and is the default text size if no tag is specified</p>
+</div>
+     
+</body>
+</html> 
