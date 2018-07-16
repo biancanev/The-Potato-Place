@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.attr{
+	color: #68d875;
+}
+.tag{
+	color: blue;
+}
+.code{
+	color: #ff5353;
+    background-color: #eee;
+}
+code{
+	color: #ff5353;
+    background-color: #eee;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Text</a>
+  <a href="#clients">Images</a>
+  <a href="#contact">Links</a>
+  <a href="#contact">Links</a>
+  <h4 style="padding: 6px 8px 6px 16px;text-decoration: none;color: #818181;display: block;">Useful Tags</h4>
+  <hr>
+<a href="#contact">&lt;div&gt;</a>
+<a href="#contact">&lt;style&gt;</a>
+<a href="#contact">&lt;script&gt;</a>
+<a href="#contact">&lt;link&gt;</a>
+
+</div>
+
+<div class="main">
+  <h2>HTML</h2>
+  <h4>Extension: <code>.html</code></h4>
+  <h4>Syntax: <code>&lt;<span class="tag">tagname</span> <span class="attr">attribute=<span class="tag">"value"</span></span>&gt;Content&lt;<span class="tag">/tagname</span>&gt;</code></h4>
+  <h4>Case Sensitive: No</h4>
+  <h4>Usability: <span style="color:green">Easy</span></h4>
+  <h4>Required Setup:<br>
+  <div class="code">
+  <code>&lt;!DOCTYPE html&gt;<br>
+  &lt;<span class="tag">html</span>&gt;<br>
+  &lt;<span class="tag">head</span>&gt;<br>
+  &lt;<span class="tag">title</span>&gt; TITLE &lt;<span class="tag">/title</span>&gt;<br>
+  &lt;<span class="tag">/head</span>&gt;<br>
+  &lt;<span class="tag">body</span>&gt;<br>
+  <span class="attr">&lt;!--Content goes here--&gt;</span><br>
+  &lt;<span class="tag">/body</span>&gt;<br>
+  &lt;<span class="tag">/html</span>&gt;</code></div></h4>
+  <h4>Compatible languages: CSS(<code>.css</code>), JavaScript(<code>.js</code>), PHP(<code>.php</code>)</h4>
+  <h3>About HTML</h3>
+  <p>HTML is one of the most easiest languages to learn coming only behind Markup(<code>.md</code>). HTML is one of the languages that makes up the client side of the website. </p>
+</div>
+     
+</body>
+</html> 
