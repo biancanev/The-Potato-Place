@@ -103,6 +103,9 @@ body {
         height: auto;
     }
 }
+footer{
+	
+}
 </style>
 </head>
 <body>
@@ -147,6 +150,18 @@ body {
   <img src="http://thepotatoplace.ga/39782933-hexagon-wallpapers.jpg " style="width:100%;">
   
 </div>
-
+<footer></footer>
+	<script>
+		var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+	</script>
 </body>
 </html>
