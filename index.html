@@ -326,6 +326,7 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
   <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie(); display_ct(); shutdown();"> Chat Server </button>
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
+  <button class="tablinks" onclick=""
 </div>
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
@@ -656,6 +657,14 @@ function myFunction() {
     }
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+function checkProfile(){
+	var username = getCookie("username");
+	if(username != ""){
+		window.location.href="http://thepotatoplace.ga/accounts/" + username + "/profile";
+	}else{
+		alert("You don't have an account with the Potato Place. If you have created an account, please note that it may take up to a week for your account to be verified.")
+	}
 }
 </script>
 </body>
