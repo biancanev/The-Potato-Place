@@ -326,7 +326,7 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
   <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie(); display_ct(); shutdown();"> Chat Server </button>
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
-  <button class="tablinks" onclick=""
+	<button class="tablinks" onclick="checkProfile()">Profile</button>
 </div>
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
@@ -662,6 +662,18 @@ function checkProfile(){
 	var username = getCookie("username");
 	if(username != ""){
 		window.location.href="http://thepotatoplace.ga/accounts/" + username + "/profile";
+		var request;
+		if(window.XMLHttpRequest){
+		    request = new XMLHttpRequest();
+		}else{
+    			request = new ActiveXObject("Microsoft.XMLHTTP");
+			request.open('GET', 'http://www.mozilla.org', false);
+			request.send(); // there will be a 'pause' here until the response to come.
+			// the object request will be actually modified
+		}
+		if (request.status === 404) {
+		    alert("The page you are trying to reach is not available.");
+		}
 	}else{
 		alert("You don't have an account with the Potato Place. If you have created an account, please note that it may take up to a week for your account to be verified.")
 	}
