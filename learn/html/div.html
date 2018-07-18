@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image -- HTML</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.attr{
+ color: #68d875;
+}
+.tag{
+ color: blue;
+}
+.code{
+ color: #ff5353;
+    background-color: #eee;
+}
+code{
+ color: #ff5353;
+    background-color: #eee;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+  <a href="http://thepotatoplace.ga/learn/html">About</a>
+  <a href="text">Text</a>
+  <a href="#">Images</a>
+  <a href="a-href">Links</a>
+  <h4 style="padding: 6px 8px 6px 16px;text-decoration: none;color: #818181;display: block;">Useful Tags</h4>
+  <hr>
+<a href="div">&lt;div&gt;</a>
+<a href="style(tag)">&lt;style&gt;</a>
+<a href="script">&lt;script&gt;</a>
+<a href="link">&lt;link&gt;</a>
+</div>
+<div class="main">
+  <h2>HTML Images</h2>
+  <h4>Tag(s): <code>&lt;<span class="tag">div</span>&gt;</code></h4>
+  <h4>Attribute(s): <code><span class="attr">src</span></code>[required], <code><span class="attr">class</span></code>, <code><span class="attr">id</span></code>, <code><span class="attr">onclick</span></code>, <code><span class="attr">style</span></code></h4>
+  <h4>Example Code: <ul>
+  <code>Input:</code><br><br>
+   <li><code>&lt;<span class="tag">div</span>&gt;<br><span class="attr">lt;!--Content gooes in here--&gt;</span><br>&lt;<span class="tag">/div</span>&gt;</code></li>
+     </ul>
+     <code>Output:</code><br>
+     </h4>
+     <h3>Examples Explained</h3>
+     <hr>
+     <p>What happened here? It looks like absoultely nothing happened. That is because the <code>&lt;<span class="tag">div</span>&gt;</code> tag is a <i>non-visible</i> tag. So what is this tag good for? When you use CSS and JavaScript, you can group multiple elements together to form one classification instead of classifying each element by itself(using the <span class="attr">class</span> attribute of course).</p>
+</div>
+     
+</body>
+</html>
+
