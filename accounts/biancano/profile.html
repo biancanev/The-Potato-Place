@@ -85,7 +85,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
           </div>
           <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
           <div id="Demo2" class="w3-hide w3-container">
-            <p>This function is not available yet..</p>
+             <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
           </div>
           <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
           <div id="Demo3" class="w3-hide w3-container">
@@ -261,6 +262,45 @@ function openNav() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'Speed');
+
+      data.addRows([
+        [0, 97],   [1, 95],  [2, 93],  [3, 97],  [4, 98],  [5, 99],
+        [6, 91],  [7, 97],  [8, 93],  [9, 90],  [10, 92], [11, 95],
+        [12, 90], [13, 90], [14, 92], [15, 97], [16, 94], [17, 98],
+        [18, 92], [19, 94], [20, 92], [21, 95], [22, 96], [23, 97],
+        [24, 90], [25, 90], [26, 92], [27, 91], [28, 99], [29, 93],
+        [30, 55], [31, 60], [32, 61], [33, 99], [34, 92], [35, 95],
+        [36, 92], [37, 98], [38, 95], [39, 91], [40, 94], [41, 95],
+        [42, 93], [43, 96], [44, 97], [45, 99], [46, 99], [47, 90],
+        [48, 92], [49, 98], [50, 96], [51, 65], [52, 67], [53, 70],
+        [54, 91], [55, 92], [56, 93], [57, 95], [58, 90], [59, 98],
+        [60, 94], [61, 90], [62, 95], [63, 97], [64, 88], [65, 89],
+        [66, 90], [67, 92], [68, 85], [69, 82]
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Log',
+          logScale: false
+        },
+        vAxis: {
+          title: 'Speed(%)',
+          logScale: false
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
 </script>
 
 </body>
