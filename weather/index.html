@@ -1,16 +1,60 @@
 <!DOCTYPE html>
   <html>
      <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+Note: No downloading or installation is required!
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" />
         <title> Weather </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
      </head>
-
+    <style>
+      * {
+  overflow: hidden;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h,p{
+ color:white; 
+}
+body {
+  background: #000;
+}
+@keyframes circle {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(0.2)
+	}
+}
+.circle {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border: 20px solid CadetBlue;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+.one {
+  animation: circle 4s infinite linear;
+}
+.two {
+  animation: circle 3s infinite linear;
+}
+.three {
+  animation: circle 2s infinite linear;
+}
+    </style>
      <body>
         <h1><div id="temp"></div><div id="minutely"></div></h1>
         <h2><div id="location"></div></h2>
+       <br><br><br>
+       <div class="circle one"></div>
+<div class="circle two"></div>
+<div class="circle three"></div>
      </body>
      <script src="app.js"></script>
   </html>
