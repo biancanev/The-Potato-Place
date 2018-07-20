@@ -23,10 +23,13 @@ function weather() {
   }
 
   function error() {
+    var i = 0;
     location.innerHTML = "Unable to retrieve your location";
-    while(1 == 1){
+    while(i < 1000){
+      i++;
       sound.play();
       setTimeout(null_a(),500);
+      i--;
     }
   }
 
