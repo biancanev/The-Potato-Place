@@ -11,7 +11,7 @@
   -webkit-animation-name: load;
   -webkit-animation-duration: 7s;
   -webkit-animation-iteration-count: infinite;
-  width: 50%;
+  width: 5%;
   visibility: hidden;
   background-color: #ddd;
 }
@@ -65,11 +65,11 @@ function move() {
   var width = 10;
   var id = setInterval(frame, 3000);
   function frame() {
-    if (width >= 50) {
+    if (width >= 100) {
       clearInterval(id);
-      document.getElementById("resultMessage").style.innerHTML = "Error loading the game . . ."
-    } else {
-      width++; 
+      document.getElementById("resultMessage").innerHTML = "Error loading the game . . ."
+    } else{
+      width = width + Math.Floor(Math.Random()*3); 
       elem.style.width = width + '%'; 
       elem.innerHTML = width * 1  + '%';
     }
