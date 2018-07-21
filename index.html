@@ -661,7 +661,6 @@ function myFunction() {
 function checkProfile(){
 	var username = getCookie("username");
 	if(username != ""){
-		window.location.href="http://thepotatoplace.ga/accounts/" + username + "/profile";
 		var request;
 		if(window.XMLHttpRequest){
 		    request = new XMLHttpRequest();
@@ -673,7 +672,9 @@ function checkProfile(){
 		}
 		if (request.status === 404) {
 		    alert("Your account is being processed. Please note it may take a week to finalize your account.");
+		    window.location.href= "http://thepotatoplace.ga/";
 		}
+		window.location.href="http://thepotatoplace.ga/accounts/" + username + "/profile";
 	}else{
 		alert("You don't have an account with the Potato Place. If you have created an account, please note that it may take up to a week for your account to be verified.")
 	}
