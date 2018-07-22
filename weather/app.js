@@ -1,8 +1,8 @@
 function weather() {
   var sound = new Audio('hangouts_call.mp3');
   var location = document.getElementById("location");
-  var apiKey = "23bc5a73297ae0b4f0f2aa05de4f1ba0";
-  var url = "https://api.forecast.io/forecast/";
+  var apiKey = "1556cb41bdce6b830c27a0d25748ceb0";
+  var url = "https://api.darksky.net/forecast/";
 
   navigator.geolocation.getCurrentPosition(success, error);
 
