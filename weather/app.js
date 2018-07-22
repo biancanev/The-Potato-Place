@@ -9,6 +9,7 @@ function weather() {
   function success(position) {
     latitude = position.coords.latitude;
     longitude = position.coords.longitude;
+    document.getElementById("location").innerHTML = ""
 
     $.getJSON(
       url + apiKey + "/" + latitude + "," + longitude + "?callback=?",
