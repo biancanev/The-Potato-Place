@@ -316,7 +316,7 @@ div.tab button.active {
     </div>
     </div>
 </head>
-<body onload="myFunction()">
+<body onload="myFunction(), browserCheck();">
 <!--Set up tabs-->
 <div class="tab">
   <button class="tablinks" onload="notification()" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
@@ -529,6 +529,36 @@ So far the URL has been undecided, therefore, it has been reverted back to
 	<div id="google_translate_element"></div>
 </footer>
 <script type="text/javascript">
+function browserCheck(){
+	    // Opera 8.0+
+    var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+    // Firefox 1.0+
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+    // Safari 3.0+ "[object HTMLElementConstructor]" 
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+    // Edge 20+
+    var isEdge = !isIE && !!window.StyleMedia;
+    // Chrome 1+
+    var isChrome = !!window.chrome && !!window.chrome.webstore;
+    // Blink engine detection
+    var isBlink = (isChrome || isOpera) && !!window.CSS;
+if(isFirefox == true){
+	window.location.href="http://outdatedbrowser.com/en";
+}else if(isSafari == true){
+	console.log('Browser is supported');
+}else if(isIE == true){
+	window.location.href="http://outdatedbrowser.com/en";
+}else if(isEdge == true){
+	console.log('Browser is supported');
+}else if(isChrome == true){
+	console.log('Browser is supported')
+}else if(isBlink == true){
+	console.log('Browser is supported');
+}
+	
+}
 function link_check(link){
 	var d = new date();
 	var hrs = d.getHours();
