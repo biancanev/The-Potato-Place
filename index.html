@@ -544,11 +544,11 @@ function browserCheck(){
     // Blink engine detection
     var isBlink = (isChrome || isOpera) && !!window.CSS;
 if(isFirefox == true){
-	window.location.href="http://outdatedbrowser.com/en";
+	document.body.innerHTML = "Aw snap. The Potato Place does not support Firefox.";
 }else if(isSafari == true){
 	console.log('Browser is supported');
 }else if(isIE == true){
-	window.location.href="http://outdatedbrowser.com/en";
+	document.body.innerHTML = "Aw snap. The Potato Place does not support Firefox.";
 }else if(isEdge == true){
 	console.log('Browser is supported');
 }else if(isChrome == true){
