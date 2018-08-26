@@ -309,14 +309,6 @@ div.tab button.active {
   <script type="text/javascript" src="assets/js/index.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet"></link>
-  <div class="bgimg-1">
-    <div class="caption">
-      <span class="border">The Potato Place</span>
-    </div>
-    </div>
-</head>
-<body onload="myFunction(), browserCheck();">
-<!--Set up tabs-->
 <div class="tab">
   <button class="tablinks" onload="notification()" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
   <button class="tablinks" onclick="openTab(event, 'MorePotatoes')"> More Potatoes </button>
@@ -327,6 +319,15 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
   <button style="float:right;" class="tablinks" onclick="checkProfile()">Profile</button>
 </div>
+  <div class="bgimg-1">
+    <div class="caption">
+      <span class="border">The Potato Place</span>
+    </div>
+    </div>
+</head>
+<body onload="myFunction(), browserCheck();">
+<!--Set up tabs-->
+
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
 	<div class="popup">
