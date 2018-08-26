@@ -245,8 +245,8 @@ div.tab {
 	width: 175px;
 	}
 div.tab button {
-    background-color: #544e4e;
-    color: white;
+    background-color: white;
+    position: sticky;
     float: left;
     border: none;
     outline: none;
@@ -256,11 +256,11 @@ div.tab button {
     font-size: 30px;
 }
 div.tab button:hover {
-    background-color: #e0d9d9;
+    background-color: rgba(34,139,34,0.6);
     color: black;
 }
 div.tab button.active {
-    background-color: #b7b0b0;
+    background-color: green;
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -325,7 +325,7 @@ div.tab button.active {
   <button class="tablinks" onclick="openTab(event, 'Music')"> Music </button>
   <button class="tablinks" onclick="openTab(event, 'Chat'); checkCookie(); display_ct(); shutdown();"> Chat Server </button>
   <button class="tablinks" onclick="openTab(event, 'Helpdesk')"> Help </button>
-	<button style="float:right;" class="tablinks" onclick="checkProfile()">Profile</button>
+  <button style="float:right;" class="tablinks" onclick="checkProfile()">Profile</button>
 </div>
 <!--Home Tab Content-->
 <div id="Home" class="tabcontent">
