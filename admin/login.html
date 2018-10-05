@@ -1,16 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>EV3 Terminal</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EV3 Terminal</title>
 <style>
-.nav{
-	width: 100%;
-    background-color: black;
-    color: white;
-    text-align: right;
-}
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
 
@@ -75,24 +68,21 @@ span.psw {
 </style>
 </head>
 <body>
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">TPP Admin</span>
-</div>
-<br>
-<form action="/action_page.php">
+
+<h2>Login Form</h2>
+
   <div class="imgcontainer">
     <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
         
-    <button type="submit">Login</button>
+    <button onclick="login()">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -100,9 +90,22 @@ span.psw {
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw"><a href="http://thepotatoplace.ga">I'm not an admin.</a></span>
+    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
-
+  <script>
+  function login(){
+  var user = document.getElementById('uname').value;
+  var psw = document.getElementById('psw').value;
+  	if(user=="tppadmininstall"){
+    	if(psw == 'admin1inst!'){
+        	window.location.href="http://thepotatoplace.ga/admin/src-index";
+        }else{
+        	alert('Incorrect Password!');
+        }
+    }else{
+    	alert('Incorrect Password');
+    }
+  }
+  </script>
 </body>
 </html>
