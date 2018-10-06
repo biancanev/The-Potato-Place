@@ -66,6 +66,9 @@ span.psw {
        width: 100%;
     }
 }
+#err-msg{
+    color: red;        
+}
 </style>
 </head>
 <body>
@@ -84,7 +87,7 @@ span.psw {
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-        
+      <p id="err-msg"></p>    
     <button onclick="login()">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -103,10 +106,14 @@ span.psw {
     	if(psw == 'admin1inst!'){
         	window.location.href="http://thepotatoplace.ga/admin/src-index";
         }else{
-        	alert('Incorrect Password!');
+        	document.getElementById('err-msg').innerHTML="Incorrect username or password"
+            document.getElementById('uname').style.border="solid 1px red";
+            document.getElementById('psw').style.border="solid 1px red"
         }
     }else{
-    	alert('Incorrect Password');
+    	document.getElementById('err-msg').innerHTML="Incorrect username or password"
+        document.getElementById('uname').style.border="solid 1px red";
+        document.getElementById('psw').style.border="solid 1px red"
     }
   }
   </script>
