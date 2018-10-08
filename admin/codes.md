@@ -15,7 +15,7 @@
 | C1 | HTML Document Not Found: Same as HTTP Error 404 |
 | C2 | HTML Link Corrupted: There is something wrong with an object linked in the HTML document |
 | C3/C7 | HTML Form Error: nginx |
-| C4 | Form Served OVer Insecure Network: The HTML for was sending or recieving data from an insecure site |
+| C4 | Form Served Over Insecure Network: The HTML for was sending or recieving data from an insecure site |
 | C5 | HTML is Malformed: HTML syntax error |
 | Ca6 | Unknown HTML Form Error: soething went wrong in the form request |
 | D1 | Version Update |
