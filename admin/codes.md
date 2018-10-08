@@ -22,4 +22,7 @@
 | D2 | Version Restore |
 | D3 | Version Backup |
 | D4 | Version Error |
-
+| RSP1 | External Comment |
+| RSP2 | External Edit |
+| RSP3 | External Request |
+| RSP4 | External Fork |
