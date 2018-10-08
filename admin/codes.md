@@ -1,5 +1,5 @@
-# SRC 3.1 Error Codes
-| Error Code | Dscription |
+# SRC 3.1 Codes
+| Code | Dscription |
 | --- | --- |
 | A1 | Object Not Found: Same as HTTP Error 404 |
 | A2 | Object is Restricted: The object is available, but has privaliged access. Login to access the object|
@@ -17,3 +17,8 @@
 | C3/C7 | HTML Form Error: nginx |
 | C4 | Form Served OVer Insecure Network: The HTML for was sending or recieving data from an insecure site |
 | C5 | HTML is Malformed: HTML syntax error |
+| D1 | Version Update |
+| D2 | Version Restore |
+| D3 | Version Backup |
+| D4 | Version Error |
+
