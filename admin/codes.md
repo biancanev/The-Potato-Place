@@ -10,3 +10,9 @@
 | B2 | JS Document is Restricted: The JS document is availabe, but has privaliged access. Login to acces the object |
 | B3 | JS Not Rendering: The JS running is taking too long to respond due to a long-running script |
 | B4 | JS is Malformed: There is a syntax error in the JS |
+| Ba | Unknown JS Error: There is an unknown problem with the JS |
+| Bb | Multiple JS Error: Ther are multiple errors in the JS document |
+| C1 | HTML Document Not Found: Same as HTTP Error 404 |
+| C2 | HTML Link Corrupted: There is something wrong with an object linked in the HTML document |
+| C3/C7 | HTML Form Error: nginx |
+| C4 | Form Served OVer Insecure Network: The HTML for was sending or recieving data from an insecure site |
