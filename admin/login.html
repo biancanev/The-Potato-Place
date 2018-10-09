@@ -71,7 +71,7 @@ span.psw {
 }
 </style>
 </head>
-<body>
+<body onload="check()">
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
   <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
   <span class="w3-bar-item w3-right">TPP Admin</span>
@@ -100,12 +100,21 @@ span.psw {
   </div>
   <script>
       //Temp Functions
+  function check(){
+      var session = localStorage.getItem("result");
+      if(session ==  "login"){
+          window.location.href="http://thepotatoplace.ga/admin/src-index"
+      }else{
+          return false
+      }
+  }
   function login(){
   var user = document.getElementById('uname').value;
   var psw = document.getElementById('psw').value;
   	if(user=="tppadmininstall"){
     	if(psw == 'admin1inst!'){
         	window.location.href="http://thepotatoplace.ga/admin/src-index";
+            localStorage.setItem("result", "login");
         }else{
         	document.getElementById('err-msg').innerHTML="Incorrect username or password"
             document.getElementById('uname').style.border="solid 1px red";
