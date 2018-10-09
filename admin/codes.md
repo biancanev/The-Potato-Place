@@ -1,5 +1,5 @@
 # SRC 3.1 Codes
-| Code | Dscription |
+| Code | Description |
 | --- | --- |
 | A1 | Object Not Found: Same as HTTP Error 404 |
 | A2 | Object is Restricted: The object is available, but has privaliged access. Login to access the object|
