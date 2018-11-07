@@ -28,3 +28,5 @@
 | RSP4 | External Fork |
 | SRCS1 | Form Success |
 | SRCS2 | Update Success |
+| Ea1 | Unknown Error |
+| Ea2 | Unknown Malform |
