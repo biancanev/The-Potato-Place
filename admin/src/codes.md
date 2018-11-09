@@ -41,3 +41,13 @@
 | 0 | 5 | 10 |
 | --- | --- | --- |
 | Not severe | Severe | Extremely Severe |
+### Code Breakdowns
+A - Object Errors: A package sent to your website is malformed or doesn't exist
+B - JS Errors : A JS document is malformed or doesn't exist.
+C - HTML Errors: A HTML document is malformed or doesn't exist.
+D - Version Info: A version of your website has been released, or not.
+RSP - External Info: Someone viewed and made a pull request.
+SRCS - Success Info: Success!!!
+E - Unknowns: There is some error that SRC is unable to process.
+F - Fatal Errors: These errors are involve file corruption or package missends.
+G - Server Info: Your server status changed.
