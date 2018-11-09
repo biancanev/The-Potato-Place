@@ -4,4 +4,4 @@ SRC(Service Request Console) 3.1 is a platform that takes error in programs and 
 
 SRC 3.1 was created by [The Potato Place Inc.](http://thepotatoplace.ga/ "The Potato Place") and is in the process of being released to the public. Some BETA testings have already been done and there is a few more bugs to work out before it is released.
 ### How to use SRC 3.1?
-SRC 3.1 uses the codes just as HTTP does. The full list of SRC codes are [here](https://github.com/biancanev/The-Potato-Place/blob/master/src/codes.md)
+SRC 3.1 uses the codes just as HTTP does. The full list of SRC codes are [here](https://github.com/biancanev/The-Potato-Place/blob/master/admin/src/codes.md)
