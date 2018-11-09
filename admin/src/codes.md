@@ -2,7 +2,7 @@
 | Code | Description | Severity |
 | --- | --- | --- |
 | A1 | Object Not Found: Same as HTTP Error 404 | 5 |
-| A2 | Object is Restricted: The object is available, but has privaliged access. Login to access the object| 2 |
+| A2 | Object is Restricted: The object is available, but has privaliged access. Log in to access the object| 2 |
 | A3 | Object Does Not Match Type Requested: The object requested is requested is a different type(e.g. request for `int()` but receive `str()`)| 3 |
 | Aa | Unknown Object Error: the error is unknown | 5 |
 | Ab | Multiple Object Error: There are multiple errors in the object | 7 |
