@@ -30,6 +30,13 @@
 | SRCS2 | Update Success | 0 |
 | Ea1 | Unknown Error | 1-10 |
 | Ea2 | Unknown Malform | 1-5 |
+| Fa1 | File Corrupted | 7-8|
+| Fa2 | Unknown Corruption | 10 |
+| Fa3 | Packages Sent to Unknown IP | 8-10 |
+| G1 | Server Connected | 0 |
+| G2 | Server Disconnected | 2-7 |
+| G3 | Server Error | 5-9 |
+| G4 | Server Virus | 10 |
 #### Severity Scale
 | 0 | 5 | 10 |
 | --- | --- | --- |
