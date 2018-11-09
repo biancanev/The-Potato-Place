@@ -1,6 +1,6 @@
 # SRC 3.1 Codes
 | Code | Description | Severity |
-| --- | --- | --- |
+| :---: | --- | :---: |
 | A1 | Object Not Found: Same as HTTP Error 404 | 5 |
 | A2 | Object is Restricted: The object is available, but has privaliged access. Log in to access the object| 2 |
 | A3 | Object Does Not Match Type Requested: The object requested is requested is a different type(e.g. request for `int()` but receive `str()`)| 3 |
