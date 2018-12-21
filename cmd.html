@@ -217,13 +217,13 @@ function checkEnter(event){
         	document.getElementById("prompt").innerHTML = "<input type='text' id='cmd' class='w3-black w3-border-0 w3-text-green w3-display-bottomleft' style='width:100%' placeholder='Insert Command' onkeypress='checkEnter(event)'>";
         }else if(val == "/systemRouter"){
         	var n = val.search("-t")
-        	if(n != -1){
+        	if(n != -1){;
             	document.getElementById("prompt").innerHTML += "<br>System Fully Routed..."
             }else{
-            	document.getElementById("prompt").innerHTML += "<br>System Routed"
+            	document.getElementById("prompt").innerHTML += "<br>System Routed";
             }
         }else{
-        	document.getElementById("prompt").innerHTML += "<br>'"+val+"'" + " is not a valid command"
+        	document.getElementById("prompt").innerHTML += "<br>'"+val+"'" + " is not a valid command";
         }
     }
 }
