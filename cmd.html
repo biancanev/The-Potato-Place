@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      color: black;
+      background-color: black;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    .one, .two, .three{
+    position:absolute;
+	margin-top:-10px;
+	z-index:1;
+	height:40px;
+	width:40px;
+	border-radius:25px;
+	
+}
+.one{
+	left:25%;
+}
+.two{
+	left:50%;
+}
+.three{
+	left:75%;
+}
+.primary-color{
+	background-color:#4989bd;
+}
+.success-color{
+	background-color:#5cb85c;
+}
+.danger-color{
+	background-color:#d9534f;
+}
+.warning-color{
+	background-color:#f0ad4e;
+}
+.info-color{
+	background-color:#5bc0de;
+}
+.no-color{
+	background-color:inherit;
+}
+body{
+	background-color: black;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">AUTHUSER</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Prompt</a></li>
+        <li><a href="#">C8 CONSOLE</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> User@TPP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center  w3-border-white w3-border-right">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+    <h4 class="w3-text-white">Computer Stats</h4>
+    <hr>
+  			<span class="w3-text-white">Computer Health:</span>
+            <div class="w3-white">
+  				<div class="w3-green" style="height:15px;width:75%"></div>
+			</div>
+            <span class="w3-text-white">Computer Battery:</span>
+            <div class="w3-white">
+  				<div class="w3-green" style="height:15px;width:98%"></div>
+			</div>
+            <span class="w3-text-white">Computer Security:</span>
+            <div class="w3-white">
+  				<div class="w3-red" style="height:15px;width:15%"></div>
+			</div>
+            <span class="w3-text-white">Processor:</span>
+            <div class="w3-white">
+  				<div class="w3-yellow" style="height:15px;width:55%"></div>
+			</div>
+            <span class="w3-text-white">Graphics:</span>
+            <div class="w3-white">
+  				<div class="w3-green" style="height:15px;width:85%"></div>
+			</div>
+            <span class="w3-text-white">Memory:</span>
+            <div class="w3-white">
+  				<div class="w3-yellow" style="height:15px;width:65%"></div>
+			</div>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <div style="width:100%; height:450px; background-color:black; color: green; border:none" class="w3-display-container" id="prompt">
+      TPP@USER Console[v.1.0.1]...<br>
+      Secure Browser: ON...<br>
+      C8-Window: ON...<br>
+      Type /help for more info...
+      <input type="text" id="cmd" class="w3-black w3-border-0 w3-text-green w3-display-bottomleft" style="width:100%" placeholder="Insert Command" onkeypress="checkEnter(event)">
+      </div>
+    </div>
+    <div class="col-sm-2 sidenav w3-text-white" style="overflow:scroll">
+      <h4>@TPP Analyzer</h4>
+      <hr>
+      <p class="w3-left">Console@TPP -- Update Security Now</p>
+      <p class="w3-left w3-text-green">Console@TPP -- MOD87201 Installed</p>
+      <p class="w3-left w3-text-red">Secure.Admin@TPP -- Threat Found</p>
+      <p class="w3-left w3-text-yellow">Console@TPP -- File Corruption Possible</p>
+      <p class="w3-left">Console@TPP -- New TPP Update <span class="w3-text-green">[v.1.0.2]</span></p>
+      <p class="w3-left w3-text-red">C8OS@TPP -- C8OS Failed to load</p>
+      <p class="w3-left">Console@TPP -- proxyconfig[1]=mod.x(p731)</p>
+      <p class="w3-left">Console@TPP -- Possible Keyframe Update</p>
+      <p class="w3-left">Console@TPP -- User Login<span class="w3-text-green">[1.71.865.21]</span></p>
+      <p class="w3-left w3-text-red">Console@TPP -- PC overheating...</p>
+      <p class="w3-left w3-text-yellow">Console@TPP -- Unexpected Memory Jump</p>
+      <p class="w3-left">Console@TPP -- Sec 2.1<span class="w3-text-green">[RX4]</span> Has <span class="w3-text-red">Expired</span></p>
+      <p class="w3-left">Console@TPP -- PC Linked W/ Mobile Device</p>
+      <p class="w3-left">Console@TPP -- Sec 2.4<span class="w3-text-green">[PC3]</span> Has <span class="w3-text-red">Expired</span></p>
+      <p class="w3-left">Console@TPP -- MOD48058 Has <span class="w3-text-green">Activated</span></p>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>TPP User Prompt</p>
+</footer>
+<script>
+function ping(){
+	document.getElementById("prompt").innerHTML += "<br>Pinging computer with data...";
+}
+function result(){
+	var x = Math.floor(Math.random()*(100-50+1))+50;
+    document.getElementById("prompt").innerHTML += "<br>Your computer ranked: " + x + "%"
+}
+function checkEnter(event){
+	var char = event.which || event.keyCode;
+    if(char == 13){
+    	var val = document.getElementById("cmd").value;
+        if(val == "/help"){
+        	document.getElementById("prompt").innerHTML += "<br><br>/analysis -- quick analysis of your computer<br>/help -- lists all possible commands<br>/ping -- Sends packages to computer to gauge connectivity";
+            
+        }else if(val == "/ping"){
+        	setTimeout(ping, 1000);
+            setTimeout(ping, 2000);
+            setTimeout(ping, 3000);
+            setTimeout(ping, 4000);
+            setTimeout(function(){document.getElementById("prompt").innerHTML += "<br>Pinging successful...";}, 5000);
+        }else if(val == "/analysis"){
+        	document.getElementById("prompt").innerHTML += "<br>Analyzing Your Computer...";
+            setTimeout(result, 20000);
+        }else if(val == "/clear"){
+        	document.getElementById("prompt").innerHTML = "<input type='text' id='cmd' class='w3-black w3-border-0 w3-text-green w3-display-bottomleft' style='width:100%' placeholder='Insert Command' onkeypress='checkEnter(event)'>";
+        }else if(val == "/systemRouter"){
+        	var n = val.search("-t")
+        	if(n != -1){
+            	document.getElementById("prompt").innerHTML += "<br>System Fully Routed..."
+            }else{
+            	document.getElementById("prompt").innerHTML += "<br>System Routed"
+            }
+        }else{
+        	document.getElementById("prompt").innerHTML += "<br>'"+val+"'" + " is not a valid command"
+        }
+    }
+}
+</script>
+</body>
+</html>
