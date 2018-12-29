@@ -8,7 +8,7 @@ const drone = new ScaleDrone(CLIENT_ID, {
     color: getRandomColor(),
   },
 });
-
+//
 let members = [];
 
 drone.on('open', error => {
