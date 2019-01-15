@@ -51,3 +51,7 @@
 + E - Unknowns: There is some error that SRC is unable to process.
 + F - Fatal Errors: These errors are involve file corruption or package missends.
 + G - Server Info: Your server status changed.
+### Error Server Requests
+| Request | Description | Server | Severity |
+| error_user_null_request | The user used a function with a null parameter. Retry the function with the correct parameters | N/a | 1 |
+
