@@ -16,9 +16,16 @@ function name(obj, req){
     var a = 1;
     var bool = false;
     while(bool == false){
-      if(x[2] == 1a){
+      if(x[2] == '1a'){
         enum = "1";  
       }
     }
+  }
+}
+function connect(test){
+  if(test == true){
+    window.location.href=test.a[2]
+  }else{
+    window.location.href=name(null, 'user_request_null_query'
   }
 }
