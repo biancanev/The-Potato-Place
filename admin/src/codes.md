@@ -56,6 +56,7 @@
 | error_user_host_insecure | The user is using an outdated browser/OS and needs to update it before granted access to the server | TPP Security Portal | 2 |
 | error_user_bad_credentials | The user provide credentials that are outdated or lower clearance. Make sure our credentials are correct and reenter them | TPP Accounting Window | 1 |
 | error_server_request_timed_out | The server took too long to respond so a different server cut your access to the server | TPP Security Portal | 4 |
+| nginx | nginx | N/a | 1 |
 #### Severity Scale
 | 0 | 5 | 10 |
 | --- | --- | --- |
