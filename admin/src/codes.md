@@ -37,10 +37,6 @@
 | G2 | Server Disconnected | 2-7 |
 | G3 | Server Error | 5-9 |
 | G4 | Server Virus | 10 |
-#### Severity Scale
-| 0 | 5 | 10 |
-| --- | --- | --- |
-| Not severe | Severe | Extremely Severe |
 ### Code Breakdowns
 + A - Object Errors: A package sent to your website is malformed or doesn't exist
 + B - JS Errors : A JS document is malformed or doesn't exist.
@@ -55,4 +51,9 @@
 | Request | Description | Server | Severity |
 | --- | --- | --- | --- |
 | error_user_null_request | The user used a function with a null parameter. Retry the function with the correct parameters | N/a | 1 |
-
+| error_user_bad_request | The user linked or uploaded a corrupted file or package. The server rejected the package and your account has been put under a watch list. | TPP Security Portal | 3-7 |
+| error_user_timed_out | The user took too long to respond in the response window. The server sut off the connection for security reasons. | TPP Security Portal/TPP Screen Watcher | 1 |
+#### Severity Scale
+| 0 | 5 | 10 |
+| --- | --- | --- |
+| Not severe | Severe | Extremely Severe |
