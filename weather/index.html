@@ -71,6 +71,7 @@ body {
     var maptypes = platform.createDefaultLayers();
     var latitude_coord = position.coords.latitude;
     var longitude_coord = position.coords.longitude;
+    document.getElementById("").innerHTML = "Long: " + position.coords.longitude + ", Lat: " + position.coords.latitude
     // Instantiate (and display) a map object:
     var map = new H.Map(
     document.getElementById('mapContainer'),
