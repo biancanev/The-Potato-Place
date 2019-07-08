@@ -148,23 +148,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-container">
     <h5>General Stats</h5>
   <label>First Name</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="John">
+  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="John" id="fname">
   <br><br>
   <label>Last Name</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="Doe">
+  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="Doe" id="lname">
   <br><br>
   <label>Monthly Income</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="3399.00">
+  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="3399.00" id="income">
   <br><br>
   <label>Bank</label><br>
-    <select class="w3-input w3-border-0 w3-quarter">
+    <select class="w3-input w3-border-0 w3-quarter" id="bank">
     <option>--Choose a bank--</option>
     <option>Bank of America</option>
     <option>Wells Fargo</option>
     <option>Chase</option>
     </select><br><br>
   <label>Projected Savings</label><br>
-    <select class="w3-input w3-border-0 w3-quarter">
+    <select class="w3-input w3-border-0 w3-quarter" id="savings">
     <option>1-10% of monthly income</option>
     <option>11-20% of monthly income</option>
     <option>21-30% of monthly income</option>
@@ -261,9 +261,9 @@ function getCookie(cname) {
 function checkCookie(name) {
   var value=getCookie(name);
   if (value != "") {
-    alert("Welcome again " + value + "user!);
+    alert(document.getElementById(name).value);
   } else {
-     value = prompt("Please enter your name:","");
+     value = document.getElementById(name).value;
      if (value != "" && value != null) {
        setCookie("username", name, 30);
      }
