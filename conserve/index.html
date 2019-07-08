@@ -172,7 +172,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <option>41-50% of monthly income</option>
     <option>51%+ of monthly income</option>
     </select><br><br><br>
-  <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="function()">Save</button>
+  <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="checkCookie(bank)">Save</button>
   </div>
   <hr>
 </div>
@@ -258,14 +258,14 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
-  var bank=getCookie("bank");
-  if (bank != "") {
-    alert("Welcome again " + user);
+function checkCookie(name) {
+  var value=getCookie(name);
+  if (value != "") {
+    alert("Welcome again " + value + "user!);
   } else {
-     user = prompt("Please enter your name:","");
-     if (user != "" && user != null) {
-       setCookie("username", user, 30);
+     value = prompt("Please enter your name:","");
+     if (value != "" && value != null) {
+       setCookie("username", name, 30);
      }
   }
 }
