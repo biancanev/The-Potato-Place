@@ -75,7 +75,9 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third">
         <h5>Spending Habits</h5>
-        <img src="https://i.pinimg.com/originals/51/15/7b/51157b373575af6e2d75571a06ded47c.png" style="width:100%" alt="Google Regional Map">
+        <span id="piechart" style="width: 900px; height: 500px;"></span>
+       	<span id="piechart2" style="width: 900px; height: 500px;"></span>
+        <h6>Status: <span class="w3-text-red">Off Track</span></h6>
       </div>
       <div class="w3-twothird">
         <h5>Notifications</h5>
@@ -209,7 +211,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- End page content -->
 </div>
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
@@ -269,6 +271,50 @@ function checkCookie(name) {
      }
   }
 }
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Utilities',     20],
+          ['Food',      20],
+          ['Commuting',  15],
+          ['Entertainment', 10],
+          ['Savings',    35]
+        ]);
+
+        var options = {
+          title: 'Recommended Spending Habits'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart2);
+
+      function drawChart2() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Amount'],
+          ['Utilities',     10],
+          ['Food',      30],
+          ['Commuting',  5],
+          ['Entertainment', 40],
+          ['Savings',    15]
+        ]);
+
+        var options = {
+          title: 'Actual Spending Habits'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
 </script>
 
 </body>
