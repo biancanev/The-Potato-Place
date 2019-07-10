@@ -1,314 +1,212 @@
 <!DOCTYPE html>
 <html>
-<title>Con$erve</title>
+<title>The Potato Place - Con$erve</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+.mySlides {display: none;}
 </style>
-<body class="w3-light-grey">
+<body class="w3-content w3-black" style="max-width:1500px;">
 
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">Con$erve</span>
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="https://www.experten.de/wp-content/uploads/2017/04/Haende-Laptop-Kreditkarte-online-banking-124568724-FO-Rawpixel-com.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Save Smarter</h1>
+        <hr class="w3-opacity">
+        <p>Manage your spendings on the web</p>
+        <p><button class="w3-button w3-block w3-green w3-round" onclick="document.getElementById('download').style.display='block'">Sign Up <i class="fa fa-chrome"></i> <i class="fa fa-edge"></i> <i class="fa fa-safari"></i> <i class="fa fa-opera"></i> <i class="fa fa-firefox"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="https://cdn.arstechnica.net/wp-content/uploads/2017/11/17123250059_5c09bc6c8c_o.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge w3-text-red"><b>Simple & Easy</b></h1>
+        <hr class="w3-opacity">
+        <p>No need for any downloads or payments</p>
+        <p><button class="w3-button w3-block w3-red w3-round" onclick="document.getElementById('download').style.display='block'">Sign Up <i class="fa fa-chrome"></i> <i class="fa fa-edge"></i> <i class="fa fa-safari"></i> <i class="fa fa-opera"></i> <i class="fa fa-firefox"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="/w3images/app4.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Simple Design</h1>
+        <hr class="w3-opacity">
+        <p>Customize photos as you go</p>
+        <p><button class="w3-button w3-block w3-indigo w3-round" onclick="document.getElementById('download').style.display='block'">Sign Up <i class="fa fa-chrome"></i> <i class="fa fa-edge"></i> <i class="fa fa-safari"></i> <i class="fa fa-opera"></i> <i class="fa fa-firefox"></i></button></p>
+      </div>
+    </div>
+  </div>
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Con$erve</b></h1>
+      <h1 class="w3-xxxlarge w3-text-green"><b>Why use it?</b></h1>
+      <p><span class="w3-xlarge">Make saving money easier.</span> Consult this web application to make sure you don't overspend on items you don't need. You can see how much free pocket cash you should have as well as calculate the worth and longevity of an item using our worth calculator. The best part about it is Con$erve is available on any device on any browser.</p>
+      <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('download').style.display='block'">
+        <i class="fa fa-sign-in"></i> Sign Up/Log In
+      </button>
+      <p>Available for <i class="fa fa-chrome w3-xlarge"></i> <i class="fa fa-edge w3-xlarge"></i> <i class="fa fa-safari w3-xlarge"></i> <i class="fa fa-opera w3-xlarge"></i> <i class="fa fa-firefox w3-xlarge"></i></p>
+    </div>
+    <div class="w3-col l4 m6">
+      <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('download').style.display='block'">
+          <i class="fa fa-download"></i> Download Application
+        </button>
+        <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="https://w3schools.com/w3images/avatar2.png" class="w3-circle w3-margin-right" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span>Welcome, <strong>USER</strong></span><br>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
-    </div>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Dashboard</h5>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-dashboard fa-fw"></i>  Overview</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-calendar fa-fw"></i>  This Month</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
-  </div>
-</nav>
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-  <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> Overview</b></h5>
-  </header>
-
-  <div class="w3-row-padding w3-margin-bottom">
-    <div>
-      <div class="w3-container w3-teal w3-padding-16">
-        <div class="w3-center">
-          <h1 class="w3-jumbo">$<span>100.00</span></h1>
-        </div>
-        <div class="w3-center"></div>
-        <h4 class="w3-center">left to spend</h4>
-      </div>
-    </div>
-
-  <div class="w3-panel">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h5>Spending Habits</h5>
-        <span id="piechart" style="width: 900px; height: 500px;"></span>
-       	<span id="piechart2" style="width: 900px; height: 500px;"></span>
-        <h6>Status: <span class="w3-text-red">Off Track</span></h6>
-      </div>
-      <div class="w3-twothird">
-        <h5>Notifications</h5>
-        <table class="w3-table w3-striped w3-white">
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-         <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-exclamation-circle w3-text-red w3-large"></i></td>
-            <td>Warning! You have reached the 50% mark of your pocket money</td>
-            <td><i>N/a</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Deposit</td>
-            <td><i>+$100.00</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-dollar w3-text-yellow w3-large"></i></td>
-            <td>Transaction</td>
-            <td><i>-$100.00</i></td>
-          </tr>
-        </table>
-      </div>
+<!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-wide">DOWNLOAD</h2>
+      <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Fake Download</button>
     </div>
   </div>
-  <hr>
-  <div class="w3-container">
-    <h5>General Stats</h5>
-  <label>First Name</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="John" id="fname">
-  <br><br>
-  <label>Last Name</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="Doe" id="lname">
-  <br><br>
-  <label>Monthly Income</label><br>
-  <input class="w3-input w3-border-0 w3-quarter" type="text" placeholder="1234.56" id="income">
-  <br><br>
-  <label>Bank</label><br>
-    <select class="w3-input w3-border-0 w3-quarter" id="bank">
-    <option>--Choose a bank--</option>
-    <option>Bank of America</option>
-    <option>Wells Fargo</option>
-    <option>Chase</option>
-    </select><br><br>
-  <label>Projected Savings</label><br>
-    <select class="w3-input w3-border-0 w3-quarter" id="savings">
-    <option>1-10% of monthly income</option>
-    <option>11-20% of monthly income</option>
-    <option>21-30% of monthly income</option>
-    <option>31-40% of monthly income</option>
-    <option>41-50% of monthly income</option>
-    <option>51%+ of monthly income</option>
-    </select><br><br><br>
-  <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="checkCookie(bank)">Save</button>
-  </div>
-  <hr>
 </div>
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding">
+    <div class="w3-col l4 m6">
+      <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="w3-col l8 m6">
+      <h1 class="w3-jumbo"><b>Easy to Use</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Banking made easier</b></h1>
+      <p><span class="w3-xlarge">Just open up a browser.</span> Don't ever worry about overspending again with Co$erve, the world's best money management web application. </p>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-padding-64 w3-center w3-white">
+  <h1 class="w3-jumbo"><b>Modes</b></h1>
+  <p class="w3-large">Choose a mode that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>250</b> Photos</li>
+        <li class="w3-padding-16"><b>10</b> Features</li>
+        <li class="w3-padding-16"><b>No</b> Ads</li>
+        <li class="w3-padding-16"><b>Office hours</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 25</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-32">Strict</li>
+        <li class="w3-padding-16"><b>1000</b> Photos</li>
+        <li class="w3-padding-16"><b>50</b> Features</li>
+        <li class="w3-padding-16"><b>No</b> Ads</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 99</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-green w3-xlarge w3-padding-32">Goal</li>
+        <li class="w3-padding-16"><b>Free Flow Cash</b> Indicator</li>
+        <li class="w3-padding-16"><b>Dis</b> Features</li>
+        <li class="w3-padding-16"><b>No</b> Ads</li>
+        <li class="w3-padding-16"><b>No</b> Card Freeze</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 99</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-quarter w3-section">
+      <ul class="w3-ul w3-card w3-hover-shadow">
+        <li class="w3-teal w3-xlarge w3-padding-32">FreeForm</li>
+        <li class="w3-padding-16"><b>1000</b> Photos</li>
+        <li class="w3-padding-16"><b>50</b> Features</li>
+        <li class="w3-padding-16"><b>No</b> Ads</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-opacity">$ 99</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
+        </li>
+      </ul>
+    </div>
+  </div>
   <br>
-  <div class="w3-container w3-dark-grey w3-padding-32">
-    <div class="w3-row">
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-green">Demographic</h5>
-        <p>Language</p>
-        <p>Country</p>
-        <p>City</p>
-      </div>
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-red">System</h5>
-        <p>Browser</p>
-        <p>OS</p>
-        <p>More</p>
-      </div>
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-orange">Target</h5>
-        <p>Users</p>
-        <p>Active</p>
-        <p>Geo</p>
-        <p>Interests</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-light-grey">
-    <h4>Con$erve</h4>
-    <p>Powered by <a href="http://thepotatoplace.gq" target="_blank">The Potato Place</a></p>
-  </footer>
-
-  <!-- End page content -->
 </div>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-xlarge">
+  <div class="w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
 <script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
 
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
   }
+  x[slideIndex-1].style.display = "block";  
 }
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-
-//Set cookies for calculation settings
-function setCookie(cname,cvalue,exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires=" + d.toGMTString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie(name) {
-  var value=getCookie(name);
-  if (value != "") {
-    alert("found");
-  } else {
-     value = document.getElementById(name).value;
-     if (value != "" && value != null) {
-       setCookie(name, name, 30);
-     }
-  }
-}
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Utilities',     20],
-          ['Food',      20],
-          ['Commuting',  15],
-          ['Entertainment', 10],
-          ['Savings',    35]
-        ]);
-
-        var options = {
-          title: 'Recommended Spending Habits'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart2);
-
-      function drawChart2() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Amount'],
-          ['Utilities',     10],
-          ['Food',      30],
-          ['Commuting',  5],
-          ['Entertainment', 40],
-          ['Savings',    15]
-        ]);
-
-        var options = {
-          title: 'Actual Spending Habits'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
-
-        chart.draw(data, options);
-      }
 </script>
 
 </body>
