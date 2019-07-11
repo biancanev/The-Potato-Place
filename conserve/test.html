@@ -234,22 +234,22 @@ function calculateCash(){
   var income = localStorage.getItem("income");
   var savings = localStorage.getItem("savings");
   if(savings = "1-10% of monthly income"){
-    var cash = Math.round(100*income-(0.05*income))/100;
+    var cash = Math.round(100*(income-(0.05*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }if(savings = "11-20% of monthly income"){
-    var cash = Math.round(100*income-(0.15*income))/100;
+    var cash = Math.round(100*(income-(0.15*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }if(savings = "21-10% of monthly income"){
-    var cash = Math.round(100*income-(0.25*income))/100;
+    var cash = Math.round(100*(income-(0.25*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }if(savings = "31-10% of monthly income"){
-    var cash = Math.round(100*income-(0.35*income))/100;
+    var cash = Math.round(100*(income-(0.35*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }if(savings = "41-10% of monthly income"){
-    var cash = Math.round(100*income-(0.45*income))/100;
+    var cash = Math.round(100*(income-(0.45*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }if(savings = "51%+ of monthly income"){
-    var cash = Math.round(100*income-(0.55*income))/100;
+    var cash = Math.round(100*(income-(0.55*income)))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }
 }
