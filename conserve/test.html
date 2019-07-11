@@ -58,7 +58,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div>
       <div class="w3-container w3-teal w3-padding-16">
         <div class="w3-center">
-          <h1 class="w3-jumbo">$<span>100.00</span></h1>
+          <h1 class="w3-jumbo" id="cash_display" onload="calculateCash()">$<span>100.00</span><span onclick="calculateCash()"><i class="fa fa-refresh"></i></span></h1>
         </div>
         <div class="w3-center"></div>
         <h4 class="w3-center">left to spend</h4>
@@ -229,6 +229,29 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+}
+function calculateCash(){
+  var income = localStorge.getItem("income");
+  var savings = localStorage.getItem("savings");
+  if(savings = "1-10% of monthly income"){
+    var cash = income-(0.05*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }if(savings = "11-20% of monthly income"){
+    var cash = income-(0.15*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }if(savings = "21-10% of monthly income"){
+    var cash = income-(0.25*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }if(savings = "31-10% of monthly income"){
+    var cash = income-(0.35*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }if(savings = "41-10% of monthly income"){
+    var cash = income-(0.45*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }if(savings = "51%+ of monthly income"){
+    var cash = income-(0.55*income);
+    document.getElementById("cash_display").innerHTML= "$" + cash;
+  }
 }
 function setData(){
   localStorage.setItem("fname", document.getElementById("fname").value);
