@@ -168,7 +168,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <option>41-50% of monthly income</option>
     <option>51%+ of monthly income</option>
     </select><br><br><br>
-  <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="checkCookie(bank)">Save</button>
+  <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="setData()">Save</button>
+    <button class="w3-button w3-padding-16 w3-green w3-ripple" onclick="getData()">Refresh</button>
   </div>
   <hr>
 </div>
@@ -229,42 +230,30 @@ function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
-
-//Set cookies for calculation settings
-function setCookie(cname,cvalue,exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires=" + d.toGMTString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+function setData(){
+  localStorage.setItem("fname", document.getElementById("fname").value);
+  localStorage.setItem("lname", document.getElementById("lname").value);
+  localStorage.setItem("income", document.getElementById("income").value);
+  localStorage.setItem("bank", document.getElementById("bank").value);
+  localStorage.setItem("savings", document.getElementById("savings").value);
 }
-
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+  function getData(){
+    var fname = localStorage.getItem("fname");
+    var lname = localStorage.getItem("lname");
+    var income = localStorage.getItem("income");
+    var bank = localStorage.getItem("bank");
+    var savings = localStorage.getItem("savings");
+    if(fname == null || lname == null || income == null || bank == null || savings == null){
+      var a = 0;
+    }else{
+      document.getElementById("fname").value = fname;
+      document.getElementById("lname").value = lname;
+      document.getElementById("income").value = income;
+      document.getElementById("bank").value = bank;
+      document.getElementById("savings").value = savings;
     }
   }
-  return "";
-}
 
-function checkCookie(name) {
-  var value=getCookie(name);
-  if (value != "") {
-    alert("found");
-  } else {
-     value = document.getElementById(name).value;
-     if (value != "" && value != null) {
-       setCookie(name, name, 30);
-     }
-  }
-}
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
