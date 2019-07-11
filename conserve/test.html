@@ -231,7 +231,7 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 function calculateCash(){
-  var income = localStorge.getItem("income");
+  var income = localStorage.getItem("income");
   var savings = localStorage.getItem("savings");
   if(savings = "1-10% of monthly income"){
     var cash = income-(0.05*income);
