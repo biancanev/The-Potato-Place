@@ -208,7 +208,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script>
-// Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
 // Get the DIV with overlay effect
@@ -233,23 +232,23 @@ function w3_close() {
 function calculateCash(){
   var income = localStorage.getItem("income");
   var savings = localStorage.getItem("savings");
-  if(savings = "1-10% of monthly income"){
-    var cash = Math.round(100*(0.95*income)))/100;
+  if(savings == "1-10% of monthly income"){
+    var cash = Math.round(100*(0.95*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
-  }if(savings = "11-20% of monthly income"){
-    var cash = Math.round(100*(0.85*income)))/100;
+  }if(savings == "11-20% of monthly income"){
+    var cash = Math.round(100*(0.85*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
-  }if(savings = "21-10% of monthly income"){
-    var cash = Math.round(100*(0.75*income)))/100;
+  }if(savings == "21-10% of monthly income"){
+    var cash = Math.round(100*(0.75*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
-  }if(savings = "31-10% of monthly income"){
-    var cash = Math.round(100*(0.65*income)))/100;
+  }if(savings == "31-10% of monthly income"){
+    var cash = Math.round(100*(0.65*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
-  }if(savings = "41-10% of monthly income"){
-    var cash = Math.round(100*(0.55*income)))/100;
+  }if(savings == "41-10% of monthly income"){
+    var cash = Math.round(100*(0.55*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
-  }if(savings = "51%+ of monthly income"){
-    var cash = Math.round(100*(0.45*income)))/100;
+  }if(savings == "51%+ of monthly income"){
+    var cash = Math.round(100*(0.45*income))/100;
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }
 }
