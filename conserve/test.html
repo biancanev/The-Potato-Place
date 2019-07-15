@@ -253,6 +253,7 @@ function calculateCash(){
     document.getElementById("cash_display").innerHTML= "$" + cash;
   }
 }
+
 function setData(){
   var fname = localStorage.getItem("fname");
   var lname = localStorage.getItem("lname");
@@ -335,6 +336,8 @@ function setData(){
 
         chart.draw(data, options);
       }
+calculateCash();
+setInterval(calculateCash, 1000);
 </script>
 
 </body>
