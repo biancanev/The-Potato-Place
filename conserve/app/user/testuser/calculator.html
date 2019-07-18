@@ -44,24 +44,24 @@ body{
 <div>
 <center><h1><strong>Worth Calculator</strong></h1></center>
   <h2>1. Which category does the object fall under?</h2>
-    <input type="radio" id="happliance"> Home Appliances<br>
-    <input type="radio" id="entertainment"> Entertainment<br>
-    <input type="radio" id="stationary"> Stationary<br>
-    <input type="radio" id="work"> Work Related<br>
-    <input type="radio" id="groceries"> Groceries<br>
+    <input name="category" type="radio" id="happliance"> Home Appliances<br>
+    <input name="category" type="radio" id="entertainment"> Entertainment<br>
+    <input name="category" type="radio" id="stationary"> Stationary<br>
+    <input name="category" type="radio" id="work"> Work Related<br>
+    <input name="category" type="radio" id="groceries"> Groceries<br>
     <hr>
     <h2>2. Do you already have this object/an older version of this object?</h2>
-    <input type="radio" id="nohave"> No<br>
-    <input type="radio" id="yeshave"> Yes. It is <input type="text" onfocus="document.getElementById('yeshave').checked=true;" id="years"> years old.
+    <input name="own" type="radio" id="nohave"> No<br>
+    <input name="own" type="radio" id="yeshave"> Yes. It is <input type="text" onfocus="document.getElementById('yeshave').checked=true;" id="years"> years old.
     <hr>
     <h2>3. How often will you use this object?</h2>
-    <input type="radio" id="1day"> Every day<br>
-    <input type="radio" id="multiweek"> A few times a week<br>
-    <input type="radio" id="1week"> Once a week<br>
-    <input type="radio" id="multimonth"> A few times a month<br>
-    <input type="radio" id="1month"> Every month<br>
-    <input type="radio" id="multiyear"> A few times a year<br>
-    <input type="radio" id="1year"> Once a year or less<br>
+    <input name="times" type="radio" id="1day"> Every day<br>
+    <input name="times" type="radio" id="multiweek"> A few times a week<br>
+    <input name="times" type="radio" id="1week"> Once a week<br>
+    <input name="times" type="radio" id="multimonth"> A few times a month<br>
+    <input name="times" type="radio" id="1month"> Every month<br>
+    <input name="times" type="radio" id="multiyear"> A few times a year<br>
+    <input name="times" type="radio" id="1year"> Once a year or less<br>
     <hr>
     <button onclick="calculateWorth()">Calculate</button>
     <h3>Your item is: <span id="reply"></span></h3>
