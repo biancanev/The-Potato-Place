@@ -65,6 +65,7 @@ body{
     <hr>
     <button onclick="calculateWorth()">Calculate</button>
     <h3>Your item is: <span id="reply"></span></h3>
+    <p id="secondary"></p>
 </div>
 <script>
 function calculateWorth(){
@@ -104,20 +105,26 @@ function calculateWorth(){
     	worth -= 3;
     }if(worth >= 10){
     	document.getElementById('reply').innerHTML = "Very Worth it!"
+	document.getElementById('secondary').innerHTML = "You should buy this immediately! It should be very useful for you!"
     }
     if(worth == 9 || worth == 8){
     	document.getElementById('reply').innerHTML = "Worth it!"
+	document.getElementById('secondary').innerHTML = "You should buy this!"
     }if(worth == 7 || worth == 6){
     	document.getElementById('reply').innerHTML = "Sort of Worth it!"
+	document.getElementById('secondary').innerHTML = "You could buy this, but maybe consider the pros and cons one last time..."
     }
     if(worth == 5 || worth == 4){
     	document.getElementById('reply').innerHTML = "Maybe Worth it?"
+	document.getElementById('secondary').innerHTML = "Consider it deeply before you buy this."
     }
     if(worth == 3 || worth == 2){
     	document.getElementById('reply').innerHTML = "Not Worth it."
+	document.getElementById('secondary').innerHTML = "It is recommended that you do not by this."
     }
     if(worth <= 1){
     	document.getElementById('reply').innerHTML = "Very Not Worth it!"
+	document.getElementById('secondary').innerHTML = "NO! Don't buy it!"
     }
 }
 </script>
