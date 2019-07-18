@@ -127,6 +127,33 @@ function calculateWorth(){
 	document.getElementById('secondary').innerHTML = "NO! Don't buy it!"
     }
 }
+google.charts.load('current', {'packages':['gauge']});
+google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Worth', 80],
+        ]);
+
+        var options = {
+          width: 400, height: 120,
+          redFrom: 0, redTo: 35,
+          yellowFrom:35, yellowTo: 70,
+          greenFrom: 70, greenTo: 100,
+          minorTicks: 5
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+
+        setInterval(function() {
+          data.setValue(0, 1, worth);
+          chart.draw(data, options);
+        }, 1000);
+      }
 </script>
 </body>
 </html>
