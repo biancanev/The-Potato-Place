@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+<style>
+input[type=text], select {
+  width: 5%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
 
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+</style>
+<body>
+
+<div>
+<center><h1><strong>Worth Calculator</strong></h1></center>
+  <h2>1. Which category does the object fall under?</h2>
+    <input type="radio" id="happliance"> Home Appliances<br>
+    <input type="radio" id="entertainment"> Entertainment<br>
+    <input type="radio" id="stationary"> Stationary<br>
+    <input type="radio" id="work"> Work Related<br>
+    <input type="radio" id="groceries"> Groceries<br>
+    <hr>
+    <h2>2. Do you already have this object/an older version of this object?</h2>
+    <input type="radio" id="nohave"> No<br>
+    <input type="radio" id="yeshave"> Yes. It is <input type="text" onfocus="document.getElementById('yeshave').checked=true;" id="years"> years old.
+    <hr>
+    <h2>3. How often will you use this object?</h2>
+    <input type="radio" id="1day"> Every day<br>
+    <input type="radio" id="multiweek"> A few times a week<br>
+    <input type="radio" id="1week"> Once a week<br>
+    <input type="radio" id="multimonth"> A few times a month<br>
+    <input type="radio" id="1month"> Every month<br>
+    <input type="radio" id="multiyear"> A few times a year<br>
+    <input type="radio" id="1year"> Once a year or less<br>
+    <hr>
+    <button onclick="calculateWorth()">Calculate</button>
+    <h3>Your item is: <span id="reply"></span></h3>
+</div>
+<script>
+function calculateWorth(){
+	var worth = 5;
+	if(document.getElementById('happliances').checked){
+    	worth += 1;
+    }if(document.getElementById('entertainment').checked){
+    	worth -= 1;
+    }if(document.getElementById('stationary').checked){
+    	worth += 1;
+    }if(document.getElementById('work').checked){
+    	worth += 3;
+    }if(document.getElementById('groceries').checked){
+    	worth += 2;
+    }if(document.getElementById('nohave').checked){
+    	worth += 0;
+    }if(document.getElementById('happliances').checked){
+    	var years = document.getElementById('years').value;
+        if(years < 10){
+        	worth -= Math.round((10-years)/4);
+        }else{
+        	worth += 1;
+        }
+    }if(document.getElementById('1day').checked){
+    	worth += 2;
+    }if(document.getElementById('multiweek').checked){
+    	worth += 1;
+    }if(document.getElementById('1week').checked){
+    	worth += 0;
+    }if(document.getElementById('multimonth').checked){
+    	worth += 0;
+    }if(document.getElementById('1month').checked){
+    	worth -= 1;
+    }if(document.getElementById('multiyear').checked){
+    	worth -= 2;
+    }if(document.getElementById('1year').checked){
+    	worth -= 3;
+    }if(worth >= 10){
+    	document.getElementById('reply').innerHTML = "Very Worth it!"
+    }
+    if(worth == 9 || worth == 8){
+    	document.getElementById('reply').innerHTML = "Worth it!"
+    }if(worth == 7 || worth == 6){
+    	document.getElementById('reply').innerHTML = "Sort of Worth it!"
+    }
+    if(worth == 5 || worth == 4){
+    	document.getElementById('reply').innerHTML = "Maybe Worth it?"
+    }
+    if(worth == 3 || worth == 2){
+    	document.getElementById('reply').innerHTML = "Not Worth it."
+    }
+    if(worth <= 1){
+    	document.getElementById('reply').innerHTML = "Very Not Worth it!"
+    }
+}
+</script>
+</body>
+</html>
