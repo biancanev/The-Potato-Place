@@ -31,12 +31,12 @@ body, html {
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("http://wallpaperswide.com/download/horizon_zero_dawn_2017_video_game-wallpaper-1152x720.jpg");
-  min-height: 400px;
+  min-height: 800px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
+  background-image: url("https://www.w3schools.com/w3images/parallax3.jpg");
   min-height: 400px;
 }
 
@@ -55,7 +55,7 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-black" id="myNavbar">
+  <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
@@ -88,7 +88,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT THE POTATO PLACE</h3>
   <p class="w3-center"><em>Quality Gaming and Buisness</em></p>
-  <p>The Potato Place prides itself on its quality products and exceptional service</p>
+  <p class="w3-center">The Potato Place is a site that is focused on creating and distributing quality software, whether that means games or management software. Originally created as a game recomendation site, The Potato Place has evolved into a multifaceted website that creates applications for every user. Whether you are a buisness manager or an avid gamer, we have the program for you.</p>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -102,8 +102,20 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">Mastercry BETA</h3>
   <p class="w3-center"><em>If you would like to beta test Mastercry please contact <a href="mailto:">email@domain.com</a>. If you would like to just download it, click <a href="">here</a></em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <h4>Package Info:</h4>
+  <h5>Package Size: 562.31 MB<br>
+  Version: 0.1.2<br>
+  Supported Platforms:<br>
+  <ul>
+  <li><i class="fa fa-windows"></i> WindowsOS (64-bit)<br></li>
+  <li><i class="fa fa-windows"></i> WindowsOS (32-bit)<br></li>
+  <li><i class="fa fa-apple"></i> MacOS</li>
+  </ul>
+  Prerequisites:
+  <ul>
+  <li>None</li>
+  </ul>
+  </h5>
   <div class="w3-row-padding w3-center">
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px"><i class="fa fa-download"></i> DOWNLOAD</button>
   </div>
@@ -178,7 +190,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
