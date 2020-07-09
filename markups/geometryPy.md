@@ -12,7 +12,7 @@ In order to start using geometryPy, you need to create a `canvas`. To do this, t
 #Basic Setup
 import geometryPy.py
 canvas.setCanvas(100, 100)
-testCanvas(100, 100)
+canvas.testCanvas(100, 100)
 print("The setup is done!")
 ```
 
