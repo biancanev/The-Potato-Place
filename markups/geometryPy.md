@@ -33,6 +33,7 @@ Here is a full list of `draw` class functions
 | --- | --- |
 | `Shape(shape, width, height, xpos, ypos)` | Defines the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`), but *does not draw it*. `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
 | `Render(shape, width, height, xpos, ypos)` | Draws the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
+| `Paint(obj)` | Prints the object `obj` onto the canvas |
 | `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers |
 | `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float |
 | `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float |
@@ -55,8 +56,9 @@ import geometryPy.py
 canvas.setCanvas(100,100)
 
 #Begin Drawing
-ellipse1 = draw.Render('ellipse', 10 5, 50, 50)#ellipse
-rect1 = draw.Render('rectangle', 10, 20, 45, 50)#rectangle
+ellipse1 = draw.Shape('ellipse', 10, 5, 50, 50)#ellipse
+rect1 = draw.Shape('rectangle', 10, 20, 45, 50)#rectangle
 shape1 = draw.Combine(ellipse1, rect1)#creates complex shape
+draw.Rotate(shape1, (10, 5), 45)
 
 ```
