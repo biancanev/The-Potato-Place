@@ -18,9 +18,9 @@ print("The setup is done!")
 Here is a full list of canvas functions:
 | Function | Use |
 | --- | --- |
-| `setCanvas(width, height)` | Creates a canvas with dimensions `width` x `height`. All parameters are integers |
-| `testCanvas(width, height)` | Prints a fully colored canvas with dimensions `widht` x `height`. All parameters are integers |
-| `invertColors()`* | Inverts the terminal colors |
+| `setCanvas(width, height)` | Creates a canvas with dimensions `width` x `height`. All parameters are integers. |
+| `testCanvas(width, height)` | Prints a fully colored canvas with dimensions `widht` x `height`. All parameters are integers. |
+| `invertColors()`* | Inverts the terminal colors. |
 
 \* Note that `invertColors()` has been depreciated as of v0.5.0 
 ### Basics
@@ -32,12 +32,12 @@ the terminal will draw out a 10 x 40 rectangle at (0, 0), or the top left corner
 Here is a full list of `draw` class functions
 | Function | Use |
 | --- | --- |
-| `Shape(shape, width, height, xpos, ypos)` | Defines the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`), but *does not draw it*. `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
-| `Render(shape, width, height, xpos, ypos)` | Draws the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
+| `Shape(shape, width, height, xpos, ypos)` | Defines the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`), but *does not draw it*. `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
+| `Render(shape, width, height, xpos, ypos)` | Draws the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
 | `Paint(obj)` | Prints the object `obj` onto the canvas |
-| `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers |
-| `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float |
-| `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float |
+| `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers. |
+| `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float. |
+| `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float. |
 | `Combine(obj1, obj2)` | Combines objects, `obj1` and `obj2` to form a complex shape. `obj1` and `obj2` should be objects. |
 
 
@@ -45,9 +45,9 @@ The `analyze` class does not actually draw shapes, but rather gives a detailed a
 Here is a full list of `analyze` class functions:
 | Function | Use |
 | --- | --- |
-| `Rect(width, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical rectangle with given dimensions `width` x `height` at location (`xpos`, `ypos`). All parameters are integers |
-| `RightTriangle(base, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical right triangle with given dimensions `base` x ` height` at location (`xpos`, `ypos`). All parameters are integers |
-| `RegularPolygon(sides, length, xpos, ypos)` | Gives area, vertices, and position of hypothetical regular polygon with `sides` number of sides and with a common side length of `length` located at position (`xpos`, `ypos`). All parameters are integers |
+| `Rect(width, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical rectangle with given dimensions `width` x `height` at location (`xpos`, `ypos`). All parameters are integers. |
+| `RightTriangle(base, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical right triangle with given dimensions `base` x ` height` at location (`xpos`, `ypos`). All parameters are integers. |
+| `RegularPolygon(sides, length, xpos, ypos)` | Gives area, vertices, and position of hypothetical regular polygon with `sides` number of sides and with a common side length of `length` located at position (`xpos`, `ypos`). All parameters are integers. |
 
 ### Basic Example 
 ```python
@@ -71,11 +71,11 @@ print(10+2)
 You can begin implementing more advanced functions to draw more complex objects.
 
 ### Shading
-> Please note that shading is currently still under work and may not work as you would like
+> Please note that shading is currently still under work and may not work as you would like.
 >
-> For more information contact us
+> For more information contact us.
 
 The `shade` class is a good way to add dimensions to your drawing. Here is a list of functions in the class:
 | Function | Use |
 | --- | --- |
-| `shadeShape(obj, style)` | Shades the shape `obj`. You can customize the shading style using `style`. Current styles are `normal` and `textured`|
+| `shadeShape(obj, style)` | Shades the shape `obj`. You can customize the shading style using `style`. Current styles are `normal` and `textured.`|
