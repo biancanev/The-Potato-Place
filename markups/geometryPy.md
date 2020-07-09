@@ -39,6 +39,7 @@ Here is a full list of `draw` class functions
 | `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float. |
 | `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float. |
 | `Combine(obj1, obj2)` | Combines objects, `obj1` and `obj2` to form a complex shape. `obj1` and `obj2` should be objects. |
+
 Note that all `origin` are located at the top left of the shape
 
 The `analyze` class does not actually draw shapes, but rather gives a detailed analysis on a hypothetical shape.
