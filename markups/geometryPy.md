@@ -15,7 +15,7 @@ the terminal will draw out a 10 x 40 rectangle at (0, 0), or the top left corner
 Here is a full list of `draw` class functions
 | Function | Use |
 | --- | --- |
-| `Render(shape, length, width, xpos, ypos)` | Draws the given `shape` with the dimensions of `length` x `width` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
+| `Render(shape, width, height, xpos, ypos)` | Draws the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"` |
 | `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers |
 | `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float |
 | `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float |
@@ -23,4 +23,7 @@ Here is a full list of `draw` class functions
 
 
 The `analyze` class does not actually draw shapes, but rather gives a detailed analysis on a hypothetical shape.
-
+Here is a full list of `analyze` class functions:
+| `Rect(width, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical rectangle with given dimensions `width` x `height` at location (`xpos`, `ypos`). All parameters are variables |
+| `RightTriangle(base, height, xpos, ypos)` | Gives area, vertices, and position of hypothetical right triangle with given dimensions `base` x ` height` at location (`xpos`, `ypos`) |
+| `RegularPolygon(sides, length, xpos, ypos)` | Gives area, vertices, and position of hypothetical regular polygon with `sides` number of sides and with a common side length of `length` located at position (`xpos`, `ypos`) |
