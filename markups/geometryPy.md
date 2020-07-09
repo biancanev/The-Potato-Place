@@ -66,3 +66,16 @@ draw.Rotate(shape1, (10, 5), 45)
 print("Hello World")
 print(10+2)
 ```
+
+### Advanced
+You can begin implementing more advanced functions to draw more complex objects.
+
+### Shading
+> Please note that shading is currently still under work and may not work as you would like
+>
+> For more information contact us
+
+The `shade` class is a good way to add dimensions to your drawing. Here is a list of functions in the class:
+| Function | Use |
+| --- | --- |
+| `shadeShape(obj, style)` | Shades the shape `obj`. You can customize the shading style using `style`. Current styles are `normal` and `textured`|
