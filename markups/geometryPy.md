@@ -62,4 +62,7 @@ rect1 = draw.Shape('rectangle', 10, 20, 45, 50)#rectangle
 shape1 = draw.Combine(ellipse1, rect1)#creates complex shape
 draw.Rotate(shape1, (10, 5), 45)
 
+#Other Python scripts can be included too!
+print("Hello World")
+print(10+2)
 ```
