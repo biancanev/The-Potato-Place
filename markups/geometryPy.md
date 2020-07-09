@@ -6,6 +6,16 @@ Status: Stable
 ### Intoduction
 geometryPy is an easy way to draw simple graphics on the terminal window. This software is meant for beginners to learn how to code.
 
+### Getting Started
+In order to start using geometryPy, you need to create a `canvas`. To do this, there is a `canvas` class. To create a basic canvas, use the function `setCanvas()`, which takes two parameters: `width`, `height`. You can see how big the canvas you created is by using the `testCanvas()` function. Here is an example of a fully set up program:
+```python
+#Basic Setup
+import geometryPy.py
+canvas.setCanvas(100, 100)
+testCanvas(100, 100)
+print("The setup is done!")
+```
+
 ### Basics
 The two most basic classes of this program are the `draw` and `analyze` classes. The `draw` class' basic function is the `render()` function, which takes five arguments: `shape`, `length`, `width`, `xpos`, `ypos`. Therefore, in this example:
 ```python
