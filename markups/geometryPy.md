@@ -15,6 +15,12 @@ canvas.setCanvas(100, 100)
 canvas.testCanvas(100, 100)
 print("The setup is done!")
 ```
+Here is a full list of canvas functions:
+| Function | Use |
+| --- | --- |
+| `setCanvas(width, height)` | Creates a canvas with dimensions `width` x `height`. All parameters are integers |
+| `testCanvas(width, height)` | Prints a fully colored canvas with dimensions `widht` x `height`. All parameters are integers |
+| `invertColors()` | Inverts the terminal colors |
 
 ### Basics
 The two most basic classes of this program are the `draw` and `analyze` classes. The `draw` class' basic function is the `render()` function, which takes five arguments: `shape`, `length`, `width`, `xpos`, `ypos`. Therefore, in this example:
