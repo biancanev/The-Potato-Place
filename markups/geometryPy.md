@@ -22,7 +22,7 @@ Here is a full list of canvas functions:
 | `testCanvas(width, height)` | Prints a fully colored canvas with dimensions `widht` x `height`. All parameters are integers |
 | `invertColors()`* | Inverts the terminal colors |
 
-* Note that `invertColors()` has been depreciated as of v0.5.0 
+\* Note that `invertColors()` has been depreciated as of v0.5.0 
 ### Basics
 The two most basic classes of this program are the `draw` and `analyze` classes. The `draw` class' basic function is the `render()` function, which takes five arguments: `shape`, `length`, `width`, `xpos`, `ypos`. Therefore, in this example:
 ```python
