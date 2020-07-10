@@ -18,8 +18,8 @@ print("The setup is done!")
 Here is a full list of canvas functions:
 | Function | Use |
 | --- | --- |
-| `setCanvas(canvas, width, height)` | Creates a canvas with dimensions `width` x `height`. All parameters are integers. |
-| `testCanvas(canvas)` | Prints a full colored canvas with the dimensions of canvas `canvas` |
+| `setCanvas(canvas, width, height)` | Creates a canvas with dimensions `width` x `height`. `canvas` is an object `width` and `height` are integers. |
+| `testCanvas(canvas)` | Prints a full colored canvas with the dimensions of canvas `canvas`. `canvas` is an object. |
 | `invertColors()`* | Inverts the terminal colors. |
 
 \* Note that `invertColors()` has been depreciated as of v0.5.0 
