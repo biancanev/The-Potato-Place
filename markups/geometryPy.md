@@ -34,7 +34,7 @@ Here is a full list of `draw` class functions
 | --- | --- |
 | `Shape(shape, width, height, xpos, ypos)` | Defines the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`), but *does not draw it*. This is usually used in conjunction with the `paint()` or one of the `animate()` transformations. `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
 | `Render(shape, width, height, xpos, ypos)` | Draws the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`). `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
-| `Paint(obj)` | Prints the object `obj` onto the canvas |
+| `Paint(obj)` | Prints the object `obj` onto the canvas. |
 | `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers. |
 | `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float. |
 | `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float. |
@@ -120,6 +120,7 @@ A full list of functions is here:
 | `translate(obj, pos1, pos2, duration)` | Move an object `obj` from `pos1` to `pos2` in `duration` seconds. `obj` should be an object. `pos1` and `pos2` should be tuples. `duration` should be an integer or float. |
 | `rotate(obj, pos1, pos2, duration)` | Rotate an object `obj` from `pos1` to `pos2` in `duration` seoconds. `obj` should be an object. `pos1` and `pos2` should be tuples. `duration` should be an integer or float. |
 | `scale(obj, size, duration)` | Scale an object `obj` from its current size by a scale of `size` in `duration` seconds. `obj` should be an object. `scale` and `duration` should be integers or floats. |
+| `destroy(obj)` | Destroys all instances of object `obj` |
 | `createTimeline(name)`\* | Creates an accessible timeline called `name` in order to view all animation sequences |
 
 \*`createTimeline()` has been depreciated since v.0.5.0
