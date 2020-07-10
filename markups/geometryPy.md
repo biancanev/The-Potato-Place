@@ -11,9 +11,8 @@ In order to start using geometryPy, you need to create a `canvas`. To do this, t
 ```python
 #Basic Setup
 import geometryPy.py
-canvas1 = canvas()
-canvas1.setCanvas(100, 100)
-canvas1.testCanvas(100, 100)
+canvas.setCanvas(100, 100)
+canvas.testCanvas(100, 100)
 print("The setup is done!")
 ```
 Here is a full list of canvas functions:
@@ -29,7 +28,7 @@ The two most basic classes of this program are the `draw` and `analyze` classes.
 ```python
 draw.Render("rectangle", 10, 40, 0, 0)
 ```
-the terminal will draw out a 10 x 40 rectangle at (0, 0), or the top left corner.
+the terminal will draw out a 10 x 40 rectangle at (0, 0), or the top left corner. The coordinate system used in this library places the origin(0,0) at the top left and the maximum(width, height) at the bottom right.
 Here is a full list of `draw` class functions
 | Function | Use |
 | --- | --- |
@@ -99,4 +98,18 @@ Next, draw a shape just as you would in a drawing.
 ```python
 body = draw.Shape("rectangle", 10, 5, 50, 50)
 ```
-Similar to the `draw` class, the `animate` class also has `translate()`, `rotate()`, and `scale()` functions. The difference is that there is a new parameter.
+Similar to the `draw` class, the `animate` class also has `translate()`, `rotate()`, and `scale()` functions. The difference is that there are new parameters: `obj` `pos1`, `pos2` `duration`. Therefore, a fully coded animation would be:
+```python
+import geometryPy.py
+#setup animation area
+canvas1 = canvas()
+canvas1.setCanvas(100,100)
+#create a scene
+scene1 = animate()
+scene1.length = 5
+scene1.framerate = 60
+#create the object
+body = draw.Shape("rectangle", 10, 5, 50, 50)
+#animate the object
+animate.translate(body, (50, 50), (60, 60), 5)#move from positon(50, 50) to positon (60, 60) in 5 seconds
+```
