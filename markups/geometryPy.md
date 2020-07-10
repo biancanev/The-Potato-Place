@@ -1,7 +1,7 @@
 # geometryPy Documentation
-Version: 1. 0. 0
+Version: 1. 0. 1
 
-Status: Stable
+Status: Under Construction
 
 ### Intoduction
 geometryPy is an easy way to draw simple graphics on the terminal window. This software is meant for beginners to learn how to code.
@@ -123,3 +123,15 @@ A full list of functions is here:
 | `createTimeline(name)`\* | Creates an accessible timeline called `name` in order to view all animation sequences |
 
 \*`createTimeline()` has been depreciated since v.0.5.0
+
+### Versions
+| Tag | Release Date | Status | Notes |
+| --- | --- | --- | --- |
+|v.0.1.0 | 5/2/20 | Unstable | N/a |
+|v.0.1.1 | 5/7/20 | Stable | Fixed bugs \[*Depreciated*\] |
+|v.0.2.0 | 5/28/20 | Stable | First stable release \[*Depreciated*\] |
+|v.0.3.0 | 6/5/20 | Unstable | Added advanced functions \[*Depreciated*\] |
+|v.0.4.0 | 6/15/20 | Unstable | Fixed bugs \[*Depreciated*\] |
+|v.0.5.0 | 6/23/20 | Stable | Fixed bugs \[*Depreciated*\] |
+|v.1.0.0 | 7/5/20 | Stable | Released for commercial use |
+|v.1.0.1 | 7/10/20 | Unstable | Added animation class |
