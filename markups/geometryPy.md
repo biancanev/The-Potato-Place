@@ -11,8 +11,9 @@ In order to start using geometryPy, you need to create a `canvas`. To do this, t
 ```python
 #Basic Setup
 import geometryPy.py
-canvas.setCanvas(100, 100)
-canvas.testCanvas(100, 100)
+canvas1 = canvas()
+canvas1.setCanvas(100, 100)
+canvas1.testCanvas(100, 100)
 print("The setup is done!")
 ```
 Here is a full list of canvas functions:
@@ -85,11 +86,17 @@ The `shade` class is a good way to add dimensions to your drawing. Here is a lis
 The `animate` class is a great tool to make simple animations. First define an animation sequences as a variable using the `animate()` function.
 ```python
 import geometryPy.py
+canvas1 = canvas()
+canvas1.setCanvas(100,100)
 scene1 = animate()
 ```
 This will create a timeline. Default values for this timeline are a duration of 30 seconds and a framerate of 30 frames per second. You can change these values by using:
 ```python
 scene1.length = #your duration
 scene1.framerate = #FPS
+```
+Next, draw a shape just as you would in a drawing.
+```python
+body = draw.Shape("rectangle", 10, 5, 50, 50)
 ```
 Similar to the `draw` class, the `animate` class also has `translate()`, `rotate()`, and `scale()` functions. The difference is that there is a new parameter.
