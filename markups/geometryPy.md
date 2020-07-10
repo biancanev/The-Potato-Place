@@ -121,4 +121,5 @@ A full list of functions is here:
 | `rotate(obj, pos1, pos2, duration)` | Rotate an object `obj` from `pos1` to `pos2` in `duration` seoconds. `obj` should be an object. `pos1` and `pos2` should be tuples. `duration` should be an integer or float. |
 | `scale(obj, size, duration)` | Scale an object `obj` from its current size by a scale of `size` in `duration` seconds. `obj` should be an object. `scale` and `duration` should be integers or floats. |
 | `createTimeline(name)`\* | Creates an accessible timeline called `name` in order to view all animation sequences |
+
 \*`createTimeline()` has been depreciated since v.0.5.0
