@@ -113,3 +113,8 @@ body = draw.Shape("rectangle", 10, 5, 50, 50)
 #animate the object
 animate.translate(body, (50, 50), (60, 60), 5)#move from positon(50, 50) to positon (60, 60) in 5 seconds
 ```
+A full list of functions is here:
+| Function | Use |
+| --- | --- |
+| `animate()` | Create a new animation scene. Editable values are `animate().length` and `animate.framerate` which edit the duration of the animation and the framerate of the animation, respectively |
+| `translate(obj, pos1, pos2, duration)` | Move an object `obj` from `pos1` to `pos2` in `duration` seconds. `obj` should be an object. `pos1` and `pos2` should be tuples. `duration` should be an integer or float |
