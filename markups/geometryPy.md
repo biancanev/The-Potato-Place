@@ -87,5 +87,9 @@ The `animate` class is a great tool to make simple animations. First define an a
 import geometryPy.py
 scene1 = animate()
 ```
-This will create a timeline. Default values for this timeline are a duration of 30 seconds and a framerate of 30 frames per second.
+This will create a timeline. Default values for this timeline are a duration of 30 seconds and a framerate of 30 frames per second. You can change these values by using:
+```python
+scene1.length = #your duration
+scene1.framerate = #FPS
+```
 
