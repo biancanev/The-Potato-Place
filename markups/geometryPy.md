@@ -1,10 +1,10 @@
-# geometryPy Documentation
+# GeometryPy Documentation
 Version: 1. 0. 1
 
 Status: Under Construction
 
 ### Intoduction
-geometryPy is an easy way to draw simple graphics on the terminal window. This software is meant for beginners to learn how to code. Get code [here](https://biancanev.github.io/The-Potato-Place/store/apps/geometryPy)
+GeometryPy is an easy way to draw simple graphics on the terminal window. This software is meant for beginners to learn how to code. Get code [here](https://biancanev.github.io/The-Potato-Place/store/apps/geometryPy).
 
 ### Getting Started
 In order to start using geometryPy, you need to create a `canvas`. To do this, there is a `canvas` class. To create a basic canvas, use the function `setCanvas()`, which takes two parameters: `width`, `height`. You can see how big the canvas you created is by using the `testCanvas()` function. Here is an example of a fully set up program:
