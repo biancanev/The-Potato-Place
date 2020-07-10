@@ -80,3 +80,12 @@ The `shade` class is a good way to add dimensions to your drawing. Here is a lis
 | Function | Use |
 | --- | --- |
 | `shadeShape(obj, style)` | Shades the shape `obj`. You can customize the shading style using `style`. Current styles are `normal` and `textured.`|
+
+### Animation
+The `animate` class is a great tool to make simple animations. First define an animation sequences as a variable using the `animate()` function.
+```python
+import geometryPy.py
+scene1 = animate()
+```
+This will create a timeline. Default values for this timeline are a duration of 30 seconds and a framerate of 30 frames per second.
+
