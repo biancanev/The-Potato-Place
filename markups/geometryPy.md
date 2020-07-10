@@ -134,4 +134,4 @@ A full list of functions is here:
 |v.0.4.0 | 6/15/20 | Unstable | Fixed bugs \[*Depreciated*\] |
 |v.0.5.0 | 6/23/20 | Stable | Fixed bugs \[*Depreciated*\] |
 |v.1.0.0 | 7/5/20 | Stable | Released for commercial use |
-|v.1.0.1 | 7/10/20 | Unstable | Added animation class |
+|v.1.0.1(Curr) | 7/10/20 | Unstable | Added animation class |
