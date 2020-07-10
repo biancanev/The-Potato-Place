@@ -92,4 +92,4 @@ This will create a timeline. Default values for this timeline are a duration of 
 scene1.length = #your duration
 scene1.framerate = #FPS
 ```
-
+Similar to the `draw` class, the `animate` class also has `translate()`, `rotate()`, and `scale()` functions. The difference is that there is a new parameter.
