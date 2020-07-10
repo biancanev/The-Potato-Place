@@ -126,7 +126,7 @@ A full list of functions is here:
 
 ### Versions
 | Tag | Release Date | Status | Notes |
-| --- | --- | --- | --- |
+| --- | :---: | --- | --- |
 |v.0.1.0 | 5/2/20 | Unstable | N/a |
 |v.0.1.1 | 5/7/20 | Stable | Fixed bugs \[*Depreciated*\] |
 |v.0.2.0 | 5/28/20 | Stable | First stable release \[*Depreciated*\] |
