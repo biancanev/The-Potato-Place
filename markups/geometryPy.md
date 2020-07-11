@@ -1,5 +1,5 @@
 # GeometryPy Documentation
-Version: 1. 0. 1
+Version: `v1.0.1`
 
 Status: Under Construction
 
