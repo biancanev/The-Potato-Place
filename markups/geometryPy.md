@@ -34,7 +34,7 @@ Here is a full list of `draw` class functions
 | --- | --- |
 | `Shape(shape, width, height, xpos, ypos)` | Defines the given `shape` with the dimensions of `width` x `height` at (`xpos`, `ypos`), but *does not draw it*. This is usually used in conjunction with the `paint()` or one of the `animate()` transformations. `shape` should be a string. `length`, `width`, `xpos`, and `ypos` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
 | `Render(shape, width, height)` | Draws the given `shape` with the dimensions of `width` x `height`. This is used as a reference to see how a shape would look like. `shape` should be a string. `length` and `width` should be integers. Current supported `shape` are: `"circle"`, `"triangle"`, and `"rectangle"`. |
-| `Paint(obj)` | Prints the object `obj` onto the canvas. |
+| `Paint()` | Prints the defined shapes onto the canvas. |
 | `Translate(obj, origin, xmov, ymov)` | Moves the object specified by `obj` by `xmov` on the x-axis and `ymov` on the y-axis. The translation is based at the `origin`. `obj` should be an object. `origin` should be a tuple. `xmov` and `ymov` should be integers. |
 | `Rotate(obj, origin, deg)` | Rotates the object defined by `obj` by `deg` degrees at the `origin`. `obj` should be an object. `origin` should be a tuple. `deg` should be a float. |
 | `Dilate(obj, origin, scale)` | Scales the object defined by `obj` by a scale of `scale` based at the `origin`. `obj` should be an object. `origin` should be a tuple. `scale` should be a float. |
