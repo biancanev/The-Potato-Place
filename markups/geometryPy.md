@@ -1,7 +1,7 @@
 # GeometryPy Documentation
 Version: `v1.0.1`
 
-Status: Under Construction
+Status: `Under Construction`
 
 ### Intoduction
 GeometryPy is an easy way to draw simple graphics on the terminal window. This software is meant for beginners to learn how to code. Get code [here](https://biancanev.github.io/The-Potato-Place/store/apps/geometryPy).
