@@ -123,7 +123,7 @@ A full list of functions is here:
 | `destroy(obj)` | Destroys all instances of object `obj` |
 | `createTimeline(name)`\* | Creates an accessible timeline called `name` in order to view all animation sequences |
 
-\*`createTimeline()` has been depreciated since v.0.5.0
+\*`createTimeline()` has been depreciated since v.1.0.0
 
 ### Versions
 | Tag | Release Date | Status | Notes |
