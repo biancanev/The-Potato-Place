@@ -1,0 +1,11 @@
+{
+	compoments:{
+		vcc: (100, 100),
+		resistor: (105, 100),
+		led: (110, 100),
+	},
+	nets:{
+		net1: {},
+	},
+	options:{}
+}
